@@ -1,36 +1,36 @@
 
-
-
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<include file="Public:head" />
-	<script src="http://api.map.baidu.com/api?v=1.4"></script>
 </head>
 
 <body>
 	<include file="Public:header" />
-	<section class="subpage-content-wrapper wrapper">
-		<include file="Public:sidebar" />
-		<div class="subpage-content">
-			<div class="breadcrumb-module">
-				<h3 class="breadcrumb-title">{$catname}</h3>
-				<div class="breadcrumb">当前位置：{$location}</div>
-			</div>
-			<div class="content">
-				<div class="con_bd">
-					
-                   <div><p align="center"><img src="/Uploads/image/lxwm.jpg"/></p>
-
-
-					</script>
-
+	<div class="breadcrumb">
+		<div class="common-width">
+			<span class="layui-breadcrumb">
+				<a href="__APP__/">首页</a>
+				<a><cite>公司简介</cite></a>
+			</span>
+		</div>
+	</div>
+	<div class="child-page-main">
+		<div class="common-width">
+			<include file="Public:sidebar" />
+			<div class="child-page-content">
+				<div>
+					<strong>{$config['web_name']}</strong>
+					<p>{$config['linkman']}：{$config['mobile']} &nbsp;&nbsp;&nbsp;&nbsp;邮箱：{$config['email']}</p>
+					<p>电话：{$config['tel']} </p>
+					<p>地址：{$config['address']} &nbsp;&nbsp;&nbsp;&nbsp;网址：{$config['web_url']}</p>
+					<p>路线：从新乡汽车站打车约8公里，历时25分钟即可到到，如有疑问，请拨打：{$config['mobile']}</p>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<include file="Public:footer" />
 </body>
 
 </html>
-

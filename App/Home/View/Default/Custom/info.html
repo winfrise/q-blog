@@ -1,3 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<include file="Public:head" />
+</head>
+
+<body>
+	<include file="Public:header" />
+	<div class="breadcrumb">
+		<div class="common-width">
+			<span class="layui-breadcrumb">
+				<a href="__APP__/">首页</a>
+				<a><cite>{$article['title']}</cite></a>
+			</span>
+		</div>
+	</div>
+	<div class="child-page-main">
+		<div class="common-width">
+			<include file="Public:sidebar" />
+			<div class="child-page-content">
+				<h3 class="news_title bold f16">{$article['title']}</h3>
+				<p>{$article['content']}</p>
+			</div>
+		</div>
+	</div>
+	<include file="Public:footer" />
+</body>
+
+</html>
+
+
+
+
 
 <!DOCTYPE HTML>
 <html>

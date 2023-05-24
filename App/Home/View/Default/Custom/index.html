@@ -1,37 +1,45 @@
 
-
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<include file="Public:head" />
+	<style>
+		.custom-list {
+
+		}
+		.custom-item {
+			
+		}
+	</style>
 </head>
 
 <body>
 	<include file="Public:header" />
-	<section class="subpage-content-wrapper wrapper">
-		<include file="Public:sidebar" />
-		<div class="subpage-content">
-			<div class="breadcrumb-module">
-				<h3 class="breadcrumb-title">{$catname}</h3>
-				<div class="breadcrumb">当前位置：{$location}</div>
-			</div>
-			<div class="content">
-
-				<ol class="news">
+	<div class="breadcrumb">
+		<div class="common-width">
+			<span class="layui-breadcrumb">
+				<a href="__APP__/">首页</a>
+				<a><cite>{$article['title']}</cite></a>
+			</span>
+		</div>
+	</div>
+	<div class="child-page-main">
+		<div class="common-width">
+			<include file="Public:sidebar" />
+			<div class="child-page-content">
+				<ul class="custom-list">
 					<volist name="list" id="vo">
-						<li><a href="{$vo.url}">{$vo.title}</a></li>
+						<li class="custom-item"><a href="{$vo.url}">{$vo.title}</a></li>
 					</volist>
-				</ol>
+				</ul>
 				<div class="page clear right">
 					{$page}
 				</div>
-
 			</div>
 		</div>
-	</section>
+	</div>
 	<include file="Public:footer" />
 </body>
 
 </html>
-
-
