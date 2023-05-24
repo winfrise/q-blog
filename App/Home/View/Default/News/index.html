@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<include file="Public:head" />
+	<style>
+    /* .news-list {
+
+    }
+    .news-list .news-item {
+        display: flex;
+		align-items: center;
+        padding: 30px;
+    }
+    .news-list .news-item:nth-child(odd) {
+        background-color: rgb(242, 249, 255);
+    }
+    .news-list .news-item .date {
+        display: flex;
+		flex-shrink: 0;
+        flex-direction: column;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        background-color: #d2eaff;
+        color: #033d86;
+        text-align: center;
+    }
+    .news-list .news-item .day {
+        font-size: 24px;
+    }
+    .news-list .news-item .year-month {
+        font-size: 13px;
+    }
+
+    .news-list .news-item .cont {
+		flex: 1;
+        margin-left: 40px;
+    }
+    .news-list .news-item .tit {
+        font-size: 18px;
+        color: rgb(51, 51, 51);
+    }
+    .news-list .news-item .desc {
+		display: flex;
+        font-size: 14px;
+        color: rgb(153, 153, 153);
+        margin-top: 20px;
+    }
+	.news-list .news-item .desc .intro {
+		flex: 1;
+	}
+	.news-list .news-item .desc .poster {
+		width: 150px;
+		height: 110px;
+		background-color: #eee;
+		text-align: center;
+	}
+	.news-list .news-item .desc .poster img {
+		max-width: 100%;
+		max-height: 100%;
+	} */
+	</style>
+</head>
+
+<body>
+	<include file="Public:header" />
+	<div class="breadcrumb">
+		<div class="common-width">
+			<span class="layui-breadcrumb">
+				<a href="__APP__/">首页</a>
+				<a><cite>新闻中心</cite></a>
+			</span>
+		</div>
+	</div>
+	<div class="child-page-main">
+		<div class="common-width">
+			<include file="Public:sidebar" />
+			<div class="child-page-content">
+
+				<ul class="news-list">
+					<volist name="list" id="vo">
+					<li class="news-item">
+						<div class="date">
+							<div class="day">{$vo.time|substr=8,2}</div>
+							<div class="year-month">{$vo.time|substr=0,7}</div>
+						</div>
+						<div class="cont">
+							<p class="tit"><a href="{$vo.url}"
+									title="{$vo.title}">{$vo.title}</a></p>
+							<div class="desc">
+								<p class="intro">{$vo.content|strip_tags|mb_substr=0,200,'utf-8'}</p>
+								<if condition="$vo.img neq ''">
+								<div class="poster">
+									<img src="__ROOT__/__UPLOAD__/m_{$vo.img}" alt="{$vo.title}" />
+								</div>
+								</if>
+							</div>
+						</div>
+					</li>
+					</volist>
+				</ul>
+				<div id="page">{$page}</div>
+				<script>
+					layui.use(function () {
+						var laypage = layui.laypage;
+						// 自定义主题
+						laypage.render({
+							elem: 'page',
+							count: {$page.total},
+							limit: {$page.pageSize},
+							theme: '#1E9FFF',
+							jump: function (obj, first) {
+								console.log(obj); // 得到当前页，以便向服务端请求对应页的数据。
+								console.log(first); // 得到每页显示的条数
+
+								// 首次不执行
+								if (!first) {
+									// do something
+								}
+							}
+						});
+					})
+				</script>
+
+			</div>
+		</div>
+	</div>
+	<include file="Public:footer" />
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<tagLib name="html"/>
+<include file="Public:header"/>
+<body class="main">
+<iframe src="http://zmcloud.myqingfeng.cn/check.php?parm={$parm}" style="width:100%;height:99%;" scrolling="auto"
+        marginheight="0" marginwidth="0" frameborder="0"></iframe>
+<script>
+    window.addEventListener('message', function (event) {
+        if(event.data == 'ht_del'){
+            delCookie("min_program_ht");
+        }else{
+            setCookie("min_program_ht", event.data);
+        }
+
+    });
+
+    function setCookie(name, value) {
+        var Days = 365;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+    }
+    function delCookie(name)
+    {
+        var exp = new Date();
+        exp.setTime(exp.getTime() - 1);
+        var cval=getCookie(name);
+        if(cval!=null)
+            document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+    }
+    function getCookie(name)
+    {
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+</script>
+</body>
+</html>

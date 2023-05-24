@@ -1,0 +1,73 @@
+<style>
+    .index-module.case {
+        background: url('__PUBLIC__/assets/images/module_three_bg.jpg') no-repeat center bottom;
+    }
+    .case .title {
+        background: url('__PUBLIC__/assets/images/three_bg.png') no-repeat top center;
+    }
+    .case .content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        /* grid-auto-rows: minmax(100px, auto); */
+        grid-template-rows: 208px 150px 208px;
+    }
+    .case .item {
+        text-align: center;
+        font-size: 200%;
+        color: #fff;
+    }
+    .case .item.one {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        background: #19CAAD;
+    }
+    .case .item.two { 
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        background: #8CC7B5;
+    }
+    .case .item.three {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        background: #D1BA74;
+    }
+    .case .item.four {
+        grid-column: 3;
+        grid-row: 1;
+        background: #BEE7E9;
+    }
+    .case .item.five {
+        grid-column: 3;
+        grid-row: 2 / 4;
+        background: #E6CEAC;
+    }
+    .case .item.six {
+        grid-column: 4;
+        grid-row: 1 / 3;
+        background: #ECAD9E;
+    }
+    .case .item.seven {
+        grid-column: 4;
+        grid-row: 3;
+        background: #BEE7E9;
+    } 
+</style>
+
+<div class="case index-module">
+    <div class="common-width">
+        <div class="title">
+            <h3 class="main-title">客户案例</h3>
+            <div class="sub-title">CASE</div>
+        </div>
+        <div class="content">
+            <div class="one item">One</div>
+            <div class="two item">Two</div>
+            <div class="three item">Three</div>
+            <div class="four item">Four</div>
+            <div class="five item">Five</div>
+            <div class="six item">Six</div>
+            <div class="seven item">seven</div>
+        </div>
+    </div>
+</div>

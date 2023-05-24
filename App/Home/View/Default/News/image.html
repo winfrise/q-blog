@@ -1,0 +1,64 @@
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="Public:head" />
+  <style>
+    .pic-block-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pic-block-item {
+      width: 300px;
+      margin: 10px 15px
+    }
+    .block-name {
+      line-height: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+	<include file="Public:header" />
+	<section class="subpage-content-wrapper wrapper">
+		<include file="Public:sidebar" />
+		<div class="subpage-content">
+			<div class="breadcrumb-module">
+				<h3 class="breadcrumb-title">{$catname}</h3>
+				<div class="breadcrumb">当前位置：{$location}</div>
+			</div>
+			<div class="content">
+        <div class="article">
+           <ul class="pic-bock-list">
+                  <div class="baguetteBoxOne gallery">
+                    <volist name="list" id="vo">
+                      <li class="pic-block-item">
+                        <a  href="__ROOT__/__UPLOAD__/{$vo.img}" title="{$vo.title}"><div class="pro01_hover"></div><img style="width: 100%" src="__ROOT__/__UPLOAD__/{$vo.img}" alt="{$vo.title}">
+                        </a>
+                        <div class="block-name">{$vo.title} </div>
+                      </li>
+                  </volist>
+                  </div>
+                  <script>
+                  baguetteBox.run('.baguetteBoxOne', {
+                      animation: 'fadeIn',
+                  });
+                  </script>
+                </ul>
+          <div id="page">
+              {$page}
+          </div>
+        </div>
+			</div>
+		</div>
+	</section>
+	<include file="Public:footer" />
+</body>
+
+</html>
+

@@ -1,0 +1,78 @@
+<tagLib name="html"/>
+<include file="Public:header" />
+<body class="main">
+ 	<div class="subTit">
+      <div class="tit">
+          <a href="javascript:;">系统</a>&gt;<a href="javascript:;">系统设置</a>
+      </div>
+      </div>
+      <div class="content">
+          <div class="formMod">
+              <div class="tit"><a href="__GROUP__/System/Index/t/1" <if condition="$group eq '1'">class="current"</if>>基础设置 </a><a href="__GROUP__/System/Index/t/4" <if condition="$group eq '4'">class="current"</if>>高级设置</a><a href="__GROUP__/System/Index/t/3">地图设置</a></div>
+              <form id="form1" action="" method="post"  enctype="multipart/form-data" class="validform">
+                  <ul>
+                   <volist name="list" id="vo" empty="$empty">
+                       <li>
+                          <label for="{$vo.key}">{$vo.name}：</label>
+                           <div class="item_cont">
+                               {$vo.input}
+                           </div>
+                       </li>
+                   </volist>
+                   <li class="push">
+                       <div class="item_cont">
+                       <if condition="$info.id neq ''">
+                       	<input type="hidden" id="id" name="id" value="{$info.id}" />
+                       	<input type="hidden" id="type" name="type" value="{$info.type}" />
+                      	</if>
+                           <input type="submit" class="submit" value="提&nbsp;交" />
+                           <input type="reset" class="reset" value="重&nbsp;置" />
+                       </div>
+                   </li>
+                  </ul>
+              </form>
+          </div>
+      </div>
+</body>
+</html>
+<script type="text/javascript" language="javascript">
+    $(function(){
+        $('#form1').Validform({
+            tiptype:3
+        }).addRule([{
+            ele:"#web_url",
+            datatype:"url",
+            errormsg:"网站URL格式不正确"
+        },{
+            ele:"#mobile",
+            datatype:/^1[0-9]\d{9}([\,\，]1[0-9]\d{9}){0,2}$/,
+            ignore:"ignore",
+            errormsg:"手机号码格式不正确，最多输入3个手机号码，以逗号分割"
+        },{
+            ele:"#email",
+            datatype:"e",
+            ignore:"ignore",
+            errormsg:"邮箱地址格式不正确"
+        }
+        ]);
+    });
+</script>
+<script>
+    $(function(){
+        $(":radio[name='filter_badwords']").each(function(){
+            if($("#attention").length==0){
+            if($("[name='filter_badwords']:checked").val()==1){
+                $(this).parent().parent().append('<div><label style="width:450px;color:#FF0000" id="attention">注意：开启后，您的网站中含有的广告法违禁词将会替换成***！</label></div>')
+            }
+            }
+        })
+        $(":radio[name='filter_badwords']").change(function(){
+            if($("[name='filter_badwords']:checked").val()==1){
+                $(this).parent().parent().append('<div><label style="width:450px;color:#FF0000" id="attention">注意：开启后，您的网站中含有的广告法违禁词将会替换成***！</label></div>')
+            }
+            if($("[name='filter_badwords']:checked").val()==0){
+               $("#attention").detach();
+            }
+        })
+    })
+</script>

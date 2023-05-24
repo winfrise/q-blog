@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="Public:head" />
+</head>
+<body>
+		<div class="header">
+			<include file="Public:header" />
+		</div>
+	<div class="wrap">
+		<div class="main">
+			<div class="left">
+				<include file="Public:sidebar" />
+			</div>
+			<div class="right">
+				<div class="article">
+				<if condition="$qfjob eq '0'">
+				{$config.qfjob|htmlspecialchars_decode}
+				<else />
+					<div class="title"><strong>{$catname}</strong><span class="right f12">{$location}</span></div>
+					<ul class="jobs">
+						<volist name="list" id="vo">
+							<li>
+								<p>
+									职位名称：<strong>{$vo.job}</strong><br>
+									结束时间：{$vo.end_time}<br>
+									招聘人数：{$vo.num}<br>
+									工资待遇：{$vo.salary}<br>
+								</p>
+								<a href="{$vo.url}">查&nbsp;看</a>
+							</li>
+						</volist>
+					</ul>
+					<div class="page clear right">
+						{$page}
+					</div>
+				</div>
+				</if>
+			</div>
+		</div>
+	</div>
+		<div class="footer">
+			<include file="Public:footer" />
+		</div>
+</body>	
+</html>

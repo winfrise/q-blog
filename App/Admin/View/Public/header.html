@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<title>{$title}</title>
+
+<load href="__PUBLIC__/Css/reset.css" />
+<load href="__PUBLIC__/Css/base.css" />
+<load href="__PUBLIC__/Js/jquery.js" />
+<load href="__PUBLIC__/Js/Validform/Validform.css" />
+<load href="__PUBLIC__/Js/Validform/Validform.js" />
+<load href="__PUBLIC__/Js/common.js" />
+<script>
+var url = "__ROOT__";
+var type = "<?php echo CONTROLLER_NAME; ?>";
+</script>
+<script>
+    var is_filter='<?php echo is_filter(); ?>';
+    var badwords= '<?php echo json_encode(get_badwords()); ?>';
+    var arr=eval(badwords);
+    if(is_filter==1){
+        $(document).ready(function(){
+            $(".validform").submit(function(){
+                var content='';
+                var flag=0;
+                var data =[];
+                $("input[type=text],textarea").each(function(){
+                    $(this).css('background-color','#FFFFFF');
+                    for(var i=0;i<arr.length;i++){
+                        if($(this).val().toLowerCase().indexOf(arr[i].toLowerCase())>-1){
+                            $(this).css('background-color','#FFFFCC');
+                            flag=1;
+                            data.push(arr[i]);
+                        }
+                    }
+                });
+                var data2 = [data[0]];
+                for(var k = 1; k<data.length; k++){
+                    if (data.indexOf(data[k]) == k) data2.push(data[k]);
+                }
+                for(var j=0;j<data2.length;j++){
+                    content +='"'+data2[j]+'",';
+                }
+                if(flag==1){
+                    if(confirm('您提交的内容中含有广告法违禁词'+content+'是否继续提交')==false){
+                        return false;
+                    }else{
+                        return true;
+                    }
+                }
+            });
+        })
+    }
+</script>
+</head>

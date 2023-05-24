@@ -1,0 +1,111 @@
+<tagLib name="html"/>
+<include file="Public:header" />
+<body>
+    <div class="subTit">
+            <div class="tit">
+                <a href="javascript:;">产品</a>&gt;<a href="javascript:;">批量增加产品</a>
+            </div>
+     </div>
+            <div class="content">
+                <div class="formMod">
+                    <div class="tit">批量增加产品</div>
+                    <form name="form1" id="form1" enctype="multipart/form-data" method="post" action="">
+                        <input type="hidden" id="p" name="p" value="{$p}" />
+                        <ul>
+
+                            <li>
+                                <label for="form-label">行业类别：</label>
+                                <div class="item_cont">
+                                    <select class="txt" id="cate1" name="cate1" >
+                                        <option value="">请选择</option>
+                                        <optgroup label='生产制造'>
+                                            <php>foreach ($cate1_list as $k => $v){</php>
+                                            <php>if($k<10000){</php>
+                                            <option value="{$v.id}" <if condition="$v['id'] eq $data_row['cate1']"> selected="selected"</if>>&emsp;{$v.name}</option>
+                                            <php>}else if($k>=20000){</php>
+                                            <optgroup label="本地服务">
+                                                <php>break;}}</php>
+                                                <php>foreach ($cate1_list as $k => $v){</php>
+                                                <php>if($k>=20000){</php>
+                                                <option value="{$v.id}" <if condition="$v['id'] eq $data_row['cate1']"> selected="selected"</if>>&emsp;{$v.name}</option>
+                                                <php>}}</php>
+                                            </optgroup>
+                                        </optgroup>
+                                    </select>
+                                    <select class="txt" id="cate2" name="cate2">
+                                        <option value="">请选择</option>
+                                        <php>foreach ($cate2_list as $k => $v){</php>
+                                        <option value="{$v.id}" <if condition="$v['id'] eq $data_row['cate2']"> selected="selected"</if>>{$v.name}</option>
+                                        <php>}</php>
+                                    </select>
+                                    <select class="txt" id="cate" name="cate">
+                                        <option value="">请选择</option>
+                                        <php>foreach ($cate as $k => $v){</php>
+                                        <option value="{$v.id}" <if condition="$v['id'] eq $data_row['cate']"> selected="selected"</if>>{$v.name}</option>
+                                        <php>}</php>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li>
+                                <label for="category">产品类别：</label>
+                                <html:select options='category' selected='classid' name="pid" id="pid" style="txt" />
+                            </li>
+                            <li>
+                                <label for="">产品标题：</label>
+                                <div class="item_cont">
+                                    <label><input type="radio" name="titleBy" value="1" checked> 根据文件名</label>
+                                    <label><input type="radio" name="titleBy" value="0"> 统一命名</label>
+                                    <p class="notice">注意：请提前修改好图片名称，图片名称会自动同步为产品名称！</p>
+                                    <input type="text" name="title" size="80" class="txt" id="title" style="display:none;" />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="img">产品图片：</label>
+                                <include file="Public:uploader" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+</body>
+<script>
+    $('select[name=cate1]').change(function(){
+        var cate_list_id = $(this).val();
+        $.ajax({
+            url : '{:U("Goods/getCateListbyParent")}',
+            type : 'get',
+            dataType : 'json',
+            data : {
+                cate_list_id : $(this).val()
+            },
+            success : function(json) {
+                $('#cate').empty().append('<option value="">请选择</option>');
+                $('#cate2').empty();
+                $('#cate2').append('<option value="">请选择</option>');
+                for (var i = 0; i < json.length; ++i) {
+                    $('#cate2').append('<option value="' + json[i]['id'] + '">' + json[i]['name'] + '</option>');
+                }
+                setTimeout(function(){$('select[name=cate2]').change();}, 200);
+            }
+        });
+    });
+    $('select[name=cate2]').change(function(){
+        $.ajax({
+            url : '{:U("Goods/getCateListbyParent")}',
+            type : 'get',
+            dataType : 'json',
+            data : {
+                cate_list_id : $(this).val()
+            },
+            success : function(json) {
+                $('#cate').empty();
+                $('#cate').append('<option value="">请选择</option>');
+                for (var i = 0; i < json.length; ++i) {
+                    $('#cate').append('<option value="' + json[i]['id'] + '">' + json[i]['name'] + '</option>');
+                }
+            }
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,144 @@
+<style>
+    .top-bar {
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        background-color: rgb(3, 61, 134);
+    }
+    .top-bar-inner {
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+    }
+    #header {
+        width: 100%;
+        height: 100px;
+    }
+    #header .header-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    #header .header-left {
+        display: flex;
+        align-items: center;
+    }
+    #header .logo {
+        width: 75px;
+        height: 75px;
+    }
+    #header .title {
+        margin-left: 20px;
+    }
+    #header .title-ch {
+        color: rgb(0, 0, 0);
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    #header .title-en {
+
+    }
+    #header .header-tel {
+        display: flex;
+        align-items: center;
+    }
+
+    #nav {
+        background: rgb(3, 61, 134);
+    }
+    #nav .layui-nav-item {
+        width: 150px;
+        padding: 0 5px;
+        box-sizing: border-box;
+        background: url(__PUBLIC__/assets/images/nav_item_bg.png) no-repeat;
+    }
+    #nav .layui-nav-item:hover {
+        background: url(__PUBLIC__/assets/images/nav_item_hover_bg.png) no-repeat;
+    }
+</style>
+<!-- 顶部导航 -->
+<div class="top-bar">
+    <div class="common-width top-bar-inner">
+        <span>欢迎来到大连某某轻钢结构工程有限公司，我们将竭诚为您提供服务！</span>
+        <span>关于我们 | 联系我们</span>
+    </div>
+</div>
+
+<!-- 头部 -->
+<header id="header">
+    <div class="common-width header-inner">
+        <div class="header-left">
+            <img src="__PUBLIC__/assets/images/logo.png" class="logo" />
+            <div class="title">
+                <div class="title-ch">中国某某轻钢结构工程有限公司</div>
+                <div class="title-en">CHINA MOU MOU LIGHT STEEL STRUCTURE ENGINEERING CO.,LTD</div>
+            </div>
+        </div>
+        <div class="header-tel">
+            <div>全国服务热线<br><span style="font-size: 22px;">400-0000-0000</span></div>
+            <img src="__PUBLIC__/assets/images/img_tel.png" />
+        </div>
+    </div>
+</header>
+
+<!-- 菜单 -->
+<ul class="layui-nav" id="nav">
+    <div class="common-width">
+        <li class="layui-nav-item">
+            <a href="__APP__/">网站首页<span class="layui-badge">9</span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="__APP__/company">关于我们<span class="layui-badge-dot"></span></a>
+            <dl class="layui-nav-child">
+                <dd>
+                    <a href="__APP__/company">企业简介<span class="layui-badge-dot"></span></a>
+                </dd>
+                <dd>
+                    <a href="__APP__/custom/17" title="企业文化">企业文化</a>
+                </dd>
+            </dl>
+        </li>
+        
+        <li class="layui-nav-item">
+            <a href="__APP__/news">新闻资讯<span class="layui-badge-dot"></span></a>
+        </li>
+        
+        <li class="layui-nav-item">
+            <a href="__APP__/product">产品展示<span class="layui-badge-dot"></span></a>
+        </li>
+        
+        <li class="layui-nav-item">
+            <a href="__APP__/custom/t/5">荣誉资质<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a class="nav-link" href="__APP__/custom/t/13" title="客户案例">客户案例</a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="__APP__/contact">联系我们<span class="layui-badge-dot"></span></a>
+        </li>
+    </div>
+</ul>
+
+<!--轮播图-->
+<div class="layui-carousel" id="ID-carousel-demo-1" style="height: 600px;">
+    <div carousel-item>
+        <div>条目1</div>
+        <div>条目2</div>
+        <div>条目3</div>
+        <div>条目4</div>
+        <div>条目5</div>
+    </div>
+</div>
+<script>
+    layui.use(function () {
+        var carousel = layui.carousel;
+
+        // 渲染 - 设置时间间隔、动画类型、宽高度等属性
+        carousel.render({
+            elem: '#ID-carousel-demo-1',
+            interval: 1800,
+            anim: 'fade',
+            width: 'auto',
+            height: '600px'
+        });
+    });
+</script>

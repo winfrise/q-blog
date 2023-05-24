@@ -1,0 +1,269 @@
+<tagLib name="html"/>
+<include file="Public:header" />
+<include file="Public:editor" />
+<load href="__PUBLIC__/Js/DatePicker/WdatePicker.js" />
+<body class="main">
+ 	<div class="subTit">
+                
+                <div class="tit">
+                    <a href="javascript:;">招聘</a>&gt;<a href="javascript:;">{$title_type}招聘</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="formMod">
+                    <div class="tit">{$title_type}招聘</div>
+                    <form action="" method="post" class="validform" enctype="multipart/form-data">
+                        <ul>
+                            <input type="hidden" id ="pid" name="pid" value="3">
+                            <li>
+                                <label for="form-label">招聘行业：</label>
+                                <div class="item_cont">
+                                    <select class="txt" id="cate1" name="cate1">
+                                        <option value="">请选择</option>
+                                        <optgroup label='行业分类'>
+                                            <php>foreach ($cate1_list as $k => $v){</php>
+                                            <option value="{$v.id}" <if condition="$v['id'] eq $data_row['cate1']"> selected="selected"</if>>&emsp;{$v.name}</option>
+                                            <php>}</php>
+                                        </optgroup>
+                                    </select>
+                                    <select class="txt" id="cate2" name="cate2">
+                                        <option value="">请选择</option>
+                                        <php>foreach ($cate2_list as $k => $v){</php>
+                                        <option value="{$v.id}" <if condition="$v['id'] eq $data_row['cate2']"> selected="selected"</if>>{$v.name}</option>
+                                        <php>}</php>
+                                    </select>
+                                    <select class="txt" id="cate" name="cate" datatype="*" nullmsg="请选择招聘行业">
+                                        <option value="">请选择</option>
+                                        <php>foreach ($cate as $k => $v){</php>
+                                        <option value="{$v.id}" <if condition="$v['id'] eq $data_row['cate']"> selected="selected"</if>>{$v.name}</option>
+                                        <php>}</php>
+                                    </select>
+
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Area">招聘地区：</label>
+                                <div class="item_cont" id="arealist">
+                                <select name="province" id="province" class="txt">
+                                    <option value="">请选择</option>
+                                    <php>foreach ($province_list as $k => $v){</php>
+                                    <option value="{$v.id}" <if condition="$v['id'] eq $info['province_id']"> selected="selected"</if>>{$v.name}</option>
+                                    <php>}</php>
+                                </select>
+                                <select name="city" id="city" class="txt">
+                                    <option value="">请选择</option>
+                                    <php>foreach ($city_list as $k => $v){</php>
+                                    <option value="{$v.id}" <if condition="$v['id'] eq $info['city_id']"> selected="selected"</if>>{$v.name}</option>
+                                    <php>}</php>
+                                </select>
+                                <select name="area_id"  id="area" class="txt" datatype="*" nullmsg="请选择招聘地区">
+                                    <option value="">请选择</option>
+                                    <php>foreach ($area_list as $k => $v){</php>
+                                    <option value="{$v.id}" <if condition="$v['id'] eq $info['area_id']"> selected="selected"</if>>{$v.name}</option>
+                                    <php>}</php>
+                                </select>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Type">工作类型：</label>
+                                <select name="type" class="txt" datatype="*" nullmsg="请选择工作类型">
+                                    <option value="">请选择</option>
+                                    <volist name="zpconfig[ZP_TYPE]" id="vo">
+                                        <option value="{$i}"<if condition="$info.type eq $i"> selected="selected"</if>>{$vo}</option>
+                                    </volist>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="Property">公司性质：</label>
+                                <div class="item_cont">
+                                    <select  name="property"  class="txt" datatype="*" nullmsg="请选择公司性质">
+                                        <option value="">请选择</option>
+                                        <volist name="zpconfig[ZP_PROPERTY]" id="vo">
+                                            <option value="{$i}"<if condition="$info.property eq $i"> selected="selected"</if>>{$vo}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Edu">学历要求：</label>
+                                <select name="education" class="txt" datatype="*" nullmsg="请选择学历要求">
+                                    <option value="">请选择</option>
+                                    <volist name="zpconfig[ZP_EDU]" id="vo">
+                                        <option value="{$i}"<if condition="$info.education eq $i"> selected="selected"</if>>{$vo}</option>
+                                    </volist>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="Experience">工作经验：</label>
+                                <select name="experience" class="txt" datatype="*" nullmsg="请选择工作经验">
+                                    <option value="">请选择</option>
+                                    <volist name="zpconfig[ZP_EXPERIENCE]" id="vo">
+                                        <option value="{$i}"<if condition="$info.experience eq $i"> selected="selected"</if>>{$vo}</option>
+                                    </volist>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="Scale">公司规模：</label>
+                                <div class="item_cont">
+                                    <select  name="scale"  class="txt" datatype="*" nullmsg="请选择公司规模">
+                                        <option value="">请选择</option>
+                                        <volist name="zpconfig[ZP_SCALE]" id="vo">
+                                            <option value="{$i}"<if condition="$info.scale eq $i"> selected="selected"</if>>{$vo}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="Salary">薪资范围：</label>
+                                <select name="salary" class="txt" datatype="*" nullmsg="请选择薪资范围">
+                                    <option value="">请选择</option>
+                                    <volist name="zpconfig[ZP_SALARY]" id="vo">
+                                        <option value="{$i}"<if condition="$info.salary eq $i"> selected="selected"</if>>{$vo}</option>
+                                    </volist>
+                                </select>
+                            </li>
+
+                            <li>
+                                <label for="job">职位名称：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="job" name="job" datatype="*1-40" errormsg="长度不能超过40个字符" nullmsg="请填写岗位名称" size="35" value="{$info.job}" />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="num">招聘人数：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="num" name="num" datatype="n1-5"  nullmsg="请填写招聘人数" size="35" value="{$info.num}" placeholder="{$info.num}"/>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="address">详细地址：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="address" name="address" datatype="*1-200" errormsg="长度不能超过200个字符" nullmsg="请填写详细地址" size="35" value="{$info.address}" placeholder="{$info.address}"/>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="end_time">结束日期：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="end_time" name="end_time" datatype="dateselect" nullmsg="请填写结束日期" errormsg="结束日期不能小于当前日期" size="35" value="{$info.end_time}" onClick="WdatePicker()" />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="content">职位信息：</label>
+                                <div class="item_cont">
+                                    <textarea cols="88" rows="10" id="content" name="content">{$info.content}</textarea>
+                                </div>
+                            </li>
+                            <li class="push">
+                                <div class="item_cont">
+                                 <if condition="$info.id neq ''">
+                                 	<input type="hidden" id="id" name="id" value="{$info.id}" />
+                                 </if>
+                                    <input type="submit" class="submit" value="提&nbsp;交" />
+                                    <input type="reset" class="reset" value="重&nbsp;置" />
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+</body>
+<script>
+    $('select[name=province]').change(function(){
+        var province_id = $(this).val();
+        $.ajax({
+            url : '{:U("Jobs/getCityListByProvince")}',
+            type : 'get',
+            dataType : 'json',
+            data : {
+                province_id : $(this).val()
+            },
+            success : function(json) {
+                $('#area').empty().append('<option value="">请选择</option>');
+                $('#city').empty();
+                if(json.length>0){
+                    $('#city').append('<option value="">请选择</option>');
+                    for (var i = 0; i < json.length; ++i) {
+                        $('#city').append('<option value="' + json[i]['id'] + '">' + json[i]['name'] + '</option>');
+                    }
+                    setTimeout(function(){$('select[name=city]').change();}, 200);
+                }else{
+                    $('#city').empty().append('<option value="">请选择</option>');
+                }
+            }
+        });
+    });
+    $('select[name=city]').change(function(){
+        $.ajax({
+            url : '{:U("Jobs/getAreaListByCity")}',
+            type : 'get',
+            dataType : 'json',
+            data : {
+                city_id : $(this).val()
+            },
+            success : function(json) {
+                $('#area').empty();
+                $('#area').append('<option value="">请选择</option>');
+                for (var i = 0; i < json.length; ++i) {
+                    $('#area').append('<option value="' + json[i]['id'] + '">' + json[i]['name'] + '</option>');
+                }
+            }
+        });
+    });
+
+    $('.validform').Validform({
+        tiptype: 4,
+        datatype: {
+            "dateselect": function (gets, obj, curform, regxp) {
+                var now = new Date();
+                var time = now.getFullYear() + "-" + ((now.getMonth() + 1) < 10 ? "0" : "") + (now.getMonth() + 1) + "-" + (now.getDate() < 10 ? "0" : "") + now.getDate();
+                if (gets < time) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        }
+    });
+</script>
+<script>
+    $('select[name=cate1]').change(function(){
+        var cate_list_id = $(this).val();
+        $.ajax({
+            url : '{:U("Jobs/getZPListbyParent")}',
+            type : 'get',
+            dataType : 'json',
+            data : {
+                cate_list_id : $(this).val()
+            },
+            success : function(json) {
+                $('#cate').empty().append('<option value="">请选择</option>');
+                $('#cate2').empty();
+                $('#cate2').append('<option value="">请选择</option>');
+                for (var i = 0; i < json.length; ++i) {
+                    $('#cate2').append('<option value="' + json[i]['id'] + '">' + json[i]['name'] + '</option>');
+                }
+                setTimeout(function(){$('select[name=cate2]').change();}, 200);
+            }
+        });
+    });
+    $('select[name=cate2]').change(function(){
+        $.ajax({
+            url : '{:U("Jobs/getZPListbyParent")}',
+            type : 'get',
+            dataType : 'json',
+            data : {
+                cate_list_id : $(this).val()
+            },
+            success : function(json) {
+                $('#cate').empty();
+                $('#cate').append('<option value="">请选择</option>');
+                for (var i = 0; i < json.length; ++i) {
+                    $('#cate').append('<option value="' + json[i]['id'] + '">' + json[i]['name'] + '</option>');
+                }
+            }
+        });
+    });
+</script>
+</html>

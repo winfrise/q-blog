@@ -1,0 +1,60 @@
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="Public:head" />
+  <style>
+    .pic-block-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pic-block-item {
+      width: 330px;
+      margin: 10px 15px
+    }
+    .block-img {
+      width: 100%;
+    }
+    .block-name {
+      line-height: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+	<include file="Public:header" />
+	<section class="subpage-content-wrapper wrapper">
+		<include file="Public:sidebar" />
+		<div class="subpage-content">
+			<div class="breadcrumb-module">
+				<h3 class="breadcrumb-title">{$catname}</h3>
+				<div class="breadcrumb">当前位置：{$location}</div>
+			</div>
+			<div class="content">
+           <ul class="pic-block-list">
+                    <volist name="list" id="vo">
+                    <li class="pic-block-item">
+                      <a  href="__APP__/news/{$vo.pid}_{$vo.id}" title="{$vo.title}"><div class="pro01_hover"></div><img class="block-img" src="__ROOT__/__UPLOAD__/m_{$vo.img}" alt="{$vo.title}">
+                      </a>
+                      <div class="block-name">{$vo.title} </div>
+                    </li>
+                  </volist>
+                </ul>
+            <div id="page">
+                {$page}
+            </div>
+			</div>
+		</div>
+	</section>
+	<include file="Public:footer" />
+</body>
+
+</html>
+
+
+
+

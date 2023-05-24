@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /App/Admin/
+Disallow: /App/Install/

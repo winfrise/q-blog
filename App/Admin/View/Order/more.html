@@ -1,0 +1,57 @@
+<tagLib name="html"/>
+<include file="Public:header" />
+<body class="main">
+            <div class="content">
+                <div class="formMod">
+                    <div class="tit">订单详细</div>
+                        <ul>
+                            <li>
+                                <label for="newsCont">产品名称：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="title" name="title" size="35" value="{$title}" readonly />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="name">联系人：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="name" name="name" size="35" value="{$info.name}" readonly />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="tel">电话：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="tel" name="tel" size="35" value="{$info.tel}" readonly />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="add">地址：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="add" name="add" size="35" value="{$info.add}" readonly />
+                                </div>
+                            </li>
+                            <!--<li>-->
+                                <!--<label for="salary">电子邮箱：</label>-->
+                                <!--<div class="item_cont">-->
+                                    <!--<input type="text" class="txt" id="salary" name="email" size="35" value="{$info.email}" readonly />-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <li>
+                                <label for="time">订购时间：</label>
+                                <div class="item_cont">
+                                    <input type="text" class="txt" id="time" name="time" size="35" value="{$info.time}" readonly/>
+                                </div>
+                            </li>
+                            
+                            
+                            <li>
+                                <label for="note">备注：</label>
+                                <div class="item_cont">
+                                    <textarea cols="88" rows="10" class="txt" id="content" name="content" readonly>{$info.notes}</textarea>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                </div>
+            </div>
+</body>
+</html>

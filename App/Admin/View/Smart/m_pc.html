@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>引用页</title>
+    <load href="__PUBLIC__/Css/reset.css" />
+    <load href="__PUBLIC__/Css/base.css" />
+    
+<script>
+var url = "__ROOT__";
+</script>
+<style>
+#notice{color:#666666; font-size: 14px; margin-left: 10px;}
+input::-webkit-input-placeholder {
+    color: #cccccc;
+    font-weight: 600;
+    font-size: 12px;
+}
+</style>
+</head>
+<body class="main">
+<load href="__PUBLIC__/Js/jquery.tzCheckbox/jquery.tzCheckbox.css" />
+<script src="__PUBLIC__/Js/jquery.google.js"></script>
+<script src="__PUBLIC__/Js/jquery.tzCheckbox/jquery.tzCheckbox.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('input[type=checkbox]').tzCheckbox({labels:['Enable','Disable']});
+    var data="<?php echo C('M_URL'); ?>";
+    if(data.indexOf(".qftouch.com")!=-1||data.indexOf(".qftouch.cn")!=-1||$.trim(data).legnth==0){
+        $("#url").val("");
+        $.getJSON("__ROOT__/Admin/Smart/ajax/t/m_pc/v/0", function(data){
+
+        });
+    }else{
+        $("#url").val(data);
+    }
+    var value=$("#url").val();
+    $(".tzCheckBox").click(function(){
+        var v;
+        if($(this).text() == '已开启')
+        {
+            $("#notice").text('');
+            $("#notice").text("已开启，绑定手机站域名后移动终端访问网站时，将会展示手机网站，推荐开启");
+            $("#m_url").show();
+            $("#tijiao").show();
+            $("#url").val(value);
+            if($("#url").val().length!=0){
+                v='1';
+            }else{
+                v='0';
+            }
+        }else
+        {
+            v='0';
+            $("#notice").text('');
+            $("#notice").text("已关闭，移动终端访问网站时，将会展示PC网站");
+            $("#m_url").hide();
+            $("#tijiao").hide();
+        }
+        $.getJSON("__ROOT__/Admin/Smart/ajax/t/m_pc/v/"+v, function(data){
+
+        });
+
+    })
+
+    $(".form").submit(function () {
+        var url=$("#url").val();
+        if($.trim(url).length==0){
+            alert("手机网站地址不能为空!");
+            return false;
+        }
+        else if(url.indexOf("http://")==-1){
+            alert("请填写正确的手机网站地址!");
+            return false;
+        }
+        else if(url.indexOf(".qftouch.com")!=-1||url.indexOf(".qftouch.cn")!=-1){
+            alert("手机网站地址不能为QFTouch测试域名!");
+            return false;
+        }
+        else{
+            return true;
+        }
+    })
+});
+
+
+
+</script>
+<div class="subTit">
+                <div class="tit">
+                    <a href="javascript:;">Smart</a>&gt;<a href="javascript:;">移动访问</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="formMod">
+                    <div class="tit">移动自动访问</div>
+                    <form action="" method="post" class="form" enctype="multipart/form-data">
+                        <ul>
+                            <li>
+                            
+                                 <input type="checkbox" id="switch_m_pc" name="switch_m_pc" data-on="已开启" data-off="已关闭" <if condition="$switch_m_pc eq '1'">checked</if> /> <span id="notice"><if condition="$switch_m_pc eq '1'">已开启，绑定手机站域名后移动终端访问网站时，将会展示手机网站，推荐开启<else />已关闭，移动终端访问网站时，将会展示PC网站</if></span>
+                            </li>
+                            <li id="m_url" style="padding-left: 80px; font-size: 14px; line-height: 24px; <if condition='$switch_m_pc eq 0'>display: none;</if>">
+
+                                <label for="url" style="width:120px;color:#666666;font-size:14px;line-height: 33px">手机网站地址：</label>
+                                <div class="item_cont">
+                                    <input style="padding-left:10px;height:25px;" size="50" type="text" id="url" name="url" size="35" class="txt" placeholder="以http://开头！例：http://m.zhimei.com"/>
+
+                                </div>
+                            </li>
+                            <li id="tijiao" class="push" style="padding-top: 10px;padding-left: 13px;<if condition='$switch_m_pc eq 0'>display: none;</if>">
+                                <div class="item_cont">
+                                    <input type="submit" class="submit" value="保&nbsp;存" />
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+  
+
+
+</body>
+</html>

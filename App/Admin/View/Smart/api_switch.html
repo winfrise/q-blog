@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>引用页</title>
+    <load href="__PUBLIC__/Css/reset.css" />
+    <load href="__PUBLIC__/Css/base.css" />
+    
+<script>
+var url = "__ROOT__";
+</script>
+<style>
+#notice{color:#666666; font-size: 14px; margin-left: 10px;}
+</style>
+</head>
+<body class="main">
+<load href="__PUBLIC__/Js/jquery.tzCheckbox/jquery.tzCheckbox.css" />
+<script src="__PUBLIC__/Js/jquery.google.js"></script>
+<script src="__PUBLIC__/Js/jquery.tzCheckbox/jquery.tzCheckbox.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('input[type=checkbox]').tzCheckbox({labels:['Enable','Disable']});
+
+    $(".tzCheckBox").click(function(){
+        var v;
+        if($(this).text() == '已开启')
+        {
+            v='1';
+            $("#notice").text('');
+            $("#notice").text("已开启外部数据接口调用功能");
+            $("#token").show();
+        }else
+        {
+            v='0';
+            $("#notice").text('');
+            $("#notice").text("已关闭外部数据接口调用功能");
+            $("#token").hide();
+        }
+        $.getJSON("__ROOT__/Admin/Smart/ajax/t/switch_api/v/"+v, function(data){
+            
+        });
+    })
+});
+
+
+
+</script>
+<div class="subTit">
+                <div class="tit">
+                    <a href="javascript:;">Smart</a>&gt;<a href="javascript:;">数据接口</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="formMod" style="padding-bottom: 10px;">
+                    <div class="tit">数据接口功能</div>
+                    <form action="" method="post">
+                        <ul>
+                            <li>
+                                 <input type="checkbox" id="switch_m_pc" name="switch_m_pc" data-on="已开启" data-off="已关闭" <if condition="$switch_api eq '1'">checked</if> /> <span id="notice"><if condition="$switch_api eq '1'">已开启外部数据接口调用功能<else />已关闭外部数据接口调用功能</if></span>
+                            </li>
+                            <li id="token" style="padding-left: 104px; font-size: 14px; line-height: 24px; <if condition='$switch_api eq 0'>display: none;</if>">
+                                    <p style="background: #fcff9d;padding: 0 30px;display: inline-block;border: 1px #ccc dashed;line-height: 47px;font-size: 18px;">token：{$api_token}</p>
+                                <p style="line-height: 24px;padding: 10px 0;">token是智美云的外部数据接口调用唯一凭据，调用各接口时都需使用本token。开发者需要进行妥善保存。</p>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+
+
+</body>
+</html>

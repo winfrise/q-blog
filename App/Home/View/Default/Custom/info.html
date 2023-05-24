@@ -1,0 +1,30 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="Public:head" />
+</head>
+
+<body>
+	<include file="Public:header" />
+	<section class="subpage-content-wrapper wrapper">
+		<include file="Public:sidebar" />
+		<div class="subpage-content">
+			<div class="breadcrumb-module">
+				<h3 class="breadcrumb-title">{$catname}</h3>
+				<div class="breadcrumb">当前位置：{$location}</div>
+			</div>
+			<div class="content">
+				<h1 class="news_title bold f16">{$article['title']}</h1>
+				<div class="meta f12">发布：{$user['username']}&emsp;浏览：{$article['click']}次</div>
+				<div class="pro02">
+				<p>{$article['content']}</p></div>
+			</div>
+		</div>
+	</section>
+	<include file="Public:footer" />
+</body>
+
+</html>
+
+
