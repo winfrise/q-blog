@@ -8,8 +8,9 @@ class ProductController extends PublicController {
         
         $pid = $this->getTypeID(PRODUCT);
         $count = M('goods')->where("`pid` in ($pid)")->count();
-        $page_size = $this->config('page_default');
-        $pagination = new \Page($count, $page_size);
+        // $page_size = $this->config('page_default');
+        $page_size = 12;
+        $page = new \Page($count, $page_size);
         if ($count) {
             $product = M('goods')->where("`pid` in ($pid)")->order('`order` desc,`id` desc')->limit($page->firstRow . ',' . $page->listRows)->select();
         }
@@ -24,6 +25,7 @@ class ProductController extends PublicController {
         $this->assign('list', $product);
         $this->assign('pagination', array('total' => $count, 'pageSize' => $page_size));
         $this->assign('categories', $categories);
+        $this->assign('page', $page->show());
         $this->display();
     }
 
