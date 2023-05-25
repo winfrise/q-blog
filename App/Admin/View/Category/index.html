@@ -17,7 +17,8 @@
                             <tr>
                                 <th width="6%"><input type="checkbox" value="" id="check_box" onclick="selectall('id[]');"></th>
                                 <th width="10%">ID</th>
-                                <th width="50%">分类名称</th>
+                                <th width="40%">分类名称</th>
+                                <th width="10%">图片</th>
                                 <th width="8%">排序</th>
                                 <th >操作&emsp;</th>
                             </tr>
@@ -29,6 +30,12 @@
                                 <td align="center"><if condition="$vo.parent neq '0' and $vo.id neq '4' and $vo.id neq '5' and $vo.id neq '6'"><input type="checkbox" value="{$vo.id}" name="id[]"><else /><input type="hidden" value="{$vo.id}"></if></td>
                                 <td align="center"><span class="col_ccc">{$vo.id}</span></td>
                                 <td><if condition="$vo.parent neq '0'"><a style="text-decoration:none;">{$vo.name}</a><else />{$vo.name}</if></td>
+                                <td align="center" class="order">
+                                    <if condition="$vo.img neq ''">
+                                        <img width="100" height="75" src="__ROOT__/__UPLOAD__/{$vo.img}">
+                                    <else />暂无图片
+                                    </if>
+                                </td>
                                 <td align="center"  class="order">{$vo.order}</td>
                                 
                                 <td align="center" class="op">

@@ -3,6 +3,20 @@ namespace Home\Controller;
 
 class IndexController extends PublicController {
     public function index() {
+			$productCategories = M('type')->where('`parent`=2')
+											->order('`order` desc, `id` asc')
+											->limit(0, 7)
+											->select();
+			$this->assign('productCategories', $productCategories);
+			
+			//新闻中心
+			$news = M('article')->where("`pid` in (4)")
+							   	 ->order('`order` desc,`id` desc')
+								 ->limit(0, 5)
+							   	 ->select();
+			$this->assign('news',$news);	
+
+
         	$news_id  = $this->getTypeID(NEWS);
 			$product_id = $this->getTypeID(PRODUCT);
 			$article = M('article')->where('`id`=1')->find();
@@ -25,12 +39,6 @@ class IndexController extends PublicController {
 				}
 			$this->assign('product',$product);
 
-			//新闻中心
-			$news = M('article')->where("`pid` in (4)")
-							   	 ->order('`order` desc,`id` desc')
-								 ->limit(0, 14)
-							   	 ->select();
-			$this->assign('news',$news);	
 
 			// //发货通知
 			// $fhtz = M('article')->where("`pid` in (21)")

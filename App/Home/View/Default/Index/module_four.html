@@ -12,18 +12,23 @@
             <div class="sub-title">CASE</div>
         </div>
         <div class="news-list">
-            <for start="1" end="5">
+            <volist name="news" id="vo">
             <li class="news-item">
                 <div class="date">
-                    <div class="day">15</div>
-                    <div class="year-month">2014-10</div>
+                    <div class="day">{$vo.time|substr=8,2}</div>
+                    <div class="year-month">{$vo.time|substr=0,7}</div>
                 </div>
                 <div class="cont">
-                    <p class="tit"><a href="https://architecture-201.view.websiteonline.cn/article.html?article_id=21"  title="人造石性能特点">人造石性能特点</a></p>
-                    <p class="desc">**柔和的外表 纳米微晶石花色品种多、色彩明快、自然高雅、现代感十足，尽显其**和丰富的内涵，是追求心灵意境的**体现。</p>
+                    <p class="tit"><a href="/news/{$vo.pid}_{$vo.id}"  title="{$vo.title}">{$vo.title}</a></p>
+                    <p class="desc">{$vo.content|strip_tags|mb_substr=0,200,'utf-8'}</p>
                 </div>
             </li>
-            </for>
+            </volist>
+        </div>
+        <div class="module-bottom">
+            <a href="/news">
+                <button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">查看更多</button>
+            </a>
         </div>
     </div>
 </div>
