@@ -6,14 +6,20 @@ class ProductController extends PublicController {
     public function index() {
         $current_page = $_REQUEST['current_page'] ? $_REQUEST['current_page'] : 1;
         $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 9;
+        $keyword = $_REQUEST['keyword'];
         $type = $_REQUEST['type'];
 
         $pid = $type ? $type : $this->getTypeID(PRODUCT);
-        $count = M('goods')->where("`pid` in ($pid)")->count();
+
+        $where = "`pid` in ($pid)";
+        if ($keyword) {
+            $where .= " and `title` like '%$keyword%'";
+        }
+        $count = M('goods')->where($where)->count();
 
         $firstRow = ($current_page - 1) * $page_size;
         if ($count) {
-            $product = M('goods')->where("`pid` in ($pid)")->order('`order` desc,`id` desc')->limit($firstRow . ',' . $page_size)->select();
+            $product = M('goods')->where($where)->order('`order` desc,`id` desc')->limit($firstRow . ',' . $page_size)->select();
         }
 
 
@@ -34,8 +40,7 @@ class ProductController extends PublicController {
             'currentPage' => $current_page,
         )));
         $this->assign('currentCategory', $type ? $type : '');
-        var_dump($type ? $type : '');
-        var_dump($categories);
+        $this->assign('keyword', $keyword);
         $this->assign('sidebarMenus', $categories);
         $this->display();
     }

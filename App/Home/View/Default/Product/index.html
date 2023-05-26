@@ -6,27 +6,28 @@
 	<style>
 		.product-category {
 			padding: 10px 0;
-			box-shadow: 0px 3px 5px #bdb9b9;
 		}
 		.product-category .common-width {
 			display: flex;
-		}
-		.product-category .category-name {
-			width: 100px;
-			line-height: 56px;
+			box-shadow: 0px 3px 5px #bdb9b9;
+			border: 1px solid #ccc;
+    		border-radius: 4px;
+			padding: 20px;
+			box-sizing: border-box;
 		}
 		.product-category ul {
 			flex: 1;
-			display: flex;
-			flex-wrap: wrap;
 		}
-		.product-category ul li {
-			width: 135px;
-			height: 28px;
-			line-height: 28px;
+		.product-category ul li, .product-category .category-name {
+			padding: 4px 10px;
+			display: inline-block;
+			margin: 8px 7px;
+			cursor: pointer;
 		}
 		.product-category ul li.active {
-			background: #ccc;
+			background: #f1f8ff;
+			border-radius: 4px 4px 4px 4px;
+			color: #409eff;
 		}
 		.product-list {
 			display: flex;
@@ -48,58 +49,55 @@
 		.product-list .product-title {
 			line-height: 40px;
 		}
+
+		.search-box {
+			margin:  30px  0;
+		}
+		.search-box .layui-input-group {
+			margin: 0 auto;
+		}
+		.search-box .search-input {
+			width: 500px;
+			height: 50px;
+		}
+		.search-box .layui-input-affix {
+			line-height: 48px;
+		}
+		.search-box .search-btn {
+			background-color: #409eff;
+			width: 100px;
+			height: 48px;
+			line-height: 48px;
+			color: white;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			cursor: pointer;
+		}
 	</style>
+	<script>
+		const pagination = {$paginationStr};
+		let keyword = "{$keyword}"
+		let currentCategory = "{$currentCategory}"
+		function jump () {
+			let url = `/product?page_size=${pagination.pageSize}&current_page=${pagination.currentPage}`
+			if (keyword) {
+				url += `&keyword=${keyword}`
+			}
+			if (currentCategory)  {
+				url += `&type=${currentCategory}`
+			}
+			window.location.href = url;
+		}
+		function jumpCategory(categoryId) {
+			currentCategory = categoryId
+			jump()
+		}
+	</script>
 </head>
 
 <body>
 	<include file="Public:header" />
-	<div class="product-category">
-		<div class="common-width">
-			<div class="category-name">产品分类</div>
-			<ul>
-				<li class="<if condition="$currentCategory eq ''">active</if>">
-					<a href="/product">全部分类</a>
-				</li>
-				<volist name="sidebarMenus" id="vo">
-				<li class="<if condition="$currentCategory eq $vo['id']">active</if>">
-					<a href="{$vo.url}">{$vo.name}</a>
-				</li>
-				</volist>
-			</ul>
-		</div>
-		<div class="common-width">
-			<form class="layui-form">
-				<div class="layui-form-item">
-					<div class="layui-input-group">
-						<div class="layui-input-prefix">
-							搜索
-						</div>
-						<input type="text" lay-verify="required"  placeholder="请输入关键字" lay-reqtext="请输入关键字" class="layui-input">
-						<div class="layui-input-split layui-input-suffix" style="cursor: pointer;" lay-submit lay-filter="demo-login">
-							<i class="layui-icon layui-icon-search"></i>
-						</div>
-					</div>
-				</div>
-			</form>
-			<script>
-			layui.use(function () {
-				var form = layui.form;
-				var layer = layui.layer;
-				// 提交事件
-				form.on('submit(demo-login)', function (data) {
-					var field = data.field; // 获取表单字段值
-					// 显示填写结果，仅作演示用
-					layer.alert(JSON.stringify(field), {
-						title: '当前填写的字段值'
-					});
-					// 此处可执行 Ajax 等操作
-					// …
-					return false; // 阻止默认 form 跳转
-				});
-			});
-			</script>
-		</div>
-	</div>
+	
 	<div class="breadcrumb">
 		<div class="common-width">
 			<span class="layui-breadcrumb">
@@ -108,6 +106,51 @@
 			</span>
 		</div>
 	</div>
+
+	<div class="search-box">
+		<div class="common-width">
+			<form class="layui-form">
+				<div class="layui-input-group">
+					<input type="text" name="keyword" value="{$keyword}"  lay-affix="clear"  placeholder="请输入关键字" lay-reqtext="请输入关键字" class="layui-input search-input">
+					<div class="layui-input-split layui-input-suffix" style="padding: 0;" lay-submit lay-filter="product-search">
+						<div class="search-btn"><i class="layui-icon layui-icon-search"></i> 搜索</div>
+					</div>
+				</div>
+			</form>
+			<script>
+			layui.use(function () {
+				var form = layui.form;
+				var layer = layui.layer;
+				var $ = layui.$;
+				console.log('$', $.ajax)
+				// 提交事件
+				form.on('submit(product-search)', function (data) {
+					var field = data.field; // 获取表单字段值
+					keyword = field.keyword
+					pagination.currentPage =  1
+					jump()
+					return false; // 阻止默认 form 跳转
+				});
+			});
+			</script>
+		</div>
+	</div>
+	<div class="product-category">
+		<div class="common-width">
+			<div class="category-name">产品分类:</div>
+			<ul>
+				<li onclick="jumpCategory()" class="<if condition="$currentCategory eq ''">active</if>">
+					全部
+				</li>
+				<volist name="sidebarMenus" id="vo">
+				<li onclick="jumpCategory({$vo.id})" class="<if condition="$currentCategory eq $vo['id']">active</if>">
+					{$vo.name}
+				</li>
+				</volist>
+			</ul>
+		</div>
+	</div>
+
 	<div class="child-page-main">
 		<div class="common-width">
 			<div class="product-content">
@@ -125,7 +168,6 @@
 				</ul>
 				<div id="page"></div>
 				<script>
-					const pagination = {$paginationStr};
 					layui.use(function () {
 						var laypage = layui.laypage;
 						// 自定义主题
@@ -134,11 +176,13 @@
 							curr: pagination.currentPage,
 							count: pagination.total,
 							limit: pagination.pageSize,
-							layout: ['prev', 'page', 'next', 'limit'],
+							layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'],
 							theme: '#1E9FFF',
 							jump: function (obj, first) {
 								if (!first) {
-									window.location.href=`/product?page_size=${obj.limit}&current_page=${obj.curr}`;
+									pagination.pageSize = obj.limit
+									pagination.currentPage = obj.curr
+									jump()
 								}
 							}
 						});
