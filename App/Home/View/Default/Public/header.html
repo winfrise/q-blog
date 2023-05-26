@@ -51,6 +51,18 @@
         box-sizing: border-box;
         background: url(__PUBLIC__/assets/images/nav_item_bg.png) no-repeat;
     }
+
+    .carousel-item {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    .carousel-item .carousel-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 </style>
 <!-- 顶部导航 -->
 <div class="top-bar">
@@ -116,13 +128,13 @@
 </ul>
 
 <!--轮播图-->
-<div class="layui-carousel" id="ID-carousel-demo-1" style="height: 600px;">
+<div class="layui-carousel" id="ID-carousel-demo-1" style="height: 350px;">
     <div carousel-item>
-        <div>条目1</div>
-        <div>条目2</div>
-        <div>条目3</div>
-        <div>条目4</div>
-        <div>条目5</div>
+        <div class="carousel-item"><img class="carousel-img" src="__PUBLIC__/assets/banner/banner01.jpg" /></div>
+        <div class="carousel-item"><img class="carousel-img" src="__PUBLIC__/assets/banner/banner02.jpg" /></div>
+        <div class="carousel-item"><img class="carousel-img" src="__PUBLIC__/assets/banner/banner03.jpg" /></div>
+        <div class="carousel-item"><img class="carousel-img" src="__PUBLIC__/assets/banner/banner04.jpg" /></div>
+        <div class="carousel-item"><img class="carousel-img" src="__PUBLIC__/assets/banner/banner05.jpg" /></div>
     </div>
 </div>
 <script>
@@ -135,7 +147,7 @@
             interval: 1800,
             anim: 'fade',
             width: 'auto',
-            height: '600px'
+            height: '350px'
         });
     });
 </script>

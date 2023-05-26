@@ -4,12 +4,36 @@
 <head>
 	<include file="Public:head" />
 	<style>
+		.product-category {
+			padding: 10px 0;
+			box-shadow: 0px 3px 5px #bdb9b9;
+		}
+		.product-category .common-width {
+			display: flex;
+		}
+		.product-category .category-name {
+			width: 100px;
+			line-height: 56px;
+		}
+		.product-category ul {
+			flex: 1;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.product-category ul li {
+			width: 135px;
+			height: 28px;
+			line-height: 28px;
+		}
+		.product-category ul li.active {
+			background: #ccc;
+		}
 		.product-list {
 			display: flex;
 			flex-wrap: wrap;
 		}
 		.product-list .product-item  {
-			width: 278px;
+			width: 270px;
 			margin: 15px;
 		}
 		.product-list .product-item .poster {
@@ -29,21 +53,67 @@
 
 <body>
 	<include file="Public:header" />
+	<div class="product-category">
+		<div class="common-width">
+			<div class="category-name">产品分类</div>
+			<ul>
+				<li class="<if condition="$currentCategory eq ''">active</if>">
+					<a href="/product">全部分类</a>
+				</li>
+				<volist name="sidebarMenus" id="vo">
+				<li class="<if condition="$currentCategory eq $vo['id']">active</if>">
+					<a href="{$vo.url}">{$vo.name}</a>
+				</li>
+				</volist>
+			</ul>
+		</div>
+		<div class="common-width">
+			<form class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-group">
+						<div class="layui-input-prefix">
+							搜索
+						</div>
+						<input type="text" lay-verify="required"  placeholder="请输入关键字" lay-reqtext="请输入关键字" class="layui-input">
+						<div class="layui-input-split layui-input-suffix" style="cursor: pointer;" lay-submit lay-filter="demo-login">
+							<i class="layui-icon layui-icon-search"></i>
+						</div>
+					</div>
+				</div>
+			</form>
+			<script>
+			layui.use(function () {
+				var form = layui.form;
+				var layer = layui.layer;
+				// 提交事件
+				form.on('submit(demo-login)', function (data) {
+					var field = data.field; // 获取表单字段值
+					// 显示填写结果，仅作演示用
+					layer.alert(JSON.stringify(field), {
+						title: '当前填写的字段值'
+					});
+					// 此处可执行 Ajax 等操作
+					// …
+					return false; // 阻止默认 form 跳转
+				});
+			});
+			</script>
+		</div>
+	</div>
 	<div class="breadcrumb">
 		<div class="common-width">
 			<span class="layui-breadcrumb">
 				<a href="__APP__/">首页</a>
-				<a><cite>公司简介</cite></a>
+				<a><cite>产品展示</cite></a>
 			</span>
 		</div>
 	</div>
 	<div class="child-page-main">
 		<div class="common-width">
-			<include file="Public:sidebar" />
-			<div class="child-page-content">
+			<div class="product-content">
 				<ul class="product-list">
 					<volist name="list" id="vo">
-					<li class="product-item">
+					<li class="product-item" >
 						<a href="{$vo.url}" class="product-link" title="{$vo.title}">
 							<div class="poster">
 								<img src="__ROOT__/__UPLOAD__/m_{$vo.img}" alt="{$vo.title}">

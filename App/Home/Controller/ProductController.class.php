@@ -6,8 +6,9 @@ class ProductController extends PublicController {
     public function index() {
         $current_page = $_REQUEST['current_page'] ? $_REQUEST['current_page'] : 1;
         $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 9;
+        $type = $_REQUEST['type'];
 
-        $pid = $this->getTypeID(PRODUCT);
+        $pid = $type ? $type : $this->getTypeID(PRODUCT);
         $count = M('goods')->where("`pid` in ($pid)")->count();
 
         $firstRow = ($current_page - 1) * $page_size;
@@ -20,7 +21,11 @@ class ProductController extends PublicController {
             $product[$key]['url'] = __APP__ . '/product/' . $value['pid'] . '_' . $value['id'];
         }
         
-        $categories = M('type')->find(PRODUCT);
+        $categories = M('type')->where("`parent` = 2")->field('id,name')->order('`order` desc,`id` asc')->select();
+        foreach($categories as $key=>$value)
+        {
+            $categories[$key]['url'] = '/product?type=' . $value['id'];
+        }
 
         $this->assign('list', $product);
         $this->assign('paginationStr', json_encode(array(
@@ -28,7 +33,10 @@ class ProductController extends PublicController {
             'pageSize' => $page_size,
             'currentPage' => $current_page,
         )));
-        $this->assign('categories', $categories);
+        $this->assign('currentCategory', $type ? $type : '');
+        var_dump($type ? $type : '');
+        var_dump($categories);
+        $this->assign('sidebarMenus', $categories);
         $this->display();
     }
 
