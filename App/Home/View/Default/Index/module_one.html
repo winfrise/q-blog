@@ -34,6 +34,26 @@
     .short-menu-item {
         text-align: center;
     }
+    .short-menu-item img {
+        transition: transform 800ms;
+    }
+    .short-menu-item:hover img {
+        transform: rotateY(180deg);
+    }
+
+    .short-menu-item .menu-name a {
+        color: rgb(112, 112, 112);
+    }
+    .short-menu-item:hover .menu-name a {
+        color: #0B54BD;
+    }
+    .menu-name {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    .menu-name span {
+        font-size: 14px;
+    }
 </style>
 
 <div class="aboutus index-module">
@@ -43,11 +63,10 @@
             <div class="sub-title">ABOUT US</div>
         </div>
         <div class="content">
-            <img src="__PUBLIC__/assets/images/aboutus_pic.jpg" />
+            <img src="__UPLOAD__/{$companyIntro['img']}" />
             <div class="intro">
                 <p>
-                    <strong>中国轻钢结构工程有限公司</strong><br>
-                    成立于1969年10月，主要从事轻钢结构建筑的设计、制作、安装事业。公司办公地位于中国上海市某某区，加工厂位于上海市自贸区，占地面积20万平方米，厂房面积40000平方米,公司注册资金1000万人民币。几十年时间先后在中国及珠江三角洲、山东等地建成5000余项、1000多万平方米轻钢结构形式的粮库、工厂、仓库、体育馆、会馆及其它各种用途的建筑。
+                   {$companyIntro['content']}
                 </p>
                 <div class="intro-bottom">
                     <div>OUR<br><strong>VISION</strong></div>
@@ -57,24 +76,24 @@
         </div>
         <div class="short-menu">
             <div class="short-menu-item">
-                <img src="__PUBLIC__/assets/images/short_menu_aboutus.png" />
-                <div>公司简介<br>About US</div>
+                <a href="/company"><img src="__PUBLIC__/assets/images/short_menu_aboutus.png" /></a>
+                <div class="menu-name"><a href="/company">公司简介<br><span>About US</span></a></div>
             </div>
             <div class="short-menu-item" >
-                <img src="__PUBLIC__/assets/images/short_menu_honor.png" />
-                <div>公司资质<br>Company Honor</div>
+                <a href="/honor"><img src="__PUBLIC__/assets/images/short_menu_honor.png" /></a>
+                <div class="menu-name"><a href="/honor">公司资质<br><span>Company Honor</span></a></div>
             </div>
             <div class="short-menu-item">
-                <img src="__PUBLIC__/assets/images/short_menu_culture.png" />
-                <div>企业文化<br>Company Culture</div>
+                <a href="/culture"><img src="__PUBLIC__/assets/images/short_menu_culture.png" /></a>
+                <div class="menu-name"><a href="/culture">企业文化<br><span>Company Culture</span></a></div>
             </div>
             <div class="short-menu-item">
-                <img src="__PUBLIC__/assets/images/short_menu_info.png" />
-                <div>企业资讯<br>Company Information</div>
+                <a href="/news"><img src="__PUBLIC__/assets/images/short_menu_info.png" /></a>
+                <div class="menu-name"><a href="/news">企业资讯<br><span>Company Information</span></a></div>
             </div>
             <div class="short-menu-item">
-                <img src="__PUBLIC__/assets/images/short_menu_contactus.png" />
-                <div>联系我们<br>Contact Us</div>
+                <a href="/contact"><img src="__PUBLIC__/assets/images/short_menu_contactus.png" /></a>
+                <div class="menu-name"><a href="/contact">联系我们<br><span>Contact Us</span></a></div>
             </div>
         </div>
         <div class="module-bottom">

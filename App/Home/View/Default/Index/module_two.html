@@ -6,11 +6,18 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .product .content > div {
+    .product .content .product-cate-item {
+        position: relative;
         width: 300px;
         height: 225px;
         box-sizing: border-box;
         border: 1px solid #eee;
+    }
+    .product-cate-item .name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 </style>
 
@@ -22,8 +29,9 @@
         </div>
         <div class="content">
             <volist name="productCategories" id="vo">
-            <div>
+            <div class="product-cate-item">
                 <img src="__ROOT__/__UPLOAD__/{$vo.img}">
+                <div class="name">{$vo.name}</div>
             </div>
             </volist>
         </div>

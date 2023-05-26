@@ -42,14 +42,7 @@ class CustomController extends PublicController {
                 $list[$key]['url'] = __APP__ . '/' . $type . '/' . $value['id'] . '_' . $value['id'];
             }
         }
-        $title = $category['name'];
-        $keywords = $category['keywords'];
-        $description = $category['description'];
-        $this->header_seo($title, $keywords, $description);
-        $this->page_location($_REQUEST['t']);
-        $this->catname($_REQUEST['t']);
 
-        $this->assign('category', $category['name']);
         $this->assign('page', $page->show());
         $this->assign('list', $list);
         $this->display();

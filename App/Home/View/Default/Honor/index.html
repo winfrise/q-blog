@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <include file="Public:head" />
+    <style>
+        .honor-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .honor-item {
+            width: 400px;
+            margin: 0 30px 30px;
+        }
+        .honor-img {
+            width: 100%;
+        }
+        .honor-title {
+            text-align: center;
+            font-size: 16px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <include file="Public:header" />
+    <div class="breadcrumb">
+        <div class="common-width">
+            <span class="layui-breadcrumb">
+                <a href="__APP__/">首页</a>
+                <a><cite>资质荣誉</cite></a>
+            </span>
+        </div>
+    </div>
+    <div class="child-page-main">
+        <div class="common-width">
+            <include file="Public:sidebar" />
+            <div class="child-page-content">
+                <ul class="honor-list">
+                    <volist name="list" id="vo">
+                        <li class="honor-item"><a href="/honor/details?id={$vo.id}">
+                            <img class="honor-img" src="__UPLOAD__/{$vo.img}" />
+                            <div class="honor-title">{$vo.title}</div>
+                        </a></li>
+                    </volist>
+                </ul>
+                <div>{$page}</div>
+            </div>
+        </div>
+    </div>
+    <include file="Public:footer" />
+</body>
+
+</html>

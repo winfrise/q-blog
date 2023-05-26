@@ -16,15 +16,16 @@ return array(
     'TMPL_ACTION_SUCCESS' => 'Public:jump',
     'URL_ROUTER_ON'       =>  true, //开启路由
     'URL_ROUTE_RULES'     =>  array(   //路由规则
-        '/^culture$/'              =>  'custom/info?id=17',
+        '/^company$/'              =>  'company/index?id=1',
+        '/^contact$/'              =>  'company/index?id=38',
+        '/^culture$/'              =>  'company/index?id=17',
         '/^news\/(\d+)_(\d+)$/'    =>  'news/news_info?id=:2',
         '/^news\/(\d+)$/'          =>  'news/news_type?type=:1',
         '/^product\/(\d+)_(\d+)$/' =>  'product/product_info?id=:2',
         '/^product\/(\d+)$/'       =>  'product/product_type?type=:1',
         '/^custom\/(\d+)$/'        =>  'custom/info?id=:1',
         '/^custom\/t\/(\d+)$/'     =>  'custom/index?t=:1',
-        '/^honor$/'                =>  'custom/index?t=5',
-        '/^case$/'                 =>  'custom/index?t=13',
+        '/^honor$/'                =>  'honor/index?t=5',
     ),
     'URL_HTML_SUFFIX' => '',  // URL伪静态后缀设置
     'LOAD_EXT_CONFIG' => 'db,api,api_url',

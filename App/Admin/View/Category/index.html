@@ -27,7 +27,7 @@
                             <volist name="list" id="vo" empty="$empty" >
                             <if condition="$vo.id !=6 ">  
                             <tr>
-                                <td align="center"><if condition="$vo.parent neq '0' and $vo.id neq '4' and $vo.id neq '5' and $vo.id neq '6'"><input type="checkbox" value="{$vo.id}" name="id[]"><else /><input type="hidden" value="{$vo.id}"></if></td>
+                                <td align="center"><if condition="$vo.system eq '0'"><input type="checkbox" value="{$vo.id}" name="id[]"><else /><input type="hidden" value="{$vo.id}"></if></td>
                                 <td align="center"><span class="col_ccc">{$vo.id}</span></td>
                                 <td><if condition="$vo.parent neq '0'"><a style="text-decoration:none;">{$vo.name}</a><else />{$vo.name}</if></td>
                                 <td align="center" class="order">
@@ -53,7 +53,7 @@
                                     <else />
                                     <a href="__GROUP__/Category/edit/id/{$vo.id}/type/{$vo.type}"  target="main"><i class="icon icon_edit"></i>修改</a>
                                     </if>
-                                    <if condition="$vo.parent neq '0' and $vo.id neq '4' and $vo.id neq '5' and $vo.id neq '6'">
+                                    <if condition="$vo.system eq '0'">
                                     <a href="javascript:;" onclick="cate_del(this,'Category',{$vo.id})";><i class="icon icon_x"></i>删除</a>
                                     </if>
                                 </td>
