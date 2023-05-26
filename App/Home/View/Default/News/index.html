@@ -100,15 +100,16 @@
 					</li>
 					</volist>
 				</ul>
-				<div id="page">{$page}</div>
+				<div>{$page}</div>
+				<div id="page"></div>
 				<script>
 					layui.use(function () {
 						var laypage = layui.laypage;
 						// 自定义主题
 						laypage.render({
 							elem: 'page',
-							count: {$page.total},
-							limit: {$page.pageSize},
+							count: {$pagination.total},
+							limit: {$pagination.pageSize},
 							theme: '#1E9FFF',
 							jump: function (obj, first) {
 								console.log(obj); // 得到当前页，以便向服务端请求对应页的数据。

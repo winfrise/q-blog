@@ -9,8 +9,9 @@ class NewsController extends PublicController {
         $news_id = $this->getTypeID(NEWS);
 
         $count = M('article')->where("`pid` in ($news_id)")->count();
-        $page_size = 
-        $pagination = new \Page($count, $page_size);
+        var_dump($count);
+        $page_size = 10;
+        $page = new \Page($count, $page_size);
         $news = M('article')->where("`pid` in ($news_id)")->order('`order` desc,`id` desc')->limit($page->firstRow . ',' . $page->listRows)->select();
 
 
@@ -22,6 +23,7 @@ class NewsController extends PublicController {
 
         $this->assign('list', $news);
         $this->assign('pagination', array('total' => $count, 'pageSize' => $page_size));
+        $this->assign('page', $page->show());
         $this->assign('categories', $categories);
         $this->display();
 

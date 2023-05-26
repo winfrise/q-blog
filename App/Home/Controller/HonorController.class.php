@@ -8,7 +8,7 @@ class HonorController extends PublicController {
 
         $category_id = 5;
         $page_num = 4;
-        $count = M($type)->where("`pid` in ($category_id)")->count();
+        $count = M('article')->where("`pid` in ($category_id)")->count();
         $page = new \Page($count, $page_num);
 
         $list = M('article')->where("`pid` in ($category_id)")->order('`order` desc,`id` desc')->limit($page->firstRow . ',' . $page->listRows)->select();
