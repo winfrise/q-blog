@@ -103,21 +103,20 @@
 				<div>{$page}</div>
 				<div id="page"></div>
 				<script>
+					const pagination = {$paginationStr};
 					layui.use(function () {
 						var laypage = layui.laypage;
 						// 自定义主题
 						laypage.render({
 							elem: 'page',
-							count: {$pagination.total},
-							limit: {$pagination.pageSize},
+							curr: pagination.currentPage,
+							count: pagination.total,
+							limit: pagination.pageSize,
+							layout: ['prev', 'page', 'next', 'limit'],
 							theme: '#1E9FFF',
 							jump: function (obj, first) {
-								console.log(obj); // 得到当前页，以便向服务端请求对应页的数据。
-								console.log(first); // 得到每页显示的条数
-
-								// 首次不执行
 								if (!first) {
-									// do something
+									window.location.href = `/news?page_size=${obj.limit}&current_page=${obj.curr}`;
 								}
 							}
 						});

@@ -4,27 +4,35 @@ namespace Home\Controller;
 class NewsController extends PublicController {
 
     public function index() {
-        import("ORG.Util.Page");
+        $current_page = $_REQUEST['current_page'] ? $_REQUEST['current_page'] : 1;
+        $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 9;
 
-        $news_id = $this->getTypeID(NEWS);
+        $news_id = 4;
 
         $count = M('article')->where("`pid` in ($news_id)")->count();
-        var_dump($count);
-        $page_size = 10;
-        $page = new \Page($count, $page_size);
-        $news = M('article')->where("`pid` in ($news_id)")->order('`order` desc,`id` desc')->limit($page->firstRow . ',' . $page->listRows)->select();
+
+        $firstRow = ($current_page - 1) * $page_size;
+        $news = M('article')->where("`pid` in ($news_id)")->order('`order` desc,`id` desc')->limit($firstRow . ',' . $page_size)->select();
 
 
         foreach ($news as $key => $value) {
             $news[$key]['url'] = __APP__ . '/news/' . $value['pid'] . '_' . $value['id'];
         }
 
-        $categories = M('type')->find(NEWS);
 
         $this->assign('list', $news);
-        $this->assign('pagination', array('total' => $count, 'pageSize' => $page_size));
-        $this->assign('page', $page->show());
-        $this->assign('categories', $categories);
+        $this->assign('paginationStr', json_encode(array(
+            'total' => $count, 
+            'pageSize' => $page_size,
+            'currentPage' => $current_page,
+        )));
+
+        $sidebarMenus[0] = array('name' => '新闻动态', 'url' => '/news');
+        $sidebarMenus[1] = array('name' => '资质荣誉', 'url' => '/honor');
+        $sidebarMenus[2] = array('name' => '公司简介', 'url' => '/company');
+        $sidebarMenus[3] = array('name' => '联系我们', 'url' => '/contact');
+
+        $this->assign('sidebarMenus', $sidebarMenus);
         $this->display();
 
     }

@@ -4,8 +4,6 @@ namespace Home\Controller;
 class ProductController extends PublicController {
 
     public function index() {
-        import("ORG.Util.Page");
-        
         $current_page = $_REQUEST['current_page'] ? $_REQUEST['current_page'] : 1;
         $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 9;
 

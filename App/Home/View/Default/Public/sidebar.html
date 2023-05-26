@@ -35,6 +35,7 @@
     }
     .sidebar-item a {
         color: #fff;
+        display: block;
     }
     .sidebar-item:hover, .sidebar-item.active {
         background-color: #000;
@@ -42,13 +43,12 @@
 </style>
 
 <div class="sidebar">
-    <div class="sidebar-name">新闻资讯<span>NEWS</span></div>
+    <div class="sidebar-name">快捷导航<span>Menus</span></div>
     <div class="sidebar-list">
+        <volist name="sidebarMenus" id="vo">
         <div class="sidebar-item">
-            <a href="">公司新闻</a>
+            <a href="{$vo.url}">{$vo.name}</a>
         </div>
-        <div class="sidebar-item">
-            <a href="">行业新闻</a>
-        </div>
+        </volist>
     </div>
 </div>
