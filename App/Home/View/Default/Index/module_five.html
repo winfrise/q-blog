@@ -1,0 +1,178 @@
+<style>
+    .rank-module {
+        background: #F5F6F9;
+    }
+    .product-rank-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .product-rank {
+        width: 380px;
+        height: 685px;
+    }
+    .product-rank.rank-one {
+        background:#fff url(__PUBLIC__/assets/images/rank_blue_bg.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .product-rank.rank-two {
+        background:#fff  url(__PUBLIC__/assets/images/rank_orange_bg.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .product-rank.rank-three {
+        background: #fff  url(__PUBLIC__/assets/images/rank_purple_bg.png) no-repeat;
+        background-size: 100% auto;
+    }
+    .product-rank .rank-name {
+        font-size: 22px;
+        color: #333;
+        line-height: 1;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+        /* 产品列表 */
+		.rank-product-list {
+
+		}
+		.rank-product-item {
+			margin: 20px;
+			transition: all .5s ease-in-out;
+			overflow: hidden;
+			position: relative;
+			top: 0;
+		}
+        .rank-product-item .product-link {
+            display: flex;
+        }
+		.rank-product-item:hover {
+			top: -6px;
+		}
+		.rank-product-item .poster {
+			width: 120px;
+			height: 80px;
+            border-radius: 4px;
+            overflow: hidden;
+		}
+		.rank-product-item .poster img {
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.rank-product-item .product-title {
+			line-height: 1;
+			font-size: 18px;
+			color: #333;
+            margin-left: 15px;
+            margin-top: 6px;
+		}
+		.rank-product-item .product-trade {
+			font-size: 12px;
+			color: #666;
+            margin-left: 15px;
+            margin-top: 8px;
+		}
+		.rank-product-item .product-rate {
+			color: #666;
+            margin-left: 15px;
+            margin-top: 8px;
+		}
+		.rank-product-item .product-rate .layui-icon {
+			font-size: 16px;
+    		color: #ffb800;
+		}
+
+</style>
+
+<div class="rank-module index-module">
+    <div class="common-width">
+        <div class="title">
+            <h3 class="main-title">产品排行榜</h3>
+            <div class="sub-title">Product</div>
+        </div>
+        <div class="product-rank-container">
+            <div class="product-rank rank-one">
+                <div class="rank-name">人气排行榜</div>
+                <div class="rank-product-list">
+                    <volist name="recommendProductList" id="vo" offset="0"  length="6">
+                        <div class="rank-product-item">
+                            <a href="{$vo.url}" class="product-link" title="{$vo.title}">
+                                <div class="poster">
+                                    <img src="__ROOT__/__UPLOAD__/m_{$vo.img}" alt="{$vo.title}">
+                                </div>
+                                <div class="rank-product-info">
+                                    <div class="product-title">{$vo.title}</div>
+                                    <div class="product-trade">适用行业：化学、化工、食品 等</div>
+                                    <div class="product-rate">
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-half"></i>
+                                        <i class="layui-icon layui-icon-rate"></i>
+                                        <span>3.5分</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <div class="product-rank rank-two">
+                <div class="rank-name">好评排行榜</div>
+                <div class="rank-product-list">
+                    <volist name="recommendProductList" id="vo" offset="0"  length="6">
+                        <div class="rank-product-item">
+                            <a href="{$vo.url}" class="product-link" title="{$vo.title}">
+                                <div class="poster">
+                                    <img src="__ROOT__/__UPLOAD__/m_{$vo.img}" alt="{$vo.title}">
+                                </div>
+                                <div class="rank-product-info">
+                                    <div class="product-title">{$vo.title}</div>
+                                    <div class="product-trade">适用行业：化学、化工、食品 等</div>
+                                    <div class="product-rate">
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-half"></i>
+                                        <i class="layui-icon layui-icon-rate"></i>
+                                        <span>3.5分</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <div class="product-rank rank-three">
+                <div class="rank-name">销量排行榜</div>
+                <div class="rank-product-list">
+                    <volist name="recommendProductList" id="vo" offset="0"  length="6">
+                        <div class="rank-product-item">
+                            <a href="{$vo.url}" class="product-link" title="{$vo.title}">
+                                <div class="poster">
+                                    <img src="__ROOT__/__UPLOAD__/m_{$vo.img}" alt="{$vo.title}">
+                                </div>
+                                <div class="rank-product-info">
+                                    <div class="product-title">{$vo.title}</div>
+                                    <div class="product-trade">适用行业：化学、化工、食品 等</div>
+                                    <div class="product-rate">
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-solid"></i>
+                                        <i class="layui-icon layui-icon-rate-half"></i>
+                                        <i class="layui-icon layui-icon-rate"></i>
+                                        <span>3.5分</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+        </div>
+        <div class="module-bottom">
+            <a href="/product">
+                <button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">查看更多</button>
+            </a>
+        </div>
+    </div>
+</div>
