@@ -238,6 +238,9 @@
 			border-bottom-right-radius: 4px;
 			cursor: pointer;
 		}  
+        .search-box .search-btn .layui-icon {
+            color: #fff;
+        }
         
 		.product-category {
 			padding: 10px 0;
@@ -260,9 +263,62 @@
 			cursor: pointer;
 			color: #666;
 		}
+        .product-category .category-name {
+            color: #333;
+        }
 		.product-category ul li.active {
 			background: #f1f8ff;
 			border-radius: 4px 4px 4px 4px;
 			color: #409eff;
+		}
+
+        /* 产品卡片列表 */
+		.product-card-list {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -10px;
+		}
+		.product-card-item {
+			width: 285px;
+			margin: 10px;
+			transition: all .5s ease-in-out;
+			background-color: #fdfdfd;
+			box-shadow: 0 4px 10px 0 rgba(0,39,134,.05);
+			border-radius: 5px;
+			overflow: hidden;
+			position: relative;
+			top: 0;
+		}
+		.product-card-item:hover {
+			top: -6px;
+		}
+		.product-card-item .poster {
+			width: 100%;
+			height: 190px;
+		}
+		.product-card-item .poster img {
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.product-card-item .product-title {
+			line-height: 1;
+			font-size: 18px;
+			color: #333;
+			margin: 10px;
+			margin-top: 15px;
+		}
+		.product-card-item .product-trade {
+			font-size: 12px;
+			color: #666;
+			margin: 10px;
+		}
+		.product-card-item .product-rate {
+			color: #666;
+			margin: 10px;
+		}
+		.product-card-item .product-rate .layui-icon {
+			font-size: 16px;
+    		color: #ffb800;
 		}
 </style>
