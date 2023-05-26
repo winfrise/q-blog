@@ -6,7 +6,6 @@ class IndexController extends PublicController {
 			// 产品分类列表
 			$productCategories = M('type')->where('`parent`=2')
 											->order('`order` desc, `id` asc')
-											->limit(0, 8)
 											->select();
 			$this->assign('productCategories', $productCategories);
 			
