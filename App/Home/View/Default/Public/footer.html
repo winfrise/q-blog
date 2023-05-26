@@ -70,3 +70,15 @@
     </div>
 
 </footer>
+__PUBLIC__
+<script>
+    const $imgs = document.querySelectorAll('img')
+    Array.from($imgs).forEach(item => {
+        item.addEventListener('error', (e) => {
+            const target = e.target
+            if (e.target.dataset.name === 'error') return
+            target.src = '__PUBLIC__/assets/images/image_error.png'
+            target.dataset.name = "error"
+        })
+    })
+</script>
