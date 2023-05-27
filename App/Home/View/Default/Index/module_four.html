@@ -1,31 +1,32 @@
 <style>
-    .news-module .title {
+    .news-module .module-header {
         background: url('__PUBLIC__/assets/images/four_bg.png') no-repeat top center;
     }
-
 </style>
 
 <div class="news-module index-module">
     <div class="common-width">
-        <div class="title">
+        <div class="module-header">
             <h3 class="main-title">新闻资讯</h3>
-            <div class="sub-title">CASE</div>
+            <div class="sub-title">NEWS</div>
         </div>
-        <div class="news-list">
-            <volist name="news" id="vo">
-            <li class="news-item">
-                <div class="date">
-                    <div class="day">{$vo.time|substr=8,2}</div>
-                    <div class="year-month">{$vo.time|substr=0,7}</div>
-                </div>
-                <div class="cont">
-                    <p class="tit"><a href="/news/{$vo.pid}_{$vo.id}"  title="{$vo.title}">{$vo.title}</a></p>
-                    <p class="desc">{$vo.content|strip_tags|mb_substr=0,200,'utf-8'}</p>
-                </div>
-            </li>
-            </volist>
+        <div class="module-main">
+            <div class="news-list">
+                <volist name="news" id="vo">
+                <li class="news-item">
+                    <div class="date">
+                        <div class="day">{$vo.time|substr=8,2}</div>
+                        <div class="year-month">{$vo.time|substr=0,7}</div>
+                    </div>
+                    <div class="cont">
+                        <p class="tit"><a href="/news/{$vo.pid}_{$vo.id}"  title="{$vo.title}">{$vo.title}</a></p>
+                        <p class="desc">{$vo.content|strip_tags|mb_substr=0,200,'utf-8'}</p>
+                    </div>
+                </li>
+                </volist>
+            </div>
         </div>
-        <div class="module-bottom">
+        <div class="module-footer">
             <a href="/news">
                 <button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">查看更多</button>
             </a>

@@ -1,33 +1,16 @@
 <style>
-    .product .title {
+    .product-module .module-header {
         background: url('__PUBLIC__/assets/images/two_bg.png') no-repeat top center;
-    }
-    .product .content {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .product .content .product-cate-item {
-        position: relative;
-        width: 300px;
-        height: 225px;
-        box-sizing: border-box;
-        border: 1px solid #eee;
-    }
-    .product-cate-item .name {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 </style>
 
-<div class="product index-module">
+<div class="product-module index-module">
     <div class="common-width">
-        <div class="title">
+        <div class="module-header">
             <h3 class="main-title">推荐产品</h3>
             <div class="sub-title">PRODUCT</div>
         </div>
-        <div class="content">
+        <div class="module-main">
             <div class="product-card-list">
                 <volist name="recommendProductList" id="vo">
                     <div class="product-card-item">
@@ -50,7 +33,7 @@
                 </volist>
             </div>
         </div>
-        <div class="module-bottom">
+        <div class="module-footer">
             <a href="/product">
                 <button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius">查看更多</button>
             </a>
