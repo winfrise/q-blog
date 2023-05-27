@@ -14,6 +14,32 @@ ul {
     margin: 0;
 }
 
+.layui-laypage {
+
+}
+.layui-laypage a,.layui-laypage span {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #1E9FFF;
+    font-size: 14px;
+}
+.layui-laypage select {
+    height: 28px;
+    font-size: 14px;
+}
+.layui-laypage .layui-laypage-skip {
+    height: 36px;
+    font-size: 14px;
+}
+.layui-laypage button, .layui-laypage input {
+    height: 36px;
+    font-size: 14px;
+}
+
 .common-width {
     width: 1200px;
     margin-left: auto;
@@ -205,10 +231,10 @@ ul {
     flex-wrap: wrap;
     margin: 0 -10px;
 }
-
 .product-card-item {
     width: 285px;
-    margin: 10px;
+    height: 325px;
+    margin: 10px 9px;
     transition: all .5s ease-in-out;
     background-color: #fdfdfd;
     box-shadow: 0 4px 10px 0 rgba(0, 39, 134, .05);
@@ -216,21 +242,18 @@ ul {
     overflow: hidden;
     position: relative;
     top: 0;
-}
-
-.product-card-item:hover {
-    top: -6px;
+    border: 1px solid #eee;
 }
 
 .product-card-item .poster {
     width: 100%;
-    height: 190px;
+    height: 219px;
 }
 
 .product-card-item .poster img {
     display: block;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .product-card-item .product-title {
@@ -255,4 +278,10 @@ ul {
 .product-card-item .product-rate .layui-icon {
     font-size: 16px;
     color: #ffb800;
+}
+
+.product-card-item:hover {
+    top: -6px;
+    border-color: rgba(2, 88, 173, 0.5);
+    box-shadow: 0 4px 10px 0 rgba(2, 88, 173, 0.5);
 }

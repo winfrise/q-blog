@@ -5,7 +5,7 @@ class ProductController extends PublicController {
 
     public function index() {
         $current_page = $_REQUEST['current_page'] ? $_REQUEST['current_page'] : 1;
-        $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 9;
+        $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 12;
         $keyword = $_REQUEST['keyword'];
         $type = $_REQUEST['type'];
 
