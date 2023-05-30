@@ -11,7 +11,12 @@ class ProductController extends PublicController {
         $type = $_REQUEST['type'];
 
         $pid = $type ? $type : $this->getTypeID(PRODUCT);
-        $count = M('goods')->where("`pid` in ($pid)")->count();
+
+        $where = "`pid` in ($pid)";
+        if ($keyword) {
+            $where .= " and `title` like '%$keyword%'";
+        }
+        $count = M('goods')->where($where)->count();
 
         $firstRow = ($current_page - 1) * $page_size;
         if ($count) {
@@ -38,7 +43,7 @@ class ProductController extends PublicController {
         )));
         $this->assign('page', $page->show());
         $this->assign('currentCategory', $type ? $type : '');
-
+        $this->assign('keyword', $keyword);
         $this->assign('sidebarMenus', $categories);
         $this->display();
     }

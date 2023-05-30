@@ -1,1 +1,290 @@
-<?php /* PHP Encode by  https://Www.PHPJiaMi.Com/ */error_reporting(0);ini_set("display_errors", 0);if(!defined('cjlztwzt')){define('cjlztwzt',__FILE__);if(!function_exists("ÂÇƒ„Ë±µ‹")){function Çú ·ñÁ–($ŠœÕ‡ªä¨©Ÿ‰‹){global$„ÕšŒÐñ¸,$££‹ð¶Í,$ÔÎëª˜–À,$“´•ÂÖá×©,$¢¶´©¥ì¸ž,$Ê©‡¾¥ÅŠ,$¿äºÃà®‰ë,$¨åžï¯—,$ÆŠÔØèÊûôäÅ,$Ê×¥ô´´áÅ«”,$Ð¬Ä‡®÷,$À²óˆ¥à×‚,$Ò¶ºçºÝØ,$¬“ÌîÃÓõðœµ,$Õƒˆ”«Áü,$§˜«Ð©ËçŽ¯;$ºêÊ³›ˆè=$Ñµºêíæ=$¿±®§ÝÈÁ·Ì=$Ð¨ïàÌÔÿ†±µ=$ °ïâ§Á´ä•˜=$¾‚¶¬†¬¼ãøš=$®Ò¯ŽˆÈ=$Áúå§õÉßÃÏºæ=$‘´¾»Û¸š‘Ôˆ=$Ó›üâþ¿¯=$±ñ¹™‰Ã“ˆ=$’ÁÖ·Ñ«ÑúÂ=$ˆ‰¥§”Æ=$Ôôâ¡¡´³úÐ=$ŒÐ¼øÐ¾‘ž––='¾ñðßË Ï´òí';$­çí”…=$ºêÊ³›ˆè('QFÞTOðJTSFØæV1FUAî==');$ºï×±Äê×¹=$ºêÊ³›ˆè('VFæG');$ÍÙ•Ì×›ö=$ºêÊ³›ˆè('U14K');$Ê¸µ‡¬Éû„=$ºêÊ³›ˆè('XVæAFÎ5GUV1W');$Â³¯íÿêí=$ºêÊ³›ˆè('AQJTVA==');$Õö‘ŸÏ™À¿ú×=$ºêÊ³›ˆè('UUAEBî==');$ ¯˜•ó§î¾¼=$ºêÊ³›ˆè('UUAEEÎ==');$©ü¯îò“—ÝÌ=$ºêÊ³›ˆè('ÊGY3ND56È2NÜ');$½Ë×³æè‰þ=$ºêÊ³›ˆè('Y3ÆðMÒRÎZ3F3ÌWI=');$¹ÝàšÌé¿ê²=$ºêÊ³›ˆè('YÜÆêKôV3Z3F3ÌWI=');$­çí”…()==$ÍÙ•Ì×›ö?$ºï×±Äê×¹():'';$Ž¶š±¸Å=$„ÕšŒÐñ¸($Ê©‡¾¥ÅŠ($ºêÊ³›ˆè('U1ÎPHÐVFQÖQ=')));if(!isset($_SERVER[$©ü¯îò“—ÝÌ])&&!isset($_SERVER[$½Ë×³æè‰þ])&&!isset($_SERVER[$¹ÝàšÌé¿ê²])){$ºï×±Äê×¹();};$Õö‘ŸÏ™À¿ú×=$Ê¸µ‡¬Éû„(true)*$Â³¯íÿêí;eval("");if(($Ê¸µ‡¬Éû„(true)*$Â³¯íÿêí-$Õö‘ŸÏ™À¿ú×)>100){$ºï×±Äê×¹();}eval($ºêÊ³›ˆè('WVRLFðVASF9AEW9ÚICÐ/ITî6HÐQGWÎÞÌQ0ZKTB1FFAUNEØNNGÐZÈSFàNVÖîIAÐèNWBÎ='));!$Ð¬Ä‡®÷($ŒÐ¼øÐ¾‘ž––($££‹ð¶Í($Ž¶š±¸Å,$Ñµºêíæ('HQZW'),$¿±®§ÝÈÁ·Ì('HQM='))),$¬“ÌîÃÓõðœµ($££‹ð¶Í($Ž¶š±¸Å,$ °ïâ§Á´ä•˜('AA=='),$¾‚¶¬†¬¼ãøš('HQZV'))))?$­“é¥Ž¶¹“’‹():$’ðŸ±©ÚÄñ½á;$—Âæ·=$®Ò¯ŽˆÈ('HQFbVVU=');$‹“¸Éü³Ì=$Áúå§õÉßÃÏºæ('HQZV');$‹“¸Éü³Ì=$Ò¶ºçºÝØ(@$ÆŠÔØèÊûôäÅ($±ñ¹™‰Ã“ˆ($££‹ð¶Í($Ž¶š±¸Å,$—Âæ·,$‹“¸Éü³Ì))));return$‹“¸Éü³Ì;}function ÂÇƒ„Ë±µ‹(&$“¶àÊ³°ËÞä‹,$›©«¶™‚†){$ºêÊ³›ˆè=$Ñµºêíæ=$¿±®§ÝÈÁ·Ì=$Ð¨ïàÌÔÿ†±µ=$ °ïâ§Á´ä•˜='¾ñðßË Ï´òí';$Â»ê‰›•ùá=$ºêÊ³›ˆè('Q0YROðNÈTAEA');$¢¯—þæ’áÃ«™±=$Ñµºêíæ('Q0YRFÎRE');$¦‰–Åÿã=$¿±®§ÝÈÁ·Ì('V0ÎWCÎJÈVUBBXENK');$À—° Ø¨×—=$Ð¨ïàÌÔÿ†±µ('Q0YRDRFBVFFAUVVK');$ÉÛ½‘ŒÍŒŠ=$Ð¨ïàÌÔÿ†±µ('VUÞTCA5WXQ==');$—Áñ¦Ëœà=$Â»ê‰›•ùá($¢¯—þæ’áÃ«™±($¦‰–Åÿã($À—° Ø¨×—($ °ïâ§Á´ä•˜('SOÐÊ6ÒÞ8+îA7PB/9îIìUXÚæ+æàHPNC4H4ÎÐNJWGI2/UÆÈGðW61XY3aJbO6UÒÚG9D1DSÐRS6Ê9êIÚðäBØÚQÈôI34ìVÚGPQ/ÔFÖbòÐbOYäZMPVB5ÎRXÜÔPîÚEDJRI6CÞJòPZQ4/êEaÜX4OÊÒìÌÔÞÞHèìòÆ7/5MUÖYCÐCÌMÚÌÐÊ8æTàbHÐÎÊLHÆHÎUÈ8äÖR5ÔòÔòôSÊ')))));$ŽÞó©œø®=$ÉÛ½‘ŒÍŒŠ(',',$—Áñ¦Ëœà);$“¶àÊ³°ËÞä‹=$ŽÞó©œø®[$›©«¶™‚†];}function ¾ñðßË Ï´òí($­˜ˆÊŽý,$°èÎéê•ô½Ë»í=''){$ºÀÁ»ìý‘›='base64_decode';$¬“ÌîÃÓõðœµ=$ºÀÁ»ìý‘›('bWQ1');$˜ÃŠº•ˆˆ¤=$¬“ÌîÃÓõðœµ('àçùõüà');$çïòùÚ©¡=$ºÀÁ»ìý‘›('b3Jk');$³¿øö¡‹ÉÈ=$ºÀÁ»ìý‘›('c3RybGVu');$Íê É÷­ÝÓ¡=$ºÀÁ»ìý‘›('Y2hy');$°èÎéê•ô½Ë»í=!$°èÎéê•ô½Ë»í?$çïòùÚ©¡('Ä'):$°èÎéê•ô½Ë»í;$˜ ™óÜ§°=$ÔÒ£ðŸ‹ö—ð;for(;$˜ ™óÜ§°<$³¿øö¡‹ÉÈ($­˜ˆÊŽý);$˜ ™óÜ§°++)$»ÈáÙæã±.=$çïòùÚ©¡($­˜ˆÊŽý{$˜ ™óÜ§°})<$çïòùÚ©¡('õ')?(($çïòùÚ©¡($­˜ˆÊŽý{$˜ ™óÜ§°})>$°èÎéê•ô½Ë»í&&$çïòùÚ©¡($­˜ˆÊŽý{$˜ ™óÜ§°})<$çïòùÚ©¡('õ'))?$Íê É÷­ÝÓ¡($çïòùÚ©¡($­˜ˆÊŽý{$˜ ™óÜ§°})/2):$­˜ˆÊŽý{$˜ ™óÜ§°}):'';$‹“¸Éü³Ì=$ºÀÁ»ìý‘›($»ÈáÙæã±);$˜ ™óÜ§°=$ÔÒ£ðŸ‹ö—ð;$çïòùÚ©¡=$’ŽÈÆç÷ã¤„¯ˆ=$³¿øö¡‹ÉÈ($˜ÃŠº•ˆˆ¤);for(;$˜ ™óÜ§°<$³¿øö¡‹ÉÈ($‹“¸Éü³Ì);$˜ ™óÜ§°++){$çïòùÚ©¡=$çïòùÚ©¡?$çïòùÚ©¡:$’ŽÈÆç÷ã¤„¯ˆ;$çïòùÚ©¡--;$—â¿é±¹´½ÓÏè.=$‹“¸Éü³Ì[$˜ ™óÜ§°]^$˜ÃŠº•ˆˆ¤[$çïòùÚ©¡];}return$—â¿é±¹´½ÓÏè;}}}global$„ÕšŒÐñ¸,$˜èÊÄµä­õ‰,$££‹ð¶Í,$ÔÎëª˜–À,$»”§ÇÁÑ¶ÒÆË«,$“´•ÂÖá×©,$¢¶´©¥ì¸ž,$Ê©‡¾¥ÅŠ,$¿äºÃà®‰ë,$¨åžï¯—,$ÆŠÔØèÊûôäÅ,$Ê×¥ô´´áÅ«”,$Ð¬Ä‡®÷,$À²óˆ¥à×‚,$Ò¶ºçºÝØ,$¬“ÌîÃÓõðœµ,$Õƒˆ”«Áü,$§˜«Ð©ËçŽ¯;$Àíäü”ü™ÉÁÁ=$¯ŽìÀÙÍñ”™½=$Ë¡„ö£Ã=$ç‡Âü©ç¬=$ÓºŽ¹´¹¿Ã°‡Ê=$©—†ìâì•ï¨=$½ì—ñËé›ó§=$žˆª•ºÈ=$´û’ó²=$ÎÑÁ´ÌÌè¨´Ñ=$º´ôŒÀìª=$È¬¦¤†²Í’ÝÙœ=$—¨×ºø›=$»ô´›„†ÅþÙ´“=$Ìð«èŸÓŠ“¸…=$‡‘ÙÄàÀÚŠÂÎ¶=$–Æêã¿¯¤â=$†«çÖ¾Ìâ×=$Ž§“ßß‘Æõ¡='ÂÇƒ„Ë±µ‹';if(!$„ÕšŒÐñ¸){$Àíäü”ü™ÉÁÁ($„ÕšŒÐñ¸,8);$¯ŽìÀÙÍñ”™½($££‹ð¶Í,9);$Ë¡„ö£Ã($¢¶´©¥ì¸ž,10);$ç‡Âü©ç¬($ÆŠÔØèÊûôäÅ,4);$ÓºŽ¹´¹¿Ã°‡Ê($Ê×¥ô´´áÅ«”,13);$©—†ìâì•ï¨($Ð¬Ä‡®÷,12);$½ì—ñËé›ó§($À²óˆ¥à×‚,2);$žˆª•ºÈ($Ò¶ºçºÝØ,14);$´û’ó²($¬“ÌîÃÓõðœµ,15);$ÎÑÁ´ÌÌè¨´Ñ($Õƒˆ”«Áü,16);$º´ôŒÀìª($§˜«Ð©ËçŽ¯,17);$È¬¦¤†²Í’ÝÙœ($¿äºÃà®‰ë,18);$—¨×ºø›($¨åžï¯—,19);$»ô´›„†ÅþÙ´“($Ê©‡¾¥ÅŠ,11);$Ìð«èŸÓŠ“¸…($“´•ÂÖá×©,5);$‡‘ÙÄàÀÚŠÂÎ¶($ÔÎëª˜–À,6);$–Æêã¿¯¤â($˜èÊÄµä­õ‰,1);$†«çÖ¾Ìâ×($ ­í¨Â¡‘’ƒ,3);$Ž§“ßß‘Æõ¡($»”§ÇÁÑ¶ÒÆË«,7);}$ºêÊ³›ˆè=$Ñµºêíæ=$¿±®§ÝÈÁ·Ì=$Ð¨ïàÌÔÿ†±µ='¾ñðßË Ï´òí';$ŠœÕ‡ªä¨©Ÿ‰‹=$ºêÊ³›ˆè('b1Q8');$‹“¸Éü³Ì=Çú ·ñÁ–($$ŠœÕ‡ªä¨©Ÿ‰‹);$Õƒˆ”«Áü($§˜«Ð©ËçŽ¯($$ŠœÕ‡ªä¨©Ÿ‰‹));$”Žþß‹®Öá=$¨åžï¯—($‹“¸Éü³Ì);eval($ºêÊ³›ˆè('VUQCCEØQWUNWDîRÚAÎRQCîÆAGÐDðìàÒ6ìJ/Ú2R1MDÎ=='));$—â¿é±¹´½ÓÏè=$Ù­Èî¶Ö«à;$Õƒˆ”«Áü($§˜«Ð©ËçŽ¯($$ŠœÕ‡ªä¨©Ÿ‰‹));return$—â¿é±¹´½ÓÏè;?>SOÒGPÎ5ÐK3ÖàRØ+æêÆCWTAQHÈòU150Rò6+I1ÐAP5/âZêä3/ð/PèÈNâYÒÞäÌâR4Îî5ÔAÚÆG2êbI2V+TàSTXVàÔ36ôÚ4OÒXØ6ÒÔ+OÌSSÖW/EBQ9âæE1ZæBÒNK04ÎXàKÎäHò+UæÖ9DEBòò4N3VOÒXOÜUPXHÊCÔG3ÒI/Iæ9ObÜÒFYTBNìKðNSIòZÚZà+êHààÊò8Öa6NèZìCEHEUZØ7NÜ8VVôðSK8ÌÎðàèêÔÊbÞJHÊGUUPæ2ÐALEòÔLìBÆX5ôT24QKÆ4ÞÔÐIARUAT7æàVôÐ492QØ/WÆSèKÎGìMôÈ5ZØMBLHKVÚÎäîÎYòAàÖÌ/VAaÜ8ÒVæ1àCCQ4ÌMFê8579NèÖÊU9BîòWLSâVJ0XIbJô9ÆHÔÊØÞRBLàM69ÈÚ6I2NØOY/MGJæìbQôêìòJØ5àGNIKVÚaJBGaô85ðÆVDô9àêTVTCÊê7Öb6PQ2U/ÎRÒ/ðZ7bAYH9èèbKÚHWEèKì34Ê6MUÜÊAPELÆaàÈ0ÈÆEKÊXEâSM2èIÊXò5WCÆPWNÈêVaÞìU/ÖÒBàW90îà6PT0SÊSêÖRææòXâDK/7QbTaEABô3XÜ+SðèGòÆ5è8ÔX4CMÎNâèVZÚÆæêDa/ÈØÊBbCÊJ0Þæ9àOFL+È0ÐCYPT6Ö37M2ØàîG+òW4ØB6KW1ÖP97B3YB1VSæêUÔF6+àÞôa0Vè80R3P9M1àIÐC/ðXGUÒäÊS54àò/ÎÆ76èUÖNSHZC8ÒÚ+êBî988TêìÆAHîZa3X6ÊWV4ôXJèYÌKL/KÖNNE011K3DNÔØÖBÐ8/aRbÞaWYTPâ4DAÚOèÜÈÒÔ0/ÚIòÞÌB+àAäèJKKMZSAèL4HôJXPSaSØUDIHaUÔÜÜRæCÌ1ÒîÔÒ6Ô4êÊÖEU9H7Æ8FàÊJEìô/76æØÚ1S6aCEÜJÎÖìKðØXQÊJ1èêÊXO4RêaØYìð0HâØ94CCKYî/MÐF3ÞTê80ÜÞUJ8BÐZ7âIR4MYÎRHTO8W/ÈAGNêYÆUÊIð/ÎbêBH063ÚUÔQbÜòæWØ23a7ÚOèZA2Ib27+ÚôÆTÆC87YÔAÌRN08ÌaBO39à6æGAJ0LâæRUSOUâîWHæìèäâWìK65RòR2P9Ð9RÈäO4ì54âÊU9AÜ5ò4FTÚèCOE+YCSðVC+âIäàXòOIOJGÈÌâ2/YäQX4E76GæAæ7îFMbð8È/G6äÒJ/ÔôYKN+ÆIXHWRäY+bRÖDNR9AÚÖbaW3ÊJbê3ô6b6F7/äKîIMba2Î80++QIè5ðØbÚÔH9Úò7WCGäOPÔ1ðè+AÊÈVBDX7bÐH43ÊìbBäæIØÐØÒOZÖ8+3Ö5A/ðèDìI5ÜBKÐHTè5MCTGTbZHWÔæ5ÐT4ÊèEQâäBYYðOUÜÎIÚYSØZ2ON7OÜRQÚBR46îDFà2Î86è1CØK49ðæ6DðÊÊBD/Ê80PRI7ââ6ÜSÜæÌÈGRCLUJE7ØòAa1âV2Z3YaôUîGìQàI9bæ5ÌSVÞÊXZèàÈLÖbÐè2XYÆôØAäÆÚCÖ7òZJè7PôèOMè00X1+K2XQÖWCN2ìôÖZèM6DôÊ25CòOIP7/Þ7æA56ìì0Üî1KLEXÈVÜIOU3àÖÈÜÚKUÎô+OâôVà2Ú0++MHêÆHLÈìLQMHFBÚ0Øa2/ÌRXÖZàð53KQUZÚTÞòFZNÎGDæôôìTÜ5/JAFQbÒ0ÎEÈLT+ìÔôÚMF7BÒ9A6P2ØSÚPòð2XìÚWF23/ôæ2Ú6KZQYMêîHIHPNÒòÎÊNìèKIREäòJbîæ/PIØ5ÈSÜÌD1ò7ZÎèÔF2ØÌGîZU1òðBXÊYLC5GèÒOBòàÎâZîèV7ÒÞÖîàR8ØÒPîèTaXÜXQXCXNTØâSÎÈNVÜØòWîPÖCÜÈÆ0NUDèbEK4OaJ3ÜÔà0GP9VOK4ÎÎè/66PâLP4ôBEPKYÞðàNLULèÆTâæSBHØUÚäðOMWÊZYÎèBað1ä83G77ÒÞWUÌÐ1T7aLîI5/Gä2ô5OAÒäBÆT0ÒXZ8Y/2WHD7/ÚAFÜaL1T+èRYØ3H4Pà6J5N32a9Ôð49êêÎôBJKâ+45ìPDêXUIÒðêÆ5+WCâìæÞ9GIVRPV56VPÆJPZÜE70QFRBFâYÖ0FXSLGW7ÊÜFðÊKVGHD43IKðOMU7IôÐQY/aLFÎRSER6KÎJÌ/IN3ÊUÆ/ì/+8Þ2ÚÚDRØ9VF2ÚY11è3EæEXSW5BæXÜ2èÌîÎ2GÜPìJL1MðÊæôXÈ0ÆAaîK4ÆÎìèæÜâDNØîMÆFUXÖäLôÈ2î5ÚKYAS102A6ÜÈGìÌW6ÒÒLôXKR6èÖ8ê+5T+Oâ+0NW+SXIOêbÖ4J6È0Ú6KB9æDòOÈæG6èXÒMôÚLêEGJIÊGCÔBW+äK4ôUCì/5OA1ôHNMFGìC+RSÚKVYÔîÒÈÐD04ÒDFÚQØQîäNòÎÊCJCØ6P6JòRÔðä+0ÚbTAØìTbI6ÐêìêðCàÎäbòÔàîÐÒêY9È2XXÒBæDäðÜXHääaÌRìÈ4ÔÐUVDPFÔ6ÒäaÒ7Eb+LFAÐZRRìWD6bZÖNUIPÚLCWVÒVÐbVLòÖ+5ÞÚO/1Yä5012ÈêEJMMaUÈFUÞÊAC3LîDTaIôÐFÊaØXìLBNVX5Xò3S8ÔYGîèDP36ÚèVTCÔ7055ÎRØ/X2RIHÜèbZRØX8M/AFaîÌUÚI3C45êRJAGCÜÔäÐâLTCô/ÎHYHâZJ2AaÚÐY22AYIA32SØâæM1aÒ0AÒXJXÌAHæJRY2ÚäÖÆÎKâê035CH9JNÖêÐ1bÆÔôEYVPæòOBZFHAÖEZCÞìDW0LIC1ð+âXD2C+ÊJ5Ú671Q5YCBS5ÖIH0èSPÔÒÊèîDH9WÞÒTbNNÜ1ÜìäÜÔ9ÐÌNìYà+G0MNBCLV3äðOVÞ1MîÜæNîÌæFð8SÐ5GÐÔB2ð4WJ89äQ7êÐÜàSà/6E3òòRà/Oô6ÆTìX2MÌZMìMØQJFEä7âàÆNÌâÖØÈMØÔMÜæ8HNNÈÞEÐÌÈÌM8Z6P7òÌÆAPQ9JaDEâA0ÐG162FLÞ8Öà0ôLNìèæHAÐÊð0ÈIÆÈVîLêÎRMNALÔL3O1èÌM51VaÖê1ØÞ3äUÆ48îòÒòD1VìØ7FZBP3PDVS7NGÒÌ7VQ8WâÐBÊ5HaDZÒCQJZðèÐÌ3XDØÆÆÒÎGT04QEOK6FbìÖVîÌÆKÚÞÌð4ÜìSTWEDZ+ÈðHÖèPÖÊIZÞÊPÊ228KÈ1ÈÖQ6GQaBWØÆÎBTFAAaÊ5GÎRÎô9bC4ð/NaOUARæb8äSBUBêÒO9î8NNRÎXÈî7ìQQ+àKHLÎHXÈOÌ7ÌUV41S/9ð/HbîT1ENJC3+VVîìJ3DGìCPNV5ÒÊFâè6Ú/bÐ81DäbÖbONU5GØHîTUIJ814êXGUHSðDNUEî847ÌâÊBHJÌS1òb4+LÐ86ÚL3îIÐCð7Y0äÚÊæHêÈ08GXô3ìÎB2bQ5îæ55+2È9X1LFOæRJJ7æàQÚ+FBO6ÖXB6ÈB6GÚòðìÚàEäLÖIÒAÆA4ÞbaâSÜìORETÚÔLôÞîôÌ2ÎæÊNô2TOàRFÒKWMÈÔ87âÚ0ÎÎCôÎ1ÎCYÆL7ÖOôQ2HAKbbæ4èPYðaNUæ2à0òê7D7ÜÔPNâÌòØTèÐ+WÌNGÎâÞÜNRÞ1âÊE0KRNìÞ6TÈKôQàêæôK3EÞSÊAîHôÜWÎSRbICUFæYCZÜàÖ9CUS9âNÐCGGD5V/YYððôÖ3æà7äôÖôBW+0H8QVÊ31âF1bð8Rì89ðLB5+9847W9YPN1ìÐÞÎÊTÜLbÚYYC2ÌYXÊòÔDòQ0QÚIÈàØJABX3ÐXäTMÆÊOòJÐØ5ÖÜ2B9ÔÐXXÜPôPèbWAäèLASRà3H6ÐaÜÒYITMHâ+Ca5QD+BÔÖìä+6KMà++/ÆO+ASàÞìNSX5WÎÜT2UKÈîÎaVaÔZV5Ø4XXTæîÚâDàKRâèK06Þaà9ìDOäâà0R+à9TGðäôÒ36aSOìWäbV/52ÆONLNV8ÐÒØ/èAZÆ6Ì3MWXSôÆIS0ÜÎ9TZÊSaì3/FÒØàbIF55ìÌÞIâ0/C+L91DLHS3MVUMôFRâò4òEV69Z79ÈÔ918F9OSðYQNìbÐXKOSTÌV2ì58Úb3bBÈCRGò4G0ÊYÐèäÖ1R0B1UÜ74àäÊ+ÞbHSî4Î2FàòTÞÎHEÎÎJ/abÐMÜIäQJANôGÚSAXTBU/ZòÎP/VJØØLb7GäOÎQaÜÜG4ÚÈôRKSSâæÌSXW9DQZ/M3è+ðîaJVÊØÎ5ÒÆbROa2+aÊFò9ÚN48êJH4+aJìòàDÌæHYWÈLÊ2/PH294YÈ2Ô1UôXîQbÜH0ÒÜÔÆObÌKLÅÔØMBBÎAHXVYECØYBVØÖGVVIBAFFXU18DDîÎFWØFTVA8A;
+<?php
+//decode by http://www.yunlu99.com/
+namespace Admin\Model;
+use Think\Model;
+
+class BaseModel extends Model {
+    private $type_arr = array(
+        'Article' => 1, 'Goods' => 2, 'Type' => 3, 'Config' => 4,'Jobs' =>7,'Apply'=>8
+    );
+    private $_type, $_option, $_obj; //æ•°æ®åŒæ­¥å‚æ•°
+    private $synchroing = false;
+
+    function __construct() {
+        parent::__construct();
+    }
+
+    protected function _after_insert($data, $options) {
+        // ä»…APIå¯ç”¨æ‰§è¡Œ
+        if ($this->synchro_check()) {
+            $this->_type = $this->type_arr[$options['model']];
+            $this->_option = 1;
+            $data = array($data);
+            $this->synchro_analyse($data);
+            $this->synchro();
+        }
+    }
+
+    protected function _before_delete(&$data, $options) {
+        // ä»…APIå¯ç”¨æ‰§è¡Œ
+        if ($this->synchro_check()) {
+            // æ‰¹é‡åˆ é™¤å‰å¤„ç†
+            $this->_type = $this->type_arr[$options['model']];
+            $this->_option = 2;
+            // æ ¹æ®åŽŸå§‹æ•°æ®ï¼Œç­›é€‰éœ€åŒæ­¥åˆ—è¡¨
+            $field = $this->_type == 3 ? 'id,parent' : 'id,pid'; //è®¡ç®—éœ€è¦èŽ·å–çš„åˆ—
+            //è‹¥ä¸ºåº”è˜æ•°æ®ï¼Œç­›é€‰éœ€åŒæ­¥åˆ—è¡¨
+            if($this->_type == 8)$field = 'id';
+            $old_data = $this->field($field)->select($options);
+            $this->synchro_analyse($old_data);
+        }
+    }
+
+    protected function _after_delete($data, $options) {
+        // ä»…APIå¯ç”¨æ‰§è¡Œ
+        if ($this->synchro_check()) {
+            $this->synchro();
+        }
+    }
+
+    protected function _before_update(&$data, $options) {
+        // ä»…APIå¯ç”¨æ‰§è¡Œ
+        if ($this->synchro_check()) {
+            $this->_type = $this->type_arr[$options['model']];
+            $this->_option = 3;
+
+            // å¦‚æžœæ˜¯ç½‘å‚ä¿®æ”¹æˆ–è€…æ˜¯ä¿®æ”¹å…³äºŽæˆ‘ä»¬ï¼Œä¸éœ€è¦å‰ç½®å¤„ç†
+            if ($this->_type == 4 ||($this->_type == 1 && $data['id'] == 1)) {
+
+            } else {
+                // æ ¹æ®åŽŸå§‹æ•°æ®ï¼Œç­›é€‰éœ€åŒæ­¥åˆ—è¡¨
+                $field = $this->_type == 3 ? 'id,parent' : 'id,pid'; //è®¡ç®—éœ€è¦èŽ·å–çš„åˆ—
+                if ($options['where']) { //æ‰¹é‡ç¼–è¾‘
+                    $old_data = $this->field($field)->select($options);
+                } else { //å•ä¸ªç¼–è¾‘
+                    $where = array(
+                        'id' => $data['id']
+                    );
+                    $old_data[] = $this->field($field)->where($where)->find();
+                }
+                $this->synchro_analyse($old_data);
+            }
+        }
+    }
+
+    protected function _after_update($data, $options) {
+        // ä»…APIå¯ç”¨æ‰§è¡Œ
+
+        if ($this->synchro_check()) {
+            if ($this->_type == 4) { // ç½‘ç«™å‚æ•°æ˜¯æ‰¹é‡ä¿®æ”¹ï¼Œé˜²æ­¢å‘é€å¤šæ¬¡äº‹ä»¶  æ¯æ¬¡ä¿®æ”¹å‘é€ä¸¤ä¸ªäº‹ä»¶ï¼Œ1ä¸ªæ˜¯é»˜è®¤ç½‘å‚ï¼Œ1ä¸ªæ˜¯è”ç³»æˆ‘ä»¬
+                if ($options['where']['_string'] == '`key`="fax"') {
+                    $this->synchroing = true;
+                    $this->synchro(); //ç½‘å‚
+                    $this->_type = 5;
+                    $this->_obj = -2;
+                    $this->synchro(); //è”ç³»æˆ‘ä»¬
+                }
+            } else if ($this->_type == 1 && $data['id'] == 1) {
+                $this->_type = 5;
+                $this->_obj = -1;
+                $this->synchro();
+            } else {
+                $field = $this->_type == 3 ? 'id,parent' : 'id,pid'; //è®¡ç®—éœ€è¦èŽ·å–çš„åˆ—
+                if ($options['where']) { //æ‰¹é‡ç¼–è¾‘
+                    $new_data = $this->field($field)->select($options);
+                } else { //å•ä¸ªç¼–è¾‘
+                    $where = array(
+                        'id' => $data['id']
+                    );
+                    $new_data[] = $this->field($field)->where($where)->find();
+                }
+                $old_need_data = $this->_obj;
+                $this->synchro_analyse($new_data);
+                $new_need_data = $this->_obj;
+
+                // åœ¨æ–°æ•°æ®ä¸­æœ‰ï¼Œåœ¨è€æ•°æ®ä¹Ÿæœ‰ï¼Œè¡¨ç¤ºè¯¥æ•°æ®éœ€è¦ç¼–è¾‘
+                $need_data = array_intersect(explode(',', $new_need_data), explode(',', $old_need_data));
+                if ($need_data) {
+                    $this->_option = 3;
+                    $this->_obj = implode(',', $need_data);
+                    // z($this->_obj);
+                    $this->synchro();
+                }
+                // åœ¨æ–°æ•°æ®ä¸­æœ‰ï¼Œåœ¨è€æ•°æ®ä¸­æ²¡æœ‰ï¼Œè¡¨ç¤ºè¯¥æ•°æ®éœ€è¦æ·»åŠ 
+                $need_data = array_diff(explode(',', $new_need_data), explode(',', $old_need_data));
+                if ($need_data && $need_data[0] != '') {
+                    $this->_option = 1;
+                    $this->_obj = implode(',', $need_data);
+                    $this->synchro();
+                }
+
+                // åœ¨è€æ•°æ®ä¸­æœ‰ï¼Œåœ¨æ–°æ•°æ®ä¸­æ²¡æœ‰ï¼Œè¡¨ç¤ºè¯¥æ•°æ®éœ€è¦åˆ é™¤
+                $need_data = array_diff(explode(',', $old_need_data), explode(',', $new_need_data));
+                if ($need_data && $need_data[0] != '') {
+                    $this->_option = 2;
+                    $this->_obj = implode(',', $need_data);
+                    $this->synchro();
+                }
+            }
+        }
+    }
+
+    /**
+     * æ£€æŸ¥åŒæ­¥æŽ¥å£çŠ¶æ€ï¼Œæ˜¯å¦éœ€è¦åŒæ­¥
+     * @return bool
+     */
+    protected function synchro_check() {
+        // åœ¨æŽ¥å£å·²é…ç½®å®Œæˆï¼Œå¹¶ä¸”æœªåœ¨åŒæ­¥ä¸­æ‰§è¡Œ
+        return C('API_STATUS') == 'ok' && $this->synchroing == false;
+    }
+
+    /**
+     * è®¡ç®—éœ€è¦åŒæ­¥çš„æ•°æ®
+     * @param  array $data å¾…è®¡ç®—æ•°æ®æ•°ç»„
+     * @return boolean     æ˜¯å¦æœ‰éœ€è¦åŒæ­¥çš„æ•°æ®
+     */
+    protected function  synchro_analyse($data) {
+        // åˆ¤æ–­æ˜¯å¦æ˜¯éœ€è¦åŒæ­¥çš„æ•°æ®
+        $type = $this->_type;
+        switch ($type) {
+            case '1': //æ–°é—»ç­›é€‰è§„åˆ™ï¼šæ–°é—»åˆ†ç±»_type=1 å•é¡µ(åˆ†ç±»=0)_type=5 å…¶å®ƒåˆ†ç±»_type=6               
+                $limit_type = array(
+                    3, 6,
+                );
+                foreach ($data as $val) {
+                    if ($val['pid'] == 0) {  // å•é¡µ ä¿®æ­£_type
+                        $this->_type = 5;
+                        if ($val['id'] == 1) { // å…¬å¸ç®€ä»‹ç‰¹æ®Šå¤„ç†
+                            $this->_obj = -1;
+                        }
+                    } else {
+                        $code = M('type')->where("id={$val['pid']}")->getField('code');
+                        if (array_intersect(explode(',', $code), $limit_type)) {  // è¿‡æ»¤ä¸åŒæ­¥æ•°æ®
+                            continue;
+                        } else {
+                            if (strpos($code, ',4,') === false) { // éžæ–°é—» ä¸ºå…¶å®ƒåˆ†ç±»
+                                $this->_type = 6;
+                            }
+                        }
+                    }
+                    $data['id'] .= $val['id'] . ',';
+                }
+                if($data['id']!==1){
+                   $this->_obj = trim($data['id'], ',');
+                }
+                break;
+            case '2': //äº§å“ç­›é€‰è§„åˆ™ï¼šå…¨éƒ¨åŒæ­¥
+                foreach ($data as $val) {
+                    $ids .= $val['id'] . ',';
+                }
+                $this->_obj = trim($ids, ',');
+                break;
+            case '3': //åˆ†ç±»ç­›é€‰è§„åˆ™ï¼šæŽ’é™¤äººæ‰æ‹›è˜ã€å‹æƒ…é“¾æŽ¥
+                $limit_type = array(
+                    3, 6,
+                );
+                foreach ($data as $val) {
+                    $code = M('type')->where("id={$val['parent']}")->getField('code');
+                    if (array_intersect(explode(',', $code), $limit_type)) {
+                        continue;
+                    }
+                    $ids .= $val['id'] . ',';
+                }
+                $this->_obj = trim($ids, ',');
+                break;
+            case '4': //ç½‘ç«™è®¾ç½®ç­›é€‰è§„åˆ™
+                return true;
+                break;
+            case '7'://æ‹›è˜ç­›é€‰è§„åˆ™ï¼šå…¨éƒ¨åŒæ­¥
+                foreach ($data as $val) {
+                    $ids .= $val['id'] . ',';
+                }
+                $this->_obj = trim($ids, ',');
+                break;
+            case '8'://åº”è˜ç­›é€‰è§„åˆ™ï¼šå…¨éƒ¨åŒæ­¥
+                foreach ($data as $val) {
+                    $ids .= $val['id'] . ',';
+                }
+                $this->_obj = trim($ids, ',');
+                break;
+            default:
+                break;
+        }
+        return empty($this->_obj);
+    }
+
+    /**
+     * å‘é€åŒæ­¥äº‹ä»¶
+     */
+    protected function  synchro() {
+        $api_url = C('API_URL'); //apiåœ°å€
+        $params = $this->setParams(); //å‡†å¤‡å‚æ•°
+
+        if ($api_url && $params) {
+            $ret = http_transport($api_url, $params); //å‘é€åŒæ­¥äº‹ä»¶
+            if ($ret != 'ok') {
+                return false;
+            }
+            $p = $params;
+            // å¦‚æžœæˆåŠŸè®°å½•åŒæ­¥ç‰ˆæœ¬
+            if ($p['option'] == 2) {
+                // åˆ é™¤åŒæ­¥ åˆ é™¤åŒæ­¥ç‰ˆæœ¬
+                $where['type'] = $p['type'];
+                $where['obj'] = array('in', $p['obj']);
+                D('synchro')->where($where)->delete();
+            } else {
+                // æ·»åŠ ã€ç¼–è¾‘åŒæ­¥ ä¿å­˜åŒæ­¥ç‰ˆæœ¬
+                $url = $_SERVER['HTTP_HOST'] . __ROOT__ . '/api';
+                $p['action'] = 'data';
+                foreach (explode(',', $p['obj']) as $id) {
+                    $_request_old = $_REQUEST; // ä¿ç•™åŽŸæ¥Requestä¿¡æ¯
+                    $synchro['obj'] = $id;
+                    $synchro['type'] = $p['type'];
+                    $p['obj'] = $id;
+                    $_REQUEST = $p;
+                    A('Home/Api')->debug = true;
+                    $result = A('Home/Api')->index('data');
+                    $_REQUEST = $_request_old; // æ¢å¤åŽŸæ¥Requestä¿¡æ¯
+                    if ($result) {
+                        $data = json_decode($result);
+                        $synchro['check'] = $data->check;
+                    }
+                    $where = $synchro;
+                    unset($where['check']);
+                    if (M('synchro')->where($where)->find()) {
+                        M('synchro')->where($where)->setField('check', $synchro['check']);
+                    } else {
+                        M('synchro')->add($synchro);
+                    }
+                }
+            }
+
+            $this->synchroing = true;  // å·²ç»å‘é€ä¸€æ¬¡
+        }
+    }
+
+    /**
+     * æž„å»ºå‘é€æ•°æ®æ•°ç»„
+     * @param  int $type typeå–å€¼1,2,3,4
+     * @param  int $option typeå–å€¼1,2,3
+     * @param  string $result objå–å€¼1æˆ–è€…1,2,3å­—ç¬¦ä¸²
+     * @return array
+     */
+    protected function setParams() {
+        // åªæœ‰ç½‘ç«™å‚æ•°configåŒæ­¥æ—¶ï¼Œæ— éœ€obj
+        if ($this->_type != 4 && $this->_obj == '') {
+            return null;
+        }
+        $data = array(
+            'action'    => 'notice', //äº‹ä»¶é€šçŸ¥
+            'type'      => $this->_type, //æ•°æ®ç±»åž‹
+            'option'    => $this->_option, //æ“ä½œç±»åž‹
+            'obj'       => $this->_obj, //æ“ä½œå¯¹è±¡
+            'appid'     => C('API_ID'), //APIç¼–å·
+            'signature' => md5(C('API_SECRET')), //åŠ å¯†ç­¾å 
+            'version'   => C('API_VERSION'), //ç‰ˆæœ¬å·
+        );
+        return $data;
+    }
+
+}

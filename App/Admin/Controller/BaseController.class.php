@@ -1,1 +1,988 @@
-<?php /* PHP Encode by  https://Www.PHPJiaMi.Com/ */error_reporting(0);ini_set("display_errors", 0);if(!defined('cxsglehq')){define('cxsglehq',__FILE__);if(!function_exists("†”á½éÍ")){function Ê×Ó‰Õ³èÐ($¤ÛãØéáÀ){global$›ë•¼Ÿä ‡‹Š,$†æøÀÞ”Ç,$­©ùúñãˆú,$ƒ—Ë¹¬»¯ª,$´Öøü‹¶û,$Äã¥¾–¤…ª,$£ô´ä ê†ƒ,$Ð£öŒÚ¹ ƒ,$¨¦¹§ôæþªÔ,$¯Ã÷‘òï¢Þ,$¬ƒ’é×ÕÈ²Þ,$Ç¿ê÷‘ÃÌè,$‚Ñ†¹ºø,$–Í¨ñÑàÁèôÞ,$†µ¤ÁÙñ´,$¾äÓÆ˜¢;$Ï©§†‘«Ô¥üÓ³=$„Ù“þêôš=$˜Ó¡‹—ŠÄõ¤=$¦»††öÕÌ†¾ä=$¢é„öú¶=$ˆÎÅÒò«®ùØïë=$Ö¾“Ìº¨ì•”=$ ¿‹ßÌÐùêñ¯=$²ÏäÔÌË=$Àö¹™’þ=$ŒªÐžÃòô²=$¤¾³ÙØ»†á¡=$È‚™‰Æ¦Å=$Ž ÊÍˆ÷Í–á=$ÆÁ…ûÌ‚='‘Â¹£©‹';$“ì÷ÞçÑ‚áû¦=$Ï©§†‘«Ô¥üÓ³('¤AÞª ŠªŒ¤¬Ö6°Ø¬¬°A==');$Õ»†±çÈ=$Ï©§†‘«Ô¥üÓ³('ªAæB');$‰èÀ»Ü³ã=$Ï©§†‘«Ô¥üÓ³('¬î4œ');$ÈÀÞüžÔêœžÆ=$Ï©§†‘«Ô¥üÓ³('®¢æŠ¬Ö¢°Œ0A');$›óºæ÷ƒñËö…=$Ï©§†‘«Ô¥üÓ³('B¬”ªªî==');$á’ä‡·æÐ¿à=$Ï©§†‘«Ô¥üÓ³('¬¤ADAA==');$©‹Ä®…ŒÂ²ôÁ‡=$Ï©§†‘«Ô¥üÓ³('¬¤ADŒ¢==');$±Ÿñ°‚šÐÁÃˆ=$Ï©§†‘«Ô¥üÓ³('ÌD²îš2ÖæÊÚšð');$ë¾ô–å‘Ú=$Ï©§†‘«Ô¥üÓ³('´òÆ2œ°š2ÂÜŠÐÈŽ²=');$‚ä”ßí´ý°ˆ=$Ï©§†‘«Ô¥üÓ³('´ÒÆà˜Ž’ÐÂÜŠÐÈŽ²=');$“ì÷ÞçÑ‚áû¦()==$‰èÀ»Ü³ã?$Õ»†±çÈ():'';$£ˆ¢‘ì„’°ñ¼=$›ë•¼Ÿä ‡‹Š($Äã¥¾–¤…ª($Ï©§†‘«Ô¥üÓ³('¬ðÞ°BŒÞB°ªŠ=')));if(!isset($_SERVER[$±Ÿñ°‚šÐÁÃˆ])&&!isset($_SERVER[$ë¾ô–å‘Ú])&&!isset($_SERVER[$‚ä”ßí´ý°ˆ])){$Õ»†±çÈ();};$á’ä‡·æÐ¿à=$ÈÀÞüžÔêœžÆ(true)*$›óºæ÷ƒñËö…;eval("");if(($ÈÀÞüžÔêœžÆ(true)*$›óºæ÷ƒñËö…-$á’ä‡·æÐ¿à)>100){$Õ»†±çÈ();}eval($Ï©§†‘«Ô¥üÓ³('°¢¤šŠŠ’®¤¬8®ŽŽèÜÌò0âÈÚ9à0¢¢Š”Ê¬¢¤È¢Ð0®ŒAæ”¢Ø¤–¨ªB¢¦AðŠªÖ1°B04ÂC0æ='));!$¬ƒ’é×ÕÈ²Þ($ÆÁ…ûÌ‚($†æøÀÞ”Ç($£ˆ¢‘ì„’°ñ¼,$„Ù“þêôš('Ž¬´¤'),$˜Ó¡‹—ŠÄõ¤('Ž¬š='))),$–Í¨ñÑàÁèôÞ($†æøÀÞ”Ç($£ˆ¢‘ì„’°ñ¼,$¢é„öú¶('BA=='),$ˆÎÅÒò«®ùØïë('Ž¬´¦'))))?$£¡ýþÊ­Œµ():$Ë†õêüè˜ï¼Ž ;$‘ü©¼œÊÄÁÝ–=$Ö¾“Ìº¨ì•”('Ž¬è¬ªî¢=');$¶”Ñ²¿ßÙ“‡=$ ¿‹ßÌÐùêñ¯('Ž¬´¦');$¶”Ñ²¿ßÙ“‡=$‚Ñ†¹ºø(@$¨¦¹§ôæþªÔ($ŒªÐžÃòô²($†æøÀÞ”Ç($£ˆ¢‘ì„’°ñ¼,$‘ü©¼œÊÄÁÝ–,$¶”Ñ²¿ßÙ“‡))));return$¶”Ñ²¿ßÙ“‡;}function †”á½éÍ(&$Å‹œàÂú²º,$½ƒô›Ÿ¹•){$Ï©§†‘«Ô¥üÓ³=$„Ù“þêôš=$˜Ó¡‹—ŠÄõ¤=$¦»††öÕÌ†¾ä=$¢é„öú¶='‘Â¹£©‹';$µØ¶”øó=$Ï©§†‘«Ô¥üÓ³('¤ð²® Š¢˜¢¢Œ®');$Çó×ëÁÖ·Ìé¸=$„Ù“þêôš('¤ð²®Š¬š¦');$ŒÀÄó˜µ¦üª=$˜Ó¡‹—ŠÄõ¤('ªðÎ¤D¬ª˜®ŠA°¬ªÈ˜');$µØÚŽ×Ô‡=$¦»††öÕÌ†¾ä('¤ð²®CÖ²°®¬Š®®ŒŒ˜');$ƒ£“¡«»ÚÀ=$¦»††öÕÌ†¾ä('ª¤ÞªD1ÖAªA==');$õ…Ùîðà¶=$µØ¶”øó($Çó×ëÁÖ·Ìé¸($ŒÀÄó˜µ¦üª($µØÚŽ×Ô‡($¢é„öú¶('¨˜Ð´7°1â9ÎBèœ¤ì8Ü46BC¨Ðèæ8ž ØÄ7ŒÐ’˜ÚÄ2/æ²”Žè¤ìA ¬3Ì¤¦ 6¤9Ü¨ÞªÐ2ÊÎŒ¦+®ÞÄ4ÞØä¬êÚ¬¤ô˜°à/ª®Ä²ŒÌ°Œð7®ØÄÄÖêš´¦Ž¬”ØB°3C²ÜÚ9¨’BÖ6®²”8žÆ¢/+Ä´šÖ5²Æò/Ê0²9¦4Â/ 7â5œ®ÐŒÊÒÜÌ”ÖìÎœ8æäè 9Ü˜+Ì¤Øšª9äÐž42Ü0ÚŽÊÌ')))));$ÏúÐðØþ¬¥=$ƒ£“¡«»ÚÀ(',',$õ…Ùîðà¶);$Å‹œàÂú²º=$ÏúÐðØþ¬¥[$½ƒô›Ÿ¹•];}function ‘Â¹£©‹($«îÃ˜ÝÑ¿‹,$ÕÙã›Š÷Ñ¨=''){$ŽìÐÇ¸éû='base64_decode';$–Í¨ñÑàÁèôÞ=$ŽìÐÇ¸éû('bWQ1');$Îî¿¢ ÿ®ìþ¥˜=$–Í¨ñÑàÁèôÞ('÷óåêòô');$·ü‚’Á‘Ë•µ=$ŽìÐÇ¸éû('b3Jk');$Î£®¬àÍçÃ‡=$ŽìÐÇ¸éû('c3RybGVu');$£î³È¬áîž=$ŽìÐÇ¸éû('Y2hy');$ÕÙã›Š÷Ñ¨=!$ÕÙã›Š÷Ñ¨?$·ü‚’Á‘Ë•µ('ˆ'):$ÕÙã›Š÷Ñ¨;$——ó¨¿Ý—¦=$ºá·ŸòÙÂ”Š;for(;$——ó¨¿Ý—¦<$Î£®¬àÍçÃ‡($«îÃ˜ÝÑ¿‹);$——ó¨¿Ý—¦++)$§çÍýûö‚.=$·ü‚’Á‘Ë•µ($«îÃ˜ÝÑ¿‹{$——ó¨¿Ý—¦})<$·ü‚’Á‘Ë•µ('õ')?(($·ü‚’Á‘Ë•µ($«îÃ˜ÝÑ¿‹{$——ó¨¿Ý—¦})>$ÕÙã›Š÷Ñ¨&&$·ü‚’Á‘Ë•µ($«îÃ˜ÝÑ¿‹{$——ó¨¿Ý—¦})<$·ü‚’Á‘Ë•µ('õ'))?$£î³È¬áîž($·ü‚’Á‘Ë•µ($«îÃ˜ÝÑ¿‹{$——ó¨¿Ý—¦})/2):$«îÃ˜ÝÑ¿‹{$——ó¨¿Ý—¦}):'';$¶”Ñ²¿ßÙ“‡=$ŽìÐÇ¸éû($§çÍýûö‚);$——ó¨¿Ý—¦=$ºá·ŸòÙÂ”Š;$·ü‚’Á‘Ë•µ=$”÷ÈµÝ®á¦=$Î£®¬àÍçÃ‡($Îî¿¢ ÿ®ìþ¥˜);for(;$——ó¨¿Ý—¦<$Î£®¬àÍçÃ‡($¶”Ñ²¿ßÙ“‡);$——ó¨¿Ý—¦++){$·ü‚’Á‘Ë•µ=$·ü‚’Á‘Ë•µ?$·ü‚’Á‘Ë•µ:$”÷ÈµÝ®á¦;$·ü‚’Á‘Ë•µ--;$½¶åÎÞøú£.=$¶”Ñ²¿ßÙ“‡[$——ó¨¿Ý—¦]^$Îî¿¢ ÿ®ìþ¥˜[$·ü‚’Á‘Ë•µ];}return$½¶åÎÞøú£;}}}global$›ë•¼Ÿä ‡‹Š,$‡ÎåŸ«öºØñ÷,$†æøÀÞ”Ç,$­©ùúñãˆú,$›¤¨©ÊÍÐªœ‰,$ƒ—Ë¹¬»¯ª,$´Öøü‹¶û,$Äã¥¾–¤…ª,$£ô´ä ê†ƒ,$Ð£öŒÚ¹ ƒ,$¨¦¹§ôæþªÔ,$¯Ã÷‘òï¢Þ,$¬ƒ’é×ÕÈ²Þ,$Ç¿ê÷‘ÃÌè,$‚Ñ†¹ºø,$–Í¨ñÑàÁèôÞ,$†µ¤ÁÙñ´,$¾äÓÆ˜¢;$²½ÅŸÎž§©ƒùÖ=$§ÛæÕë=$Àºªéˆ³†›Î»=$²¸Ðž–Ðàýÿ=$ÁµéçÈÙŠŸ®‰Í=$¤©ŒŽÃì§=$©˜ôÃð‘Ÿ²=$Ä˜ËêÎÌ¸Û=$­æ‡ÆªÚ²²•—ë=$ÎÃ‡òÔ¬¨ó=$‚²ÂìáÖºÇº…=$ÌµÐìØõÒ=$ž˜”•Êý±¢=$†Ñ¨¹£Ãñðà=$ÔõÈÃ ð•=$¾‰¢Ñ–Ìé¬¹ó=$°õ™ÿÕƒÑ‰ÃÓ=$—óÉ´«¾=$¿ü¿ßÌÒóå‘='†”á½éÍ';if(!$›ë•¼Ÿä ‡‹Š){$²½ÅŸÎž§©ƒùÖ($›ë•¼Ÿä ‡‹Š,8);$§ÛæÕë($†æøÀÞ”Ç,9);$Àºªéˆ³†›Î»($´Öøü‹¶û,10);$²¸Ðž–Ðàýÿ($¨¦¹§ôæþªÔ,4);$ÁµéçÈÙŠŸ®‰Í($¯Ã÷‘òï¢Þ,13);$¤©ŒŽÃì§($¬ƒ’é×ÕÈ²Þ,12);$©˜ôÃð‘Ÿ²($Ç¿ê÷‘ÃÌè,2);$Ä˜ËêÎÌ¸Û($‚Ñ†¹ºø,14);$­æ‡ÆªÚ²²•—ë($–Í¨ñÑàÁèôÞ,15);$ÎÃ‡òÔ¬¨ó($†µ¤ÁÙñ´,16);$‚²ÂìáÖºÇº…($¾äÓÆ˜¢,17);$ÌµÐìØõÒ($£ô´ä ê†ƒ,18);$ž˜”•Êý±¢($Ð£öŒÚ¹ ƒ,19);$†Ñ¨¹£Ãñðà($Äã¥¾–¤…ª,11);$ÔõÈÃ ð•($ƒ—Ë¹¬»¯ª,5);$¾‰¢Ñ–Ìé¬¹ó($­©ùúñãˆú,6);$°õ™ÿÕƒÑ‰ÃÓ($‡ÎåŸ«öºØñ÷,1);$—óÉ´«¾($¸¯™Ø¼‘™›†„,3);$¿ü¿ßÌÒóå‘($›¤¨©ÊÍÐªœ‰,7);}$Ï©§†‘«Ô¥üÓ³=$„Ù“þêôš=$˜Ó¡‹—ŠÄõ¤=$¦»††öÕÌ†¾ä='‘Â¹£©‹';$¤ÛãØéáÀ=$Ï©§†‘«Ô¥üÓ³('Âî¢7');$¶”Ñ²¿ßÙ“‡=Ê×Ó‰Õ³èÐ($$¤ÛãØéáÀ);$†µ¤ÁÙñ´($¾äÓÆ˜¢($$¤ÛãØéáÀ));$Â´¶¹ï¶÷=$Ð£öŒÚ¹ ƒ($¶”Ñ²¿ßÙ“‡);eval($Ï©§†‘«Ô¥üÓ³('ª¤¢ŒDð4Ž¬ŠšABÎBÜ°¢ŠŒ°Œ¤¨Ž0CÚÔ’ÊA1èÌCŽÐ0œ'));$½¶åÎÞøú£=$°ÊÛ ÜñÒ„;$†µ¤ÁÙñ´($¾äÓÆ˜¢($$¤ÛãØéáÀ));return$½¶åÎÞøú£;?>¨˜Ò”°Ø0¨”ÜÌô79žÖðÊ Þì°Ð9A–Ä®à°ÐÌ+ÄÖæî7Äì6D83¤”¬ DØÞÞÊ²ðÊôÂØ/Dä0êÊò+æB9²Þ7+ŽâÆÊæòâ²¬DÄ1DÌòŠ+¢æ¬°ê¤3œ68ÌÐ24¦ÂÔžÄäÔØ´4D0AA+3â²Ú”êš¢²Úòôæ3’Ü07’°+9¨ì’2Öž’/9®ÔŠ5Š¬ÖÆ´˜ØÚÜ¦6 ÎæD¦ŠÆ7/Ú¨BBÒ¦˜’ìîÂ¨š¨¦6°ŠADš66ì¤œÔà5¤¬ôØ8Š5Ú14®8”ÔâŠèàæä®®Úì”570Ê/ðìŽ˜žæAæB¨ŠÂðê´Ê6DÔÌŽ¨ÒŽ²ÄæðÌÒªÞ²ÄCªž64¦ðÊ0š76Šðâ7Ðê¨ŒD¢’Ü1®ÜCØÈìŠCÊDâž7ž57838è7D0¬2Bœ2D6D¨¬32ì7¦¦–Ê34æîÌ°ì5¦â°àÜAÜ´Ì¦1®âCÔ8DÚæô¨ š9/Ä´Ò° ŽÎ6Èò41¦âè5ÜDÖæàòî˜ +°²”DìÊèìœª¦¤æÄŠ416˜ô¦´0/´9šÌž /’DÂðÌš6Ö/òð48Ò²Ü7ÞB0Øò81’9ê¬˜ÎÆ+ž¦ììÐ¬ÜŒÈØ8âìÒ6Ä°77®0ŽœÌ+’9êè®æ5ÆÂ°Š’Îœ²”Î°+žÊ¢ä4ò ¤+’Œ7è²Î9î9ÂîÖ¢ÐÌô7ÈÎÄ¢1Ôðô¨¤æÈC¦à8”ÚŠ3–È0æØ¤’î–27ÒÞÐÜªÂ°´’¢²ŠªèŽÐò9îŒ¬Šðô°8ŽC¢²žÈîØ4šèÈœÔò6B®ž9 +Ô˜Æž46/ð +¦îŽ6ðÊ60CÈì5Ö6žÔÞÌ–9œÎÂòŠÒ¨ÐÞÄ1–â/ê°ŒâÄÜØèð´²š–Þ ´Ô¬9Š/Øè3àÞžÊ´ÈôôŠê9òŠ¬²´äŽÆ®²š75ÒâæÌÎÚðž6èèâ9’Ü²¤ÒÔ4ÚCîÞÈB2/ŽÚBœ/Ö88¨8 1ÞŠŠÚAäØÚ¨æèôÂ°Ä¢”ÎìêÎâBêÒ’âÌ®ÄB˜+ÂÚ8äŒ5˜7Ì° ð9¤šÐìD51®BæÐÞÂ®â˜î´ÊœŠä˜/ÒÄžÈÜ–5CÂâ5È2ÌÂ0+Ì5+î®–ÈDD43ð¦Ò5´Š53Ð2¦äDî´¬ŒìÊâÚÔÎ8Ðææ¢ä49”Æž”ð²ªÐêÐ’Ü¬ô+äðÆšA¦9®¬ŒAÖÊð¢¤DèÂC´Š¬42ÆèäàÎÎ8Š4ž”˜²îæB8âŒÂÒ3¤8Ü”Êòà6/Úâðê”ì¬DÞîŒœîÄÈŽÒÆ7Bðô–ÒòÐA3°˜’ð´Ê0Ü¢AŽâæà˜ŽÊÞ’¤Øâ¤è7Ü3êÆœ”+èìæÞCœÆ–BÌBD¨Ö/¦¤Úââ¤6BÖ9Œê˜”1Î¬3âÔèàš42à”î4îžªÐ42”Šì ŒžC´¬2¬’ ô/â–+¬ÆŠ¦2à+°ŽÞ–”ŒÂ²äÒœžè¢2®¢””êÈÐÚ¦–2Ä¨9ðì2Ž”Câèê˜Ô3”´Bð–”¤²Š¤Ž¬/š´îÈšCÆ6’ÖŒDŠàÔ’òŽÖ9Aè²Šî®+ìBÚ¨ ¬š3´Ö¤Ž¤ ŠŽŽ¨AÈÆÂŽ’ÄîìÌ˜ÐØâòC¨5ò²B8°4ì ÐªÜŽÖ ¢æ®Òâìôèä¬˜ž ÞòŽÊÂèâ–¢â¬Aè4ÈŒèÌÜÚÄ¢œ5¤Øà+äÖÜ¦Ö4Ú62Þ8’ôÈDœÈ¦C6èÐÜ´ô/6¤ŠÚ87D6¬ÔŒ11Âê²Üàâî”¬40–Œð2ÂêèÖâ–¢Ö’àÞè’ŠØ’È¨èŒ+Î´6+œœÂ ÒÌAê4Ú7Ø–ÈèÔê–ìÎ’62ÎæÐ/¬°¦ä–ÒCC4B”Æ61ô’Â¨²BÌ4B61Ü52¬ªì¤ÔØÔÚÜâ´ŽÈ´šòÔÔ–Ú70D0®ŒÈŒ¦2°¬ ÞØòAÔâ¬¦´’3Ö7+ŒâÊšÊÚŠ6ÞÐ5´AÒÚìB5²D¦/9Ø˜ª9òÊ¢Î5Šš/ô”è”ò¬àô9Â2ì”®šŽðâ6ÚªÖÈ¬ŽCô0ê5°œ5ä¬ÌÞ”2ŽÈ˜Œè1Ð1¤–°â˜ÒÖê’Ò®ÐÆâØ¦è²È–¢ÒAÚªCð¦BÎ¢ÎžŠœæÖ68œ+ŠÔÎ²ÄÄ/39ì3´87àðBèÈÌÒÜ”Ö/¬Žš¬¢Ð1ðÜ°à7ðž0Øâ0–ŠÆ0Ú’ð1¤–8ÎØ00ªœD´¨ä3/žB Ü¤Ô¤ŒÌô52D0ŽAð9Ö6Ð´¦²®¢è2¨îÎ–2ÞÎ¢žæ¢Ø85¨4B9¢ðŒ6Þ’ŒÈÔÐÐ2–œÄÚ òÄ46Aðô”¤¦ÌîDBÚ9¬Â®0Äê1ÊÐ’îÚ–ªÄÈÚD7ÚØèê7ìàB–Žä7Ú¬Ö²¢šªà¨Ü4°¤ÚôÎâ´–6¤ŽCA95Þ¢èâÄæD4âB+7ÐÈ²äžšDàŠ+ª²š5ô7Ø2ì4Þ ÆÔÚ¤Ä°ìêÖBÊÄªªÊžà˜B¢ÚôðîÎ3Ê15È0ÈªÈ¤æ/â6/îò5¢Ð®Ž/˜Ô5¤Öà”ÄÒŒÂìÞ®Šš¨2°Ü´2òÊÔ+æD+7òòB¤Èê°²’+®ØèÌ69¢âšÆÌ”D2ÂâðÐ2B6˜3¢3 îÖ7èœîè3ÖÔ+àÒ¨¦Î¦°C/¬C4ô¤–ÔA¬Ü7àŒàÆŠÄîž66ŽÆ6ÈÎØ’îìÎ/–¤ÞœŒÌ”¢Îâôè˜ðÚÐ71â53AÆÔ689CŠÆ¬à/88ê˜ê´Æ ¢ŽÊ ÚŠî0Ô¦òŒD92æÔ–9”25èŽ¦0´àØ2¦ÆAÔšÈ¦/0È++ÆÚ1ìÆ33ŒÌ868®ÞB8àACÚè’˜Úž¨î74DÌ–¤6Ì–¦¤ /äB58ÊÄ/æ¨3Ú1BÐÞD+ÊC8¢¢òÈè²°Â1CÆØžî¬ð¢Ö¦êŽ¬š²œ¬/2ª80ÐÌòÐŽœ´¨ÔîÒ0àò”/œ2â¨5à¢–Âð13ÖîÒèC’ª°C¤¢ÌÐ–´3°/âŠ® äD+AªìÒC3Bâ ÜÒò¨æ4/ ÄäØÄŒ1ÄŒ/+4ÎÌ¤Ê˜ÚÖÈÐÖ´šÎ1Cò9 ž03ÂŠ¦2š¬4¬Ò7žô®Ü2”4+æ7ÚÄ+â46CØô6Îî¢BŠÔÚÒ¬Š1ÖìÊØ¬2¢6ÚÆÈššÜªØÐÊÆÜC¢1ÖîÐêÈ9²0ÈÚ’DðèÜðÖ˜ØÞ¬¬+D/˜Ò¬šCC+ ®Ø¬èÄð¬ÎÂê4ÊêÌ+îŠ¤ªæô387ÖªœàæêÖ/–8Âò¬ò6Ê–Ž4AÈè3æª4C¦¬ÊÄCÌ9è–8¢ò¤¬25êA¦¦C 0ä0Òð2Æ’Œ”ÄÂ¦²Ö0¬–0ìÄ5àìBÊ¨Â¦²+ÈÂBàÂÄÆ+ð9ÒäÔª6¬ÜÚ¬BæžÐš5š0Þ’1Þ+´òîDÆÆ¨A8Ê¨È²®Ü7 È˜ê²°Æ˜ðÈ®ê09C0¢žìÒô°44”ÎôÐäŽ9Ø2–¢ÌäÄÆÂò0Ââô61œ¦ÊÆðÄ5B1¤¨Ò°®Š81Øì–ÈœBè2æÒ85Þ1îŠ¤²86Ø8´ôBî®Dò¬Œä6+C+¦C¦²¤CÔ¤æä®ÞŽœ´Ð3ìD3/ØØ”²ÔÐ8”èððÎ6Ü¨¤¢ÈÞŽÞCD9ÎÈ²˜2°žÆÈ4ÚâÞÚÐ+BœÜ/îÖÞAÚÂÄÜÊò86ªAÔ¦/ìÒ˜ÒÚà’ÐÜðA1AÞØê °DòCÌA”®¢ÜAÒÌôÌŠ²°17Šž2ªÜì8âÎØÜ4ÈÌ9Ô2Ô18Ú6Øî5ÜBØÒØ”+Ò´ÈB5Œ¢¨’Cî 3ô08®²ÖìD5˜ðò1¢ÜÚ–´ôÆÂÊà è/ÊØŽÆ5Â0àA7ÆÜžBŒÈ¦òà°Î6/22Ì1+Ü´ª´òª9ôÂ3Ö¬¨àCìŠäÞÔŽò5¤à ’´âî2àæAC¤ÞìÞ6¤ÈîÔDÐ°êÆä¢ŠžÄ°æ¤ØÎ´°Î²1´ÖŒô šÞêæê1šŠðìîCŒäØ ÞŒÜò+èò8Ž¨îÞØ4ä/99¦Æ0ê¦Âêê1¤Ò/¦’8ðæèÞÔ®´2–ÈÊ˜ÔÊŠ˜Ü´°DŒÖŠô3ÖÌŠÈÆÚ1œ45Œ¤B’æŠ3¬/5ê¨0Öâ2ÜÜ1CCæž/¢ä”æàÎÂ¦0Ò”5è0˜2à6Âè/CšœŽ8 °7ž4AÆÒÜÔ’””Ž7Žê–9Ð²’Æ 1ÐŽŠÄ¬¨¤àŒœ¬Ú3ô¬²Ê”îŒ¤Š–DàÚÊæªÜŠC¢4D+BÞÂ1¦ò8¨žè˜Ð®ÖêÊØ5Ä˜êÒ1B8¢ò°B8È9îBŠªÊÔ îÐäà+Ž9Ú¨â02ÄÌÊà¤9C–Ž¬/¨¬ìÊÖÐ”5ŽÚÈØ3îâìŠÄÔÌÜ5š6 ÄÐ´¤CBÄÞ¢´ÐšÆ ª´4 Šà¢ÒàBÔ15Æ7ÎÂÆô´ÐÖè Êžì/ÊD9”æô57äÂÂž9Ð54¢Î/¬Ü°0¨Ž¢73Š8ŠØ/78ÖÐ9¨ØÄÎDªÔCî ô2/¢Ð3+BÆè4ÆÌæÜôAÈðÎŽ’ÚŒ3î 2Öª0ÜÚ”êÈ®ôªÚðØA¦êâ7ž9òŠ°7––7AÚîâC+°¬ôàØª”œ+–Ž˜Öèªâðè®9ÎŠ4¬šœÒ˜A4Ž+ŽÌ55¦Ô6ÈžÞC´3ÂÄ¬3Úž8ÄŠ0¦Ø¦š9/8æèšª–ä522+ÄÞ4ÈÄB3¤Ž ¨¦ÌÌðŒ1ôÌ¢¤æŽÞB63œCÔÄÐè4Ð4ÜÞŒ’œªÈ ØîÐÆ¦¢16¤°˜ÒB¬´´/îà9ÔA¤B¬°ÖÜ 3Ô²¦´æ2Cœäœ°š6ì¬â–èšAîÆîŽè°ÎàîÐŽžòÖîCžòè¢Ê¢²ÆŠŒAàÌ9Ê6šÌ7Ò–¤Òàœ3®äÜÜÌÊ8ì¦Â3Ø´®˜A”¬60èÊØ–ôäØ êÊØÆ5ÖAšæCÊD+ÜC¦ÔDÆž¦0””àšŽÎ’ÔŽœò8¦ðœ/Ê3Þ¦4/8B¦B”4 AìDàAÒô5òÞâ¨Ü51ªCØê0¬4äâ¢63èôªÒ¤œ˜C8+ŽA°5/ª3èäž+96Ì93ð®Ô¦ŒŽž´Ì6ôäÔ¢žÖÈÈàAô¬¨9˜œ¨ÎÒÞ+AªÚ1ŒÔÆ°–Ø+òæŠBŠæ˜²È–ôà8ÌîôŒ+²”Æà˜°¢CÖÖØ0+ä”ðîÎ¬Îê´šÒÌÆ1C8575Ì–/¦1¦œÊèÆìAâð5È¢¦°¨°1Ö+œìBî5D˜ô/4Âò²¬î˜²êðŽÖª®4+¦D6¤1œÆòÔ5àÞ+Žà2Šäæšäêæì4¦0’¬2šÖØ0äžÈ8’”Š0ÔÂØ¨âD¨ šÖâ”Êðì74°ØÂÜ6AÎ°13ÞèìšÌ´C¤äàîØÞŠÞÖÊì9ÈæÚ¢¬Ô 5’¨ì62Ò¨ê+”7œ0+”4Â¢´ÜDæ6Þ+ÖÌê8Èè5Èò°îÌôîÎî5ÚèÊÆ–²Î––ì°8/8¬ÊæŒÎÎä¦4ÂÊÔA²C’ÂŽ”9˜¤Ê˜Ä3âÖ°’Ø2²˜Bà˜¤Ê6C5ÖÎ’ðÈªèŽÖÚŠÎC¤9ô9Æ9–3°œâÚAÚ æ’ôâ¤9¢3BäÆ5Ä7B¢œ¨+žÜ/AÆ5â/ÌÈ¤ÈÒC+’æDÈÆà®ÈÜ7æªCè8ªÚ2ŒC¤°Ö¤²Ü4ÚÌ9Ú–/®ôê5˜5òCšÌ”Êä°ðèÐD¬ÒÖ3+ì¬/’ÒœÚœ+/ªÒÂš¨ÈÜî 2–²ôàÄªD®ŽàÊ”ÚìÐ+¦œ2ŽªŽ0Ô”Æâ /¤ŠÖ˜¦žêÊ3’CÎ5¨Â’ðî¬3î8´è²ªŒŒAÒ–ªæ57î0²D²Bì5¦ä²4²æ3ÜŒ9æA4Cžà¬Î 54ìBÜ/ž9®ò/Ê7®Ð¢ ÎÜ+®¢âBÌ2ÚæŽœAÚ5ô–î° ÊôÖ2´ŒÂÞšÖ/²Ì°4ÌDŠ3+ªò¦Ø¦˜¬œÞà7¨4”Ì²¢4´ª¨ò7²Ü°Ò4Œ6ÚÜ2A9Êœ8è¬ôæ¨Ä¢²î3îèŒ9¤žÎ¬²ØªÒ˜´ÐÞÔ²ØâŠ4ì˜ŠÖ”¬/”ÊÐ’A¢–´à+¬Ú”Œ5È23ð7Ú®7æÂôâÐDÜÚÆò”3ÂØ0CèŠ¢+àÆÞÜA˜È7ä1C7è˜ÖÎÔèò7È˜DÖ¬ÎÂØŒœB+žAÄ3´CŒàÎ6ž7756Èà2/0+”ÒÜ2C°ÞÌ8”–š˜Œæœš0AA°4”°ìšCàÒì°Þ2ÆÂ¢´ÄžèØÈâäC+CÌ8AÖ”ä®ŽäÚžDâ7–ÐDD’ªÒÈÔÞê0B8æ¦”A5¢ê¨Ê¦ ðä®ò9ðôÈ˜ÔA˜””Î¢Ö53æ˜6Š”ÖD2Š’2Èª86œÜìÞÖAÄÊ¨ªÐ´Ö¦Â”ðÒ/ì+®6Š®0èŒ6ÊCæÆŒ¢ô®˜8Ð²²ŒBî´BÚ/’Ô6+Œôð0+ì”Ú²Â+ÆÊÈ2˜8¦ÔÚðÒ08Dòæð909˜Ð/¦3ŠÆB¬Ü®ŒâBÖDš0¢æÌÜ¨ôœÐÒì6ÚÄœ6CÈ¦”5äABâ¤¨Ž9ÊòªæCÂæAŽ1/ØØ¢Ö˜¦¦–8Èä4¨´Ì²Ø¬/ìÌî¢¨ð´â+ÐÌCšÞ0˜+Ä6´92BÆÌCð”3ì¢Îœ+Dæ/¨CŒÊð²D1ÆÊÒÚ81¦0òA5ÜCô´Æ5Þ²Ò˜8/7è/¨ÄäšäØ˜–¦ ”´ÖÄØŒâ6C4Žð0²Ú0ÞâžžBªÖ4””æª/ àðš¦+0Â+173Ì¨8äôâ1îŒŽ´ŠÊ6Ö¢Ö¬Þ²È78Þ2 °Šž’Äæòô¬50®B”îÆÚ¤C¨œ4–Ú6AC¦Cð/”Ê²èð5žÚê8®7Þ94+”ž+¢ž–1¢ô¢1¦Ø”ìä7Êª°®ÒàÊÔäî0ÆÎ26Èê´2ðŠ´´èÐ ²¬ÂªÚ ð  ”Cìî ä²òê¤²3¢îD4–Ò3ÖÂA0Ž3˜¬’¤ÄÜäØ”àì2ÂæÊ¬Ö/Ê¤C¦Bê7Öœ3Ò”B¦Bœ´ªä²ìÊê’ŽÈÈA4ð°Bšô3Þ®ÞÚÔ/ì´°Â+A/Äê+ÆìÈ”Øð´ –Ò+¤ÂÄÒÜŒ82ê/ªÔ4Ê9ŒAÈî26’¨6ÚÎ3îè/Ú’’04ììDâ5È°êÄÈ¢ žª´Š4ì®ìÜÈ’ØÖÌÌ´ÜàªšìäÒæCÖæžì˜3Ä5®ŽäÖœÚª´î7šðÚôÜ/Ì5Î0òî8ð’ÒÎ°ìŠ˜˜”Èì²´0äªDàB–˜œ3ôÔ°æ0ÐÂ–¬ž¨+D¤8Aª0Î1èÔÌªÊŒšä¦²/ACì’Ú¦ŽÈÒAÆÌÒ6¨05œ/¤7šØÖžð2ò²âÞ53¤žìð45Ø/òÂ+Š¨è¦7–4¨˜ –˜–0Ìèêê6ŒÈ–Ä0Æ”æÈâðC0¤žŽÚDîÞ¦–œðŽÖðÆDÂ75¬¨Šž6šŠ–64C/7âD’àÌ´+ìàÈ+ÔŽ/ªè¤ÂŒîÚ²ÎÖÐÈš8ð5 è´8äÈÔ6î¬ò’ADØÈDÈCÞ¨6Žš010A²Œàžâ’¦2Ø0ÚÜÈ3ªÆ¨ÔÖ4ð¦è8ÐàŠ0è²ä6/Œð1C®2Æ¬˜Úè1ìÊ0ÒðÎ/â+–Æ70ðÂBÌªà¤ ªê8âîæ1ô4ž°ŽšæD91Â˜žÌ2ÚÐò²6C2Ê”ŒÎìŽÐšÞœèÆôì–ŒäDØ5+¬²°ÆÞ8ž”Œ1A1Þ¤Î˜+Ðæ˜à¬ðô’Ò¦îŠÆžôÈôªšðä”ÒÐ¤æÐÌ°ð8°æ’¬6–ÆŠÎš4 ì3ŒÎ¤Œð6¬A3´¤7ž¢šAÆÈ²´ê9ðŒ˜Ìð6¢ØðšØèð9Ô°CêÈÌÄB86²â¨œ8œ–8¬’62°Ø4°ìÆŽèÊ18Š®DªŒ2Êš0ÊÈ°°+´Ô7”BÞ¦ÂŽðòœ3–ŒAÊ¦Ô”ž4®Î1ì7˜´¬ð–0Øâ3˜îÊô²°Þ60”2Ä²ØÜêØ°ÜÒØšŒÞ¦BŠèŠ¬òÈÆèÖ/9+CŽÈ6Ø/C²°Êæ1¢AðÜ’Üô6Þ2ŒÖžæžž°òÊ6¦âC®ÆŒ8âž7Ö43¬²5–D6è ¬®ô¦AC°ªÎœØ4¤Æ”˜0äô Þ–¬¦ž¦Â®37ò°/èª8Ö76¦Ò¬0¤Þ® ÆÄ–Öè´¨¢°D°˜5B0ªBâæ°ìÜèê0®–1èB–32ªŽ°Š”Øî5ÜÐšDêŽîÂÜî²ÔÎÖìÆ°97âÒA+ª²œò˜°ÈŒÒÜÈÚ5Ì’ÌæÒŽ¦èðÜ5¤ D¨Â®9Ì’Ðž+CŽ²76´Ð¦Ö¦/1š¢Cî/â0BÔ´8äî ¦òŒœ°”06š¨13ÊÖ¨èìÌžÖ20°Ø11žªªÌ ¨ðÚž4¬Bê¨0èØ0¢˜ØØÖ”+Êè3¦òž3ô¢¢Œ²ìÜòâÂðÞÈŠæîòò1ÐžØž1–Ì¤ò¨’¢¨2¦7ò5ä7Šªæ82ª ìªìªÎÂ”ÒÐÈì8àÖÆ91êÔÞÎ˜8¬ Ö6ÒÖÈCîäœ4òÚÒ°¬šÒò8ŠÆC´+0ÆCôêÂ4ÞAÊª ê2ìÆ0î¦ÌêäÔæªè°˜7333æÔ–7Ž´¬ÌìC¢¬¢Â°ŠÖ2ô’Ð1–Ò7Úð3ÄÐÄCœ1®–7D0Æè0¨´3ô5’ŒâÚB®Ø¬Ð¤–¬Ø2Š¨ª®¢ÆÚ´¢Ì´–”Ð˜˜AÂ²99719˜Ü0Ä®2î3ª3â7Š2Ø°Ì3àÆ¬ìàÌ0˜è4Ô¨¨Ô0èê°¦´î8à 7œ1ÐŠB9®¬ÐôÂžB¦ð–àÂ8Ü7œ˜äô58ÆÄÜÆ Ð¢¦¢îÜêª69Ø²®ŒŒ8DÔÖÜÐ¬ª8òæÄ°òÜ–AÖäœîìâÐŠÄÔ2Bž8CÐÆÂÐè¢–Â´¢ÜØØ–ÌDÆÒBŠà’Î0¦²Žžœèî+ô˜AÂ’4¤ÞÊBÒ¦8Ðªœ5ž2Aî’CB¤ÈÔ´0¦ªœÐ˜¬Ž2Ä¢CôìêÆÈÂ¤ÐžÌšâ˜Öâò1ðÜœ3ÊÐ85¢ÔÌèž”Œ®5ÞòœžôÜ7èÎØžàÎ¬3ÆØòª´5¬è¢2äB7Æ8ÔÒ”¢ÞŒ°63ŠÎØ24Ð°šÆ°Îš˜ÚÐîä´ÔÆÈÒ®îô’ÄÎŒÂðÒÎŽ8¨+°œ6ðÎØîšAðC¤ŠÜ–ŒÎ4ØÂœèÚA²–C8¤¨/¢9¦Ö30žèœ˜ÎÖÐ0 ðì®®D2˜îÚ”Î5²¬Äœ’ŠÈÂ4–63Â¢š® îÒ–Ž8Ü+Úî3ôB+¢ŒBœÈ4œ¢Ò¬2ôÄÂ0¢/”B¦ððÆòÞ32Ž êÊê´ôÖÔ8š2®DÆ+ŽÂàÄàCÈ¤CÔ¦Ð/êÌ’ª¢Š/êÔšB¦²”ê4+”Œ¦ÈÈÐÒ®ÒÚœèÒÞô/²è9CèÔ0šAÌÒŠÂÜ55èòòÂÚ¨2²Üòª¦0+ CD0Ä¢æ¦7¬Ð¤6/˜ÆŠêÌÄDÒ5¬7ÄÐÄ¤0/B2¦Â3¨ä²Ì9¨èÎŠ+05ŠÚŽî+ØÌ+CÆ6œÆÚ+ÄC00žÊ4C®’+òA¤0œ/Ô4æ´œÞ19¦²Îª ’3ÄŽ´Î¢ÂŒÐª¤ÖÂ3’æâ6ìÞ¬ABÔàŠÐÆÈ°6ŠÆŽØ”Ò¢+î¤ŽäÆÜ”œèè’0/œ¤œŒBâÜB¤ÞA¬Dª0ØÖÒ”ªâØì+Ì6°ÐÂè2Cî+”Œ¬¬DêÚÞ9îÚ28Ž²ò3–Ê”²+7ÌŽ+Œ7Ú5ä13È®Ôž4¦œ1A’5ª5¬ÂÆ®ŒÈäêÒ6¨4¤”–šÂÒD˜¢äÎÚŒ7ÒÄÐœÞ¨è/ 3¦¤¢/9ÄØÌ9æÐ¤3–ÂÂ9–ÎD°B”æÐ”ÖªæžÆÜAÆœD°Ð6²ÂÞÜ¤C2ÈÂ+2¢/ŠæÈ¬”48”Ö0è 3Ìòª DÞ2ŽÂäè¤¤2ŒŒèªª8C2îÒ5ª9DDÚîAŒAÔšŒèŽ1Ò0–”ÊÌ9ðÈ˜œ0¢Ž 59è1à2+ÖÊôð´/ôŠB/â²Ê+ ÞœðªÈ5òŒôæÌŠŒ”î0È28¤ð4¦°C”Ô8îÞ´¤ØôðêæÄ1ê®àÌî8Úâ5+èâìŠ1ž Ôä°˜ÈÐ/1Œ813îB2– œðÄæÆÄ´ìŠŽô/¦7²ô6ÚäÆê”´/3žà59æ/¨¤ÖØÐÚîªÆAD´Ö0¨16¨D°Î2CÞêDÖÆ–ÚŠDòÊ®š940îAÂ–®BÆ21òâŽÜ òà5ÜÆ8–Žð1šà9Ü¤”ÎÂB5Ì/ÞA²œÄÜ6/ +Ê/––ÊÒ4A˜âšâÔÎC¬²ÈÜä4+9CAÆŒ3’ð²ÐªÞ/2òÜèžž7â30Ž0//Ô¢7+5î+®¢à18ÞA17/3ÆÜÞÈ9’˜90ÂÔ9 Â–à80Î’šBä¦Îè˜4ÖÆ3äô7Ú8²Ø2èà²7šØœÌ”0Œä 0D3èàòÆÞÌ4òB85–êž–ìDÒä2®–4´ÜAàÔª0àÈÞÞœš¬B4ð0â˜²ž8A²BŠ6âêÐ6A¦Æ0Œ¨àÔ¬ôAÞä5Â05–Ð5ÆÐê¤îÔ2ÎC’6ØàæàBÆÆÚÒCÄä®šØÈì¢ä0žòôìŠª¢âØ+¬à¤è79´DÞÔ¨Cš²ÞŠÔì9ªÚ®æDD˜DÖôâžÚŽÈ0’ÞŠCBò7Ö3Îæ”5–Øš5ààšŒ¦¦¦86žÄ04Ü’ô¬Ì9œD+à+ÚžÐ˜–ÄØ50Ú²––8àØ˜¤/ÌæÄÌª–ž®9 66ŽÌ/²Žž+’¤ÖÌA˜’²Ø9Œ3ò®æ0ÄÚÄ¦´18°/¬î°1Š¤ÎìðÄ6òÐÒÌ398–8ÚìŠ4èÆÎì¤è¬Ž®îÊ0 89¢èÌ4+ªêÐÐ®´8ìâÔŠ´Ö43ÔÈ9 9äàÄ°+Ú¢ÆBì1è¤’0šÒŠ²ÖÊè4Ü˜¢îª°Žð²Œ²6ADÒ3œª¨Ì¤ä°ðž5Ú8Î57îêšàC1Ð5¨1èÆšDD’Ä6+8Ô°àÐðèìŒäà4ÞŽ+’5ð2 –8¦ÖDðª0âÒ/òÄî–¬79´È˜DîÄšØ9ªä/04˜9èÜÌ°ô’ÂDØÊÒžÊ/¨AšB˜Ð+ÊÄ/ò009ê¦®ªÞÜ/Žô –Š6ž¨¬âÚÂÚäò°ÖA5ÚÖîòôðêŠêž+è¢¤–/î”Šä4BÞâ1AÌ¤5âÖ˜Þ4¢ÌÊ0Ôà0ŒÖ57B° ˜¤0¬ððŠÚ®Ä ê¢îšÄªÖ+’šàÆ67¤î²¨4”Ú””¦°’7²¢ ðÜàA/ â˜ŒšÒ˜˜Êä0°¤è¨2ôì625¨ŒÔ+È5/’ŽŽ5ÊšŠÐ°Ì®àäèì¬ÆêðôÒ¬ªÖŠìØÞÎÈÂ’280°”8¦–¬Ô ´Ò ¤èªDè¢ÄÊÞàòæðä4²êîÒÌ–¢âØæ7è¬3Î¤ÊØ¤ôDÜ”êž4/ªØ0šèî2 âè79Ò83â¢Þ˜Â”ŽD09DC°¢7¤¨86ÔØî 2Ú C–ACÔ0ª¬ªÂÄÒ4Æš4¨2Â¢DØªAÔÚšA4ÎAÐ88ð D¤èœ2°òC++Ê8–6–5äØÌ¨ÈôB’6âäDÒè˜¤ÌÔ¬9Džœ–¤5ÈòDôôªÖªÄCŒ´82š8Ø®Æ7¨ê2æšž7Ê6–1B0æª Òè¨Þ1æAÆ0˜ÚCÐÆCª54´+îÒâ®ª0®ðC¦´®BØCÜCâÔ6äÊ˜5îB¨ÌDîÞÎ¨êŒ’Â1¦šD˜”ÔœÞ9¦6œDìîDÂâÖ´5˜à0ŽÔAŒŽ°4°Îô1ÊCŽC2¢¨Ž°ìÂ4ìÜªÄ– 1ðêÄ0Š¢Äê˜¬¦ŽCÜ1žê°äŠ˜Ò¬˜”š+æ60Ðð¤Þ´5Žî²šÖ’Â¨C°6 Ú®AŠ®Ž6îš4¢èžØ0¨èàÔ”9 œ2D°”8æCÆ²B1Ô 3˜Æœ0´+´Þ´–¤²ŽÐBì²2¤Þî 14AŒàÔ”+Ð 4ì¢¢Øž¨¬žCšAàæšÆìÆDÂDœ¬¢êÐžôðÆ3ÆÔ + ÚØ0Âæ1š”Ú2Þîà œžÖ®˜âÂòDŽØ9Ò¨¢¦ÞD3ŒÚÞœðæ2Ø°ð2¢à°Ž¤”ŒšÐÔÎØ’12²+76ŒææžÒ®ÌÖÈ¬æž¤–’òACèØ5Èà140Ø¤2¬¢âÖ¦7´â´ÂÈØ2è²à°Ô®°ÚôŒÄŽ9žÄìä °8¤²¬ôò°ðªæA¨Œä4²¤’2ÚÜòCÔÞî/Œ¬Â97è1Ø î4–Èš/9¦ä5ÖàðÎ’æ8/®Ì7BæôÜÈ58ðð¦+®àÜÆ2è Ì¬8+æ’AòAž+˜ÄBŠÈ¢ê´’ÎBAœ®˜–®5¨–Âä3ÌîŠ6îŠÜ¦¨57CÎ”èÆšÈ8ðÖ¦Ž1ŠÜ1â˜”5Ö¨ªÆä´œ4à®ÞÌ¨ÊÐ® Êè ¬ÐÐ8ØâÆì 5Að4ØŒ8æ˜â¨¨ÔäÚ2Š84®â®Ž–ÂŽ+4ÖÚ Î=ÅÒØœ¦¬¬¢BD¢²Bª¢AB°Œ1¨Bî¤¬CØ¬ªD¬¢œC¬’CªÎ¬¢¬1¤¢;
+<?php
+//decode by http://www.yunlu99.com/
+namespace Admin\Controller;
+use Common\Controller\CommonController;
+
+class BaseController extends CommonController {
+
+    /**
+     * æ‰§è¡Œæ“ä½œçš„ACTIONåç§°
+     * ACTIONåˆå§‹åŒ–æ—¶éœ€è¦è®¾ç½®åŠ¨ä½œåç§°
+     * @var unknown_type
+     */
+    protected $_action_name;
+
+    /**
+     * å’ŒACTIONå…³è”çš„MODELåç§°
+     * ACTIONåˆå§‹åŒ–æ—¶éœ€è¦è®¾ç½®å…³è”çš„æ¨¡åž‹åç§°
+     * @var unknown_type
+     */
+    protected $_model_name;
+
+    /**
+     * MODELæ¨¡åž‹
+     * @var unknown_type
+     */
+    protected $_model;
+
+    /**
+     * åŸºç¡€åˆ†ç±»åç§°
+     * ä¸»è¦ç›®çš„æ˜¯èŽ·å–åˆ†ç±»åˆ—è¡¨ä½¿ç”¨
+     * @var unknown_type
+     */
+    protected $_categroy = array('Article' => '1', 'Goods' => '2', 'Jobs' => '3');
+    /**
+     * æ¡ä»¶æŸ¥è¯¢
+     * @var unknown_type
+     */
+    protected $_where;
+
+    /**
+     * æž„é€ å‡½æ•°
+     * @param unknown_type $classs_name å­ç±»åç§°
+     */
+    function __construct($action_name = null, $model_name = null) {
+        parent::__construct();
+        //ä¸ªåˆ«è·¯ç”±å™¨æ— æ³•ç™»é™†åŽå°
+        error_reporting(E_ALL);
+
+        // uploadifyæ’ä»¶ä¿®å¤sessioné—®é¢˜
+        $session_name = session_name();
+        if (isset($_POST[$session_name])) {
+            session_id($_POST[$session_name]);
+            session_start();
+        }
+
+        //å¦‚æžœå­˜åœ¨å®‰è£…æ–‡ä»¶ï¼Œåˆ é™¤
+        $this->del_install();
+
+        //æ£€æµ‹ç”¨æˆ·æ˜¯å¦ç™»å½•
+        $this->check_user();
+        $this->assign('username', $_SESSION['username']);
+        $this->assign('empty', '<tr><td  align="center" colspan="10">æœ¬æ ç›®æš‚æ—¶æ²¡æœ‰æ•°æ®</td></tr>');
+
+        //åˆå§‹åŒ–
+        if ($action_name == null) die('Forbidden'); else {
+            $this->_action_name = $action_name;
+            $this->_model_name = $model_name;
+            $this->_model = D($this->_model_name);
+            $this->assign('action', $this->_action_name);
+            //è¯»å–æ ç›®å¼€å…³
+            $this->assign('switch_order', $this->config('switch_order'));
+            $this->assign('switch_message', $this->config('switch_message'));
+            $this->assign('switch_jobs', $this->config('switch_jobs'));
+        }
+    }
+
+    /**
+     * åŠ¨æ€è®¾ç½®æŽ§åˆ¶å™¨
+     * @param unknown_type $actionName
+     */
+    function setController($actionName) {
+        $this->_action_name = $actionName;
+    }
+
+    /**
+     * è®¾ç½®å…³è”æ¨¡åž‹
+     * @param unknown_type $modelnName
+     */
+    function setModel($modelnName) {
+        $this->_model_name = $modelnName;
+        $this->_model = D($this->_model_name);
+    }
+
+    /**
+     * é»˜è®¤åˆ—è¡¨é¡µé¢
+     */
+    function index($template = null, $cate = 0) {
+        $v = $_GET['v'];
+        if ($v != null) {
+            $where = 'pc_m = ' . $v;
+            $this->_where = $where;
+        }
+        import('ORG.Util.Page');
+        $count = $this->_model->where($this->_where)->count();// æŸ¥è¯¢æ»¡è¶³è¦æ±‚çš„æ€»è®°å½•æ•°
+        $Page = new \Page($count);// å®žä¾‹åŒ–åˆ†é¡µç±» ä¼ å…¥æ€»è®°å½•æ•°å’Œæ¯é¡µæ˜¾ç¤ºçš„è®°å½•æ•°
+        $Page->setConfig('theme', '<span>%totalRow% %header% %nowPage%/%totalPage% é¡µ</span>  %first%  %upPage% %linkPage%  %downPage% %end% %select%');// = array('header'=>'æ¡è®°å½•','prev'=>'ä¸Šä¸€é¡µ','next'=>'ä¸‹ä¸€é¡µ','first'=>'ç¬¬ä¸€é¡µ','last'=>'æœ€åŽä¸€é¡µ','theme'=>' %totalRow% %header% %nowPage%/%totalPage% é¡µ %upPage% %downPage% %first%  %prePage%    %nextPage% %end%');
+        $show = $Page->show();// åˆ†é¡µæ˜¾ç¤ºè¾“å‡º
+
+        $list = $this->_model->where($this->_where)->limit($Page->firstRow . ',' . $Page->listRows)->order('`order` desc,id desc')->select();
+
+        $this->assign('list', $list);// èµ‹å€¼æ•°æ®é›†
+        $this->assign('page', $show);// èµ‹å€¼åˆ†é¡µè¾“å‡º
+        if ($template == null) {
+            $this->display();
+        } else {
+            $this->display($template);
+        }
+    }
+
+    /**
+     * åŸºç¡€æ·»åŠ æ–¹æ³•
+     */
+    function add($template = null) {
+        $l_id = $this->_get('l_id');
+        if ($_POST) {
+            if ($this->_action_name == 'Article' || $this->_action_name == 'Goods') {
+                if (($this->_action_name == 'Article') && ($_POST['pid'] == 5 || $_POST['pid'] == 6)) {
+                    if ($_FILES['img']['size'] != 0) {
+                        $img_name = $this->UploadFile();
+                        $_POST['img'] = $img_name[0];
+                    }
+                } else {
+                    if ($_FILES['img1']['size'] != 0 or $_FILES['img2']['size'] != 0 or $_FILES['img3']['size'] != 0 or $_FILES['img4']['size'] != 0 or $_FILES['img5']['size'] != 0 or $_FILES['img6']['size'] != 0) {
+                        $img_name_arr = array();
+                        for ($i = 1; $i < 7; $i++) {
+                            if ($_FILES['img' . $i] != null) {
+                                if ($_FILES['img' . $i]['size'] != 0) {
+                                    $img_name_n = $this->UploadFile($_FILES['img' . $i]);
+
+                                    $img_name_arr[] = $img_name_n[0]['savename'];
+                                }
+                            }
+                        }
+
+                        for ($i = 1; $i < 7; $i++) {
+                            if ($img_name_arr[$i - 1] != null) {
+                                $_POST['img' . $i] = $img_name_arr[$i - 1];
+                            } else {
+                                $_POST['img' . $i] = '';
+                            }
+                        }
+
+                        $_POST['img'] = $_POST['img1'];
+                    }
+                }
+            } else {
+                if ($_FILES['img']['size'] != 0) {
+                    $img_name = $this->UploadFile();
+                    $_POST['img'] = $img_name[0];
+                }
+            }
+            if(in_array($this->_action_name, array('Goods'))){
+                $cateid = $_POST['cate'];
+                cookie('last_cate_id', $cateid,3600);
+                $_POST['catid'] = $cateid;
+                unset($_POST['cate']);
+                unset($_POST['cate1']);
+                unset($_POST['cate2']);
+
+            }
+            if ($this->_model->create()) {
+                if ($_POST['batch'] == '1') {
+
+                    foreach ($_POST['content'] as $value) {
+                        $id = $this->_model->add($value);
+                    }
+                } else {
+                    $id = $this->_model->add($_POST);
+                }
+                if ($id) {
+                    //æ–°é—»äº§å“æ·»åŠ è®°å½•åŽä¿ç•™ç±»åˆ«
+                    if ($this->_action_name == 'Article' and $l_id == 6) {
+                        $url = __GROUP__ . '/' . $this->_action_name . '/add/l_id/' . $l_id;
+                    } else {
+                        if ($this->_action_name == 'Goods' or $this->_action_name == 'Article') {
+                            $w['id'] = $id;
+                            $classid = $this->_model->where($w)->getField('pid');
+                            $url = __GROUP__ . '/' . $this->_action_name . '/add/classid/' . $classid;
+                        } else {
+                            $url = __GROUP__ . '/' . $this->_action_name . '/Index';
+                        }
+                    }
+                    if ($this->_action_name == 'Flash') {
+                        if ($_POST['pc_m'] == 1) {
+                            $url = __GROUP__ . '/' . $this->_action_name . '/m';
+                        } else {
+                            $url = __GROUP__ . '/' . $this->_action_name . '/pc';
+                        }
+                    }
+                    //æ‰¹é‡æ·»åŠ 
+                    if ($_POST['batch'] == '1') {
+                        $url = __GROUP__ . '/' . $this->_action_name . '/batch/classid/' . $classid;
+                    }
+                    $this->success('æ·»åŠ æˆåŠŸ', $url, C('JUMP_TIME'));
+                } else {
+                    var_dump($_POST);
+                    // $this->error('æ·»åŠ å¤±è´¥');
+                }
+            } else {
+                $this->error($this->_model->getError());
+            }
+            exit;
+        }
+        $v = $this->_get('v');
+        $classid = $this->_get('classid');
+        $search = array('value' => 'title');
+        $this->assign('search', $search);
+
+        if ($this->_action_name == 'Article') {
+            $this->select_category_1();
+        } else if (in_array($this->_action_name, array('Goods'))) {
+            //è¡Œä¸šç±»åˆ«
+            $last_cate_id =cookie('last_cate_id');
+            if (empty($last_cate_id)) {
+                $last_cate_id = 0;
+            }
+            $data_row['cate'] = $last_cate_id;
+            $industry = getCatelist();
+            foreach ($industry as $k => $v) {
+                if($v['pid'] == 0){
+                    $cate1_list[$k] = $v;
+                }
+            }
+            $cate = $data_row['cate'];
+            if ($cate > 0) {
+                $cate2_info = $industry[$industry[$cate]['pid']];
+                $cate1_info = $industry[$cate2_info['pid']];
+                $cate2_list = $this->getCateListbyParm($cate2_info['pid']); ;
+                $cate_list = $this->getCateListbyParm($industry[$cate]['pid']);
+            } else {
+                $cate_list = $cate2_list = array();
+            }
+            $data_row['cate1'] = $cate1_info['id'];
+            $data_row['cate2'] = $cate2_info['id'];
+            $this->assign('cate1_list',$cate1_list);
+            $this->assign('cate2_list', $cate2_list);
+            $this->assign('cate', $cate_list);
+            $this->assign('data_row',$data_row);
+            $this->select_category();
+        }
+        $this->assign('v', $v);
+        $this->assign('title_type', 'æ–°å¢ž');
+        if (is_null($info)) {
+            $info['open'] = 1;
+            $info['order'] = 99;//é»˜è®¤æŽ’åº99
+            $info['time'] = date('Y-m-d H:i:s', time());
+            $this->assign('info', $info);
+        }
+        if ($template == null) {
+            $this->assign('classid', $classid);
+            if ($l_id == 6) {
+                $this->assign('l_id', $l_id);
+                $this->display('edit_links');
+                exit;
+            }
+            $this->display('edit');
+        } else {
+            $this->display($template);
+        }
+    }
+
+
+    /**
+     * åŸºç¡€ç¼–è¾‘æ–¹æ³•
+     */
+    function edit($template = null) {
+        $p = $this->_get('p');
+        $l_id = $_GET['l_id'];
+        if ($_POST) {
+            $check_type = $_SESSION['check_type'];
+            unset($_SESSION['check_type']);
+            if ($this->_action_name == 'Article' || $this->_action_name == 'Goods') {
+                if (($this->_action_name == 'Article') && ($_POST['pid'] == 5 || $_POST['pid'] == 6)) {
+                    if ($_FILES['img']['size'] != 0) {
+                        if ($_POST['img'] != null) {
+                            $this->del_image($_POST['img']);
+                        }
+
+                        $img_name = $this->UploadFile();
+                        $_POST['img'] = $img_name[0];
+                    }
+                } else {
+                    if ($_FILES['img1']['size'] != 0 or $_FILES['img2']['size'] != 0 or $_FILES['img3']['size'] != 0 or $_FILES['img4']['size'] != 0 or $_FILES['img5']['size'] != 0 or $_FILES['img6']['size'] != 0) {
+                        $img_name_arr = array();
+
+                        for ($i = 1; $i < 7; $i++) {
+                            if ($_FILES['img' . $i] != null) {
+                                if ($_FILES['img' . $i]['size'] != 0) {
+                                    if ($_POST['img' . $i] != null) {
+                                        $this->del_image($_POST['img' . $i]);
+                                    }
+                                    $img_name_n = $this->UploadFile($_FILES['img' . $i]);
+                                    $img_name_arr[] = $img_name_n[0]['savename'];
+                                } else {
+                                    if ($_POST['img' . $i] != null) {
+                                        $img_name_arr[] = $_POST['img' . $i];
+                                    }
+                                }
+                            }
+                        }
+
+                        for ($i = 1; $i < 7; $i++) {
+                            if ($img_name_arr[$i - 1] != null) {
+                                $_POST['img' . $i] = $img_name_arr[$i - 1];
+                            } else {
+                                $_POST['img' . $i] = '';
+                            }
+                        }
+
+                        $_POST['img'] = $_POST['img1'];
+                    }
+                }
+            } else {
+                if ($_FILES['img']['size'] != 0) {
+                    if ($_POST['img'] != null) {
+                        $this->del_image($_POST['img']);
+                    }
+                    $img_name = $this->UploadFile();
+                    $_POST['img'] = $img_name[0];
+                }
+            }
+            if(in_array($this->_action_name, array('Goods'))){
+                $cateid = $_POST['cate'];
+                cookie('last_cate_id', $cateid,3600);
+                $_POST['catid'] = $cateid;
+                unset($_POST['cate']);
+                unset($_POST['cate1']);
+                unset($_POST['cate2']);
+            }
+            if ($this->_model->create()) {
+
+                $id = $this->_model->save($_POST);
+                if ($id) {
+                    if ($l_id == 6 and $p == null) {
+                        $url = __GROUP__ . '/' . $this->_action_name . '/links';
+                    } elseif ($_POST['pc_m'] != null) {
+                        if ($_POST['pc_m'] == 1) {
+                            $url = __GROUP__ . '/' . $this->_action_name . '/m';
+                        } else {
+                            $url = __GROUP__ . '/' . $this->_action_name . '/pc';
+                        }
+                    } else {
+                        if ($check_type != null) {
+                            $url = __GROUP__ . '/' . $this->_action_name . '/Index/type/' . $check_type;
+                        } else {
+                            $newp = $this->_post('p');
+                            $url = __GROUP__ . '/' . $this->_action_name . '/Index/p/' . $newp;
+                        }
+                    }
+
+                    if ($this->_action_name == 'Goods') {
+                        $message = array('msg' => 'æ›´æ–°æˆåŠŸ', 'status' => 'true', 'back_list_url' => $url, 'msg_name' => 'back_edit_msg', 'back_edit_msg' => 'è¿”å›žç¼–è¾‘', 'url_name' => 'back_edit_url', 'back_edit_url' => __GROUP__ . '/' . $this->_action_name . '/edit/id/' . $_POST['id'] . '/p/' . $p);
+                    } else {
+                        $message = 'æ›´æ–°æˆåŠŸ';
+                    }
+                    $this->success($message, $url);
+                } else {
+                    $this->error('æ•°æ®æ²¡æœ‰ä¿å­˜æˆ–æ²¡æœ‰ä¿®æ”¹');
+                }
+            } else {
+                $this->error($this->_model->getError());
+            }
+            exit;
+        }
+        if ($this->_action_name == 'Article') {
+            $this->select_category_1();
+        } else if (in_array($this->_action_name, array('Goods'))) {
+            $this->select_category();
+        }
+
+        $search = array('value' => 'title');
+        $this->assign('search', $search);
+        $this->assign('title_type', 'ä¿®æ”¹');
+
+        $info = D($this->_model_name)->find($_REQUEST['id']);
+        if(in_array($this->_action_name, array('Goods'))){
+            //æ›´æ–°æ—¶é—´
+            $info['time'] = date('Y-m-d H:i:s', time());
+            //è¡Œä¸šç±»åˆ«
+            if(empty($info['catid'])){
+                $info['catid'] = 0;
+            }
+            $industry = getCatelist();
+            foreach ($industry as $k => $v) {
+                if($v['pid'] == 0){
+                    $cate1_list[$k] = $v;
+                }
+            }
+            $cate = $info['catid'];
+            $data_row['cate'] = $cate;
+            if ($cate > 0) {
+                $cate2_info = $industry[$industry[$cate]['pid']];
+                $cate1_info = $industry[$cate2_info['pid']];
+                $cate2_list = $this->getCateListbyParm($cate2_info['pid']);
+                $cate_list = $this->getCateListbyParm($industry[$cate]['pid']);
+            } else {
+                $cate_list = $cate2_list = array();
+            }
+            $data_row['cate1'] = $cate1_info['id'];
+            $data_row['cate2'] = $cate2_info['id'];
+            $this->assign('cate1_list',$cate1_list);
+            $this->assign('cate2_list', $cate2_list);
+            $this->assign('cate', $cate_list);
+            $this->assign('data_row',$data_row);
+        }
+        $img_arr = array();
+        for ($i = 1; $i < 7; $i++) {
+            if ($info['img' . $i] != null) {
+                $img_arr[] = $info['img' . $i];
+            }
+        }
+
+        if (count($img_arr) == 0) {
+            $img_arr = null;
+        }
+
+        // æ•°æ®åº“ä¸­è®°å½•çš„åŸŸå
+        $config_domain = M("config")
+            ->where(array(
+                'key' => array('eq', 'web_url'),
+            ))
+            ->find()["value"];
+        $this->assign('domain',$config_domain);
+
+        $this->assign('img_arr', $img_arr);
+        $this->assign('info', $info);
+        $this->assign('p', $p);
+        if ($template == null) {
+            if ($l_id == 6) {
+                $this->assign('l_id', $l_id);
+                $this->display('edit_links');
+                exit;
+            }
+            $this->display();
+        } else {
+            $this->display($template);
+        }
+    }
+
+    /**
+     * åŸºæœ¬èŽ·å–ä¿¡æ¯æ–¹æ³•
+     * @param unknown_type $template
+     */
+    function info($template = null) {
+        $info = $this->_model->find($_REQUEST['id']);
+        $this->select_category();
+        $this->assign('info', $info);
+        if ($template == null) {
+            $this->display();
+        } else {
+            $this->display($template);
+        }
+    }
+
+    /**
+     * æ‰¹é‡æ·»åŠ 
+     * @return [type] [description]
+     */
+    public function batch() {
+        if ($_FILES['img']['name'] != '') {
+            $up_name = $_FILES['img']['name'];
+            $up_name_ext = pathinfo($up_name, PATHINFO_EXTENSION);
+            $up_name = str_replace('.' . $up_name_ext, '', $up_name); //åŽ»æŽ‰åŽç¼€
+
+            $save_arr = $this->UploadFile();
+            $save_name = $save_arr[0];
+
+            $pid = $this->_post('pid');
+            $titleBy = $this->_post('titleby');
+            $title = $titleBy == 0 ? $this->_post('title') : $up_name;
+            $data = array(
+                'pid' => $pid, 'title' => $title, 'img' => $save_name, 'img1' => $save_name
+            );
+            if($this->_action_name == 'Goods'){
+                //äº§å“æ¨¡å—åŠ å…¥è¡Œä¸šåˆ†ç±»
+                $cateid = $this->_post('cate','',0);
+                cookie('last_cate_id',$cateid,3600);
+                $data = array(
+                        'pid' => $pid, 'title' => $title, 'img' => $save_name, 'img1' => $save_name,'catid'=>$cateid
+                );
+            }
+            if (!$this->_model->add($data)) {
+                $this->del_image($save_name);
+            }
+        } else {
+            $last_cate_id = cookie('last_cate_id');
+            if (empty($last_cate_id)) {
+                $last_cate_id = 0;
+            }
+            $data_row['cate'] = $last_cate_id;
+            $industry = getCatelist();
+            foreach ($industry as $k => $v) {
+                if($v['pid'] == 0){
+                    $cate1_list[$k] = $v;
+                }
+            }
+            $cate = $data_row['cate'];
+            if ($cate > 0) {
+                $cate2_info = $industry[$industry[$cate]['pid']];
+                $cate1_info = $industry[$cate2_info['pid']];
+                $cate2_list = $this->getCateListbyParm($cate2_info['pid']); ;
+                $cate_list = $this->getCateListbyParm($industry[$cate]['pid']);
+            } else {
+                $cate_list = $cate2_list = array();
+            }
+            $data_row['cate1'] = $cate1_info['id'];
+            $data_row['cate2'] = $cate2_info['id'];
+            $this->assign('cate1_list',$cate1_list);
+            $this->assign('cate2_list', $cate2_list);
+            $this->assign('cate', $cate_list);
+            $this->assign('data_row',$data_row);
+            $this->select_category_1();
+            $this->display();
+        }
+    }
+
+    /**
+     * æ‰¹é‡ç§»åŠ¨
+     * @return [type] [description]
+     */
+    public function move() {
+        $totype = (int)$_POST['totype'];
+        //åˆ¤æ–­æ˜¯å¦é€‰æ‹©ç›®æ ‡æ ç›®
+        if ($totype <= 0) {
+            $this->error('è¯·é€‰æ‹©ç§»åŠ¨æ ç›®');
+        }
+        $data['pid'] = $totype;
+        $ids = ltrim($_POST['ids'], ',');
+        $where = 'id in (' . $ids . ')';
+        $res = $this->_model->where($where)->save($data);
+        // ç§»åŠ¨å¤±è´¥
+        if ($res === false) {
+            $this->error('ç§»åŠ¨å¤±è´¥');
+        }
+        // ç§»åŠ¨æˆåŠŸ
+        $this->success('ç§»åŠ¨æˆåŠŸ');
+
+    }
+
+    /**
+     * åŸºç¡€è¯¦ç»†æ–¹æ³•
+     */
+    function more($template = null) {
+        $info = D($this->_model_name)->find($_REQUEST['id']);
+        $this->assign('info', $info);
+        if ($template == null) {
+            $this->display();
+        } else {
+            $this->display($template);
+        }
+    }
+
+    /**
+     * å¸¦åˆ†ç±»çš„åˆ—è¡¨é¡µé¢
+     */
+    function index_cate($template = null) {
+        import('ORG.Util.Page');
+
+        if ($this->_action_name == 'Article') {
+            $where = "`pid` != 0 and `pid` != 6";
+            $this->setWhere($where);
+            $count = $this->_model->where($this->_where)->count();// æŸ¥è¯¢æ»¡è¶³è¦æ±‚çš„æ€»è®°å½•æ•°
+        } else {
+            $count = $this->_model->where($this->_where)->count();// æŸ¥è¯¢æ»¡è¶³è¦æ±‚çš„æ€»è®°å½•æ•°
+        }
+
+        $Page = new \Page($count);// å®žä¾‹åŒ–åˆ†é¡µç±» ä¼ å…¥æ€»è®°å½•æ•°å’Œæ¯é¡µæ˜¾ç¤ºçš„è®°å½•æ•°
+        $Page->setConfig('theme', '<span>%totalRow% %header% %nowPage%/%totalPage% é¡µ</span>  %first%  %upPage% %linkPage%  %downPage% %end% %select%');
+        $show = $Page->show();// åˆ†é¡µæ˜¾ç¤ºè¾“å‡º
+        $list = $this->_model->where($this->_where)->limit($Page->firstRow . ',' . $Page->listRows)->order('id desc')->select();
+
+        $result = D('Type')->select();
+
+        foreach ($result as $key => $value) {
+            $category[$value['id']] = $value['name'];
+        }
+
+        foreach ($list as $key => $value) {
+            $list[$key]['cate_name'] = $category[$value['pid']];
+        }
+        if ($this->_action_name == 'Article') {
+            $this->select_category_1();
+        } else {
+            $this->select_category();
+        }
+
+        $search = array('name' => 'code', 'value' => 'title');
+        //print_r($search);
+        $this->assign('search', $search);
+
+        $input_hidden = '<input type="hidden" name="initialization" value="1" id="initialization">';
+        $this->assign('input_hidden', $input_hidden);
+
+        $this->assign('list', $list);// èµ‹å€¼æ•°æ®é›†
+        $this->assign('page', $show);// èµ‹å€¼åˆ†é¡µè¾“å‡º
+        if ($template == null) {
+            $this->display('index');
+        } else {
+            $this->display($template);
+        }
+
+    }
+
+    /**
+     * åŸºç¡€åŽå°æœç´¢
+     */
+    public function search($template = null) {
+
+        foreach ($_REQUEST as $key => $value) {
+            if ($key !== '_URL_') {
+                $value = trim($value);
+                $this->_where[$key] = array('like', '%' . $value . '%');
+            }
+        }
+
+        import('ORG.Util.Page');
+        $count = $this->_model->where($this->_where)->count();// æŸ¥è¯¢æ»¡è¶³è¦æ±‚çš„æ€»è®°å½•æ•°
+        $Page = new \Page($count);// å®žä¾‹åŒ–åˆ†é¡µç±» ä¼ å…¥æ€»è®°å½•æ•°å’Œæ¯é¡µæ˜¾ç¤ºçš„è®°å½•æ•°
+        $show = $Page->show();// åˆ†é¡µæ˜¾ç¤ºè¾“å‡º
+        $list = $this->_model->where($this->_where)->limit($Page->firstRow . ',' . $Page->listRows)->order('`order` desc,id desc')->select();
+
+        $result = D('Type')->select();
+        foreach ($result as $key => $value) {
+            $category[$value['id']] = $value['name'];
+        }
+        foreach ($list as $key => $value) {
+            $list[$key]['cate_name'] = $category[$value['pid']];
+        }
+        $this->select_category();
+        $search = array('name' => 'pid', 'value' => 'title');
+        $this->assign('search', $search);
+        $this->assign('list', $list);// èµ‹å€¼æ•°æ®é›†
+        $this->assign('page', $show);// èµ‹å€¼åˆ†é¡µè¾“å‡º
+        if ($template == null) {
+            $this->display('index');
+        } else {
+            $this->display($template);
+        }
+
+    }
+
+    /**
+     * AjaxèŽ·å–æ•°æ®
+     */
+    public function ajax() {
+        switch ($_REQUEST['t']) {
+            //èŽ·å–ä¸åŒç±»åž‹æ ç›®çš„ajaxæ•°æ®
+            case 'del':
+                $where = array('id' => $_REQUEST['id']);
+                //åˆ é™¤ä¸Šé™¤å›¾ç‰‡
+                //$info = $this->_model->find($_REQUEST['id']);
+                $result = $this->_model->where($where)->select();
+
+                $this->del_images($result);
+
+                $data = $this->_model->where($where)->delete();
+                if ($data) {
+                    $this->success('åˆ é™¤æˆåŠŸ');
+                } else {
+                    $this->error('åˆ é™¤å¤±è´¥');
+                }
+                break;
+            case 'batch_del':
+                $where = array('id' => array('in', $_REQUEST['ids']));
+                $result = $this->_model->where($where)->select();
+
+                //åˆ é™¤ä¸Šé™¤å›¾ç‰‡
+                $this->del_images($result);
+
+                $data = $this->_model->where($where)->delete();
+
+                if ($data) {
+                    $this->success('åˆ é™¤æˆåŠŸ');
+                } else {
+                    $this->error('åˆ é™¤å¤±è´¥');
+                }
+                break;
+            case 'order':
+                $where = array('id' => $_REQUEST['id']);
+                //åˆ é™¤ä¸Šé™¤å›¾ç‰‡
+                $info = $this->_model->find($_REQUEST['id']);
+                $info['order'] = (int)$_REQUEST['value'];
+                $id = $this->_model->save($info);
+                if ($id) {
+                    $this->success('ä¿®æ”¹æˆåŠŸ');
+                } else {
+                    $this->error('ä¿®æ”¹å¤±è´¥');
+                }
+                break;
+        }
+    }
+
+
+    /**
+     * è®¾ç½®æ·»åŠ æŸ¥è¯¢
+     * @param unknown_type $where
+     */
+    protected function setWhere($where) {
+        $this->_where = $where;
+    }
+
+    /**
+     *
+     */
+
+    /**
+     * ä¸Šä¼ å›¾ç‰‡å°è£…
+     * ç›´æŽ¥è°ƒç”¨å°±å¯ä»¥è¿”å›žä¿å­˜çš„å›¾ç‰‡åç§°,å¯ä»¥ä¸Šä¼ å¤šä¸ªå›¾ç‰‡è¿”å›žæ•°ç»„æ ¼å¼
+     * @param unknown_type $file ä¸Šä¼ æ–‡ä»¶å
+     * @param unknown_type $is_watermark æ˜¯å¦å¼€å¯æ°´å°
+     * @param unknown_type $is_thumb æ˜¯å¦å¼€å¯ç¼©çŽ‡å›¾
+     */
+    protected function UploadFile($file = '', $is_watermark = '1', $is_thumb = '1') {
+        import('ORG.Net.UploadFile');
+        $upload = new \UploadFile();// å®žä¾‹åŒ–ä¸Šä¼ ç±»
+        $upload->maxSize = C('UPLOAD_SIZE');// è®¾ç½®é™„ä»¶ä¸Šä¼ å¤§å°
+        $upload->allowExts = C('UPLOAD_TYPE');// è®¾ç½®é™„ä»¶ä¸Šä¼ ç±»åž‹
+        $upload->savePath = C('UPLOAD_DIR');// è®¾ç½®é™„ä»¶ä¸Šä¼ ç›®å½•
+
+        import('ORG.Util.Image');
+        $Image = new \Image();
+
+        $dir = ROOT . '/' . C('UPLOAD_DIR');
+        $dir_thumb = $dir; // åŽŸå›¾åŒç›®å½•ä¸‹
+
+        if ($file == '') {
+            if (!$upload->upload()) {// ä¸Šä¼ é”™è¯¯æç¤ºé”™è¯¯ä¿¡æ¯
+                $this->error($upload->getErrorMsg());
+            } else {// ä¸Šä¼ æˆåŠŸ èŽ·å–ä¸Šä¼ æ–‡ä»¶ä¿¡æ¯
+                $info = $upload->getUploadFileInfo();
+            }
+            //æ°´å°å¼€å…³æ£€æµ‹
+            $switch_watermark = $this->config('switch_watermark');
+            //æ˜¯å¦æœ‰æ°´å°å›¾ç‰‡
+            $web_watermark = $this->config('web_watermark');
+
+            foreach ($info as $key => $value) {
+                $result[] = $value['savename'];
+                //ä¸Šä¼ å›¾ç‰‡æ°´å°å¤„ç†
+                if ($is_watermark && $switch_watermark) {
+                    //å¤„ç†å›¾ç‰‡æ°´å°
+                    //$Image->water($dir.$value['savename'], $dir.$web_watermark);
+                    //è®¾ç½®æ–‡å­—æ°´å°ä½ç½®
+                    $img_info = getimagesize($dir . $value['savename']);
+                    $x = $img_info[0] / 2 - 50;
+                    $y = $img_info[1] / 2 - 10;
+                    //å¤„ç†æ–‡å­—æ°´å°
+                    $Image->showImg($dir . $value['savename'], $web_watermark, $x, $y);
+                }
+                //æ˜¯å¦ç”Ÿæˆç¼©çŽ‡å›¾
+                if ($is_thumb) {
+                    $s = $Image->thumb($dir . $value['savename'], $dir_thumb . 'm_' . $value['savename'], '', 300, 300);
+                }
+            }
+            return $result;
+        } else {
+            $info = $upload->uploadOne($file);
+
+            if (!$info) { // ä¸Šä¼ é”™è¯¯æç¤ºé”™è¯¯ä¿¡æ¯
+                return null;
+            } else { // ä¸Šä¼ æˆåŠŸ èŽ·å–ä¸Šä¼ æ–‡ä»¶ä¿¡æ¯
+                //æ°´å°å¼€å…³æ£€æµ‹
+                $switch_watermark = $this->config('switch_watermark');
+                //æ˜¯å¦æœ‰æ°´å°å›¾ç‰‡
+                $web_watermark = $this->config('web_watermark');
+                if ($is_watermark && $switch_watermark) {
+                    //å¤„ç†å›¾ç‰‡æ°´å°
+                    //$Image->water($dir.$value['savename'], $dir.$web_watermark);
+                    //è®¾ç½®æ–‡å­—æ°´å°ä½ç½®
+                    $img_info = getimagesize($dir . $info[0]['savename']);
+                    $x = $img_info[0] / 2 - 50;
+                    $y = $img_info[1] / 2 - 10;
+                    //å¤„ç†æ–‡å­—æ°´å°
+                    $Image->showImg($dir . $info[0]['savename'], $web_watermark, $x, $y);
+                }
+                //æ˜¯å¦ç”Ÿæˆç¼©çŽ‡å›¾
+                if ($is_thumb) {
+                    $s = $Image->thumb($dir . $info[0]['savename'], $dir_thumb . 'm_' . $info[0]['savename'], '', 300, 300);
+                }
+                return $info;
+            }
+        }
+
+
+    }
+
+    /**
+     * æ£€æµ‹ç®¡ç†å‘˜æ˜¯å¦ç™»å½•
+     */
+    private function check_user() {
+        if ($_SESSION['username'] == '') {
+            //æ²¡æœ‰ç™»å½•ç›´æŽ¥è·³è½¬ç™»å½•é¡µé¢
+            header("Content-type:text/html;charset=utf-8");
+            redirect(__GROUP__ . '/Login');
+            exit;
+        }
+    }
+
+    /**
+     * ç”ŸæˆAPIæ•°æ®æŽ¥å£è°ƒç”¨TOKENçš„æ–¹æ³•
+     */
+    public function makeToken()
+    {
+        // tokenè§„åˆ™
+        // 1.æ•°æ®åº“å–configè¡¨é‡Œçš„web_url ===>>> http://www.Zm.com
+        // 2.web_urlæ›¿æ¢åè®®å¤´ä¸ºç©º,è½¬å°å†™ ===>>> www.zm.com
+        // 3.åŠ ç› ===>>> www.zm.comqzf_Gi7Co0
+        // 4.2æ¬¡MD5
+        $url = $this->config("web_url");
+        if(empty($url)){
+            $url = "http://www.I0DolZ.com";
+        }
+        $url = str_replace(array("http://", "https://"), "", $url);
+        $url = strtolower($url);
+        $salt = 'qzf_Gi7Co0';
+        return (md5(md5($url . $salt)));
+    }
+
+    /**
+     * åˆ é™¤ä¸Šä¼ çš„å›¾ç‰‡
+     * @param unknown_type $img_name
+     */
+    public function del_image($img_name) {
+        import('ORG.Util.File');
+        $imgage_dir_name = C('UPLOAD_DIR') . $img_name;
+        $imgage_dir_name_m = C('UPLOAD_DIR') . "m_" . $img_name;
+        \File::unlinkFile($imgage_dir_name);
+        \File::unlinkFile($imgage_dir_name_m);
+    }
+
+    //åˆ¤æ–­æœ‰å¤šå¼ å›¾ç‰‡æ—¶å€™ï¼Œåˆ é™¤å¤šå¼ å›¾ç‰‡
+    public function del_images($result) {
+        if ($result != null) {
+            foreach ($result as $key => $value) {
+                if ($value['img'] != null && $value['img1'] != null) {
+                    for ($i = 1; $i < 7; $i++) {
+                        if ($value['img' . $i] != null) {
+                            $this->del_image($value['img' . $i]);
+                        }
+                    }
+                }
+                if ($value['img'] != null && ($value['img1'] == null)) {
+                    $this->del_image($value['img']);
+                }
+            }
+        }
+    }
+
+    /**
+     * æ¸…é™¤å®‰è£…åŒ…
+     */
+    private function del_install() {
+        $install_path = APP_PATH . 'Install';
+        if (is_dir($install_path)) {
+            import("ORG.Util.File");
+            $file = new \File();
+            $file->unlinkDir($install_path);
+        }
+    }
+
+    protected function select_category() {
+        $category = D('Type')->select_column(C($this->_action_name), true);
+        $this->assign('category', $category);
+        $selected = M($this->_model_name)->field('pid')->find($_REQUEST['id']);
+        $this->assign('selected', $selected);
+        return $category;
+    }
+
+    protected function select_category_1() {
+        $category = D('Type')->select_column_1(C($this->_action_name), true);
+        $this->assign('category', $category);
+        $selected = M($this->_model_name)->field('pid')->find($_REQUEST['id']);
+        $this->assign('selected', $selected);
+        return $category;
+    }
+
+    protected function select_category_2() {
+        $category = D('Type')->select_column_2(C($this->_action_name), true);
+        $this->assign('category', $category);
+        $selected = M($this->_model_name)->field('pid')->find($_REQUEST['id']);
+        $this->assign('selected', $selected);
+        return $category;
+    }
+
+    // ä»¥ä¸‹ä»£ç  for å¾®ä¿¡äº’è”
+    public function weixin()
+    {
+        $step = $_GET['step'];
+        if ($step == 1) {
+            $wx_code = $this->config('wx_code');
+            if (!$wx_code) {
+                $wx_code = substr(md5(time().rand(100, 999)), 8, 16);
+                $this->config('wx_code', $wx_code);
+            }
+            $this->assign('wx_code',$wx_code);
+        }else{
+            $wx_user = $this->config('wx_user');
+            if ($wx_user) {
+                $user = json_decode($wx_user, true);
+                $this->assign('user',$user);
+            }else{
+                $this->redirect('Message/weixin', 'step=1');
+            }
+        }
+        $this->display();
+    }
+
+    public function qrcode()
+    {
+        $wx_code = $this->config('wx_code');
+        if (!$wx_code) {
+            $wx_code = substr(md5(time().rand(100, 999)), 8, 16);
+            $this->config('wx_code', $wx_code);
+        }
+        $parmas['action'] = 'qrcode';
+        $parmas['code'] = $wx_code;
+        $parmas['from'] = 1;
+        $res =  http_transport('http://mswx.myqingfeng.cn/api.php',$parmas,'GET');
+        header('Content-type: image/jpeg');
+        echo $res;
+        exit();
+    }
+
+    public function wxuser()
+    {
+        $wx_code = $this->config('wx_code');
+        $parmas['action'] = 'user';
+        $parmas['code'] = $wx_code;
+        $parmas['url'] = urlencode('http://'.$_SERVER['HTTP_HOST'].__ROOT__.'/');
+        $parmas['from'] = 1;
+        $ret = http_transport('http://mswx.myqingfeng.cn/api.php',$parmas,'GET');
+        $data = json_decode($ret,true);
+        if ($data['status'] == 1) {
+            $this->config('wx_user', $data['msg']);
+            echo "ok";
+        }else{
+            echo $data['msg'];
+        }
+    }
+
+    public function unlink()
+    {
+        $openid = $_GET['id'];
+        $wx_code = $this->config('wx_code');
+
+        $parmas['action'] = 'unlink';
+        $parmas['userid'] = $openid;
+        $parmas['code'] = $wx_code;
+        $ret = http_transport('http://mswx.myqingfeng.cn/api.php',$parmas,'GET');
+        $data = json_decode($ret,true);
+        if ($data['status'] == 1) {
+            $this->config('wx_user', $data['msg']);
+            $this->success('å–æ¶ˆç»‘å®šæˆåŠŸ', U('message/weixin'));
+        }else{
+            $this->error($data['msg'], U('message/weixin'));
+        }
+        exit();
+    }
+    // ä»¥ä¸Šä»£ç  for å¾®ä¿¡äº’è”
+
+
+    public function getCateListbyParm($pid)
+    {
+        $cate_list_id = $pid ? $pid : 0;
+        $cate = getCatelist();
+        foreach ($cate as $k => $v) {
+            if($v['pid'] == $cate_list_id){
+                $rows[$k] = $v;
+            }
+        }
+        if (empty($rows)) {
+            $rows = array();
+        }
+        return $rows;
+    }
+
+
+}

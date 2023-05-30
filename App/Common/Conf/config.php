@@ -8,7 +8,7 @@ return array(
     'URL_MODEL'                 =>  2,
     'TMPL_PARSE_STRING'         => array(
         '__UPLOAD__' => 'Uploads', // 增加新的上传路径替换规则
-		'__APP_MOBILE__'=>'/m'
+		'__APP_MOBILE__'=>'/m',
     ),
     //默认错误跳转对应的模板文件
     'TMPL_ACTION_ERROR'   => 'Public:jump',

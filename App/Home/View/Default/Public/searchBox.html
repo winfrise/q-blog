@@ -1,0 +1,46 @@
+<div class="search-box">
+    <div class="common-width">
+        <form class="layui-form">
+            <div class="layui-input-group">
+                <input type="text" name="keyword" value="{$keyword}"  lay-affix="clear"  placeholder="请输入想要搜索的关键词" lay-reqtext="请输入关键字" class="layui-input search-input">
+                <div class="layui-input-split layui-input-suffix" style="padding: 0;" lay-submit lay-filter="product-search">
+                    <div class="search-btn"><i class="layui-icon layui-icon-search"></i> 搜索</div>
+                </div>
+            </div>
+        </form>
+        <script>
+        layui.use(function () {
+            var form = layui.form;
+            var layer = layui.layer;
+            var $ = layui.$;
+            // 提交事件
+            form.on('submit(product-search)', function (data) {
+                var field = data.field; // 获取表单字段值
+                window.location.href = `/product?keyword=${field.keyword}`
+                return false; // 阻止默认 form 跳转
+            });
+        });
+        </script>
+    </div>
+</div>
+<div class="product-category">
+    <div class="common-width">
+        <div class="category-name">产品分类:</div>
+        <ul>
+            <li onclick="jumpCategory()" class="<if condition="$currentCategory eq ''">active</if>">
+                全部
+            </li>
+            <volist name="productCategories" id="vo">
+            <li onclick="jumpCategory({$vo.id})" class="<if condition="$currentCategory eq $vo['id']">active</if>">
+                {$vo.name}
+            </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function jumpCategory(categoryId) {
+        window.location.href= `/product?type=${categoryId}`
+	}
+</script>

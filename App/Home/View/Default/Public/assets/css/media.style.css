@@ -1,0 +1,115 @@
+@media screen and (max-width: 350px) {
+    .common-width {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .common-width {
+        width: 100%;
+    }
+
+    #header .header-tel {
+        display: none !important;
+    }
+
+    .index-module.aboutus .content {
+        display: block;
+    }
+
+    .index-module.aboutus .content>img {
+        width: 100%;
+    }
+
+    .index-module.aboutus .intro {
+        width: 100%;
+    }
+
+    .index-module.aboutus .short-menu {
+        display: block;
+    }
+
+    .index-module.aboutus .short-menu-item {
+        display: flex;
+    }
+
+
+    .index-module.product .content>div {
+        width: 50%;
+    }
+
+    .index-module.product .content>div:nth-child(3) {
+        width: 100% !important;
+    }
+
+    .index-module.case .content {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 0;
+    }
+
+    .index-module.case .content .item {
+        width: 49%;
+        height: 150px;
+    }
+
+    .index-module.case .content .item:last-child {
+        width: 100%;
+    }
+
+    #footer {
+        height: 100% !important;
+    }
+
+    #footer .common-width {
+        display: block !important;
+    }
+
+    .child-page-content {
+        margin-left: 0 !important;
+    }
+
+    .child-page-main .common-width {
+        display: block !important;
+    }
+
+    .child-page-main .sidebar {
+        width: 100%;
+    }
+
+    .child-page-main .sidebar .sidebar-name {
+        display: none;
+    }
+
+    .child-page-main .sidebar-list {
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+    }
+
+    .child-page-main .sidebar-item {
+        margin: 0 5px;
+    }
+
+    .news-list .news-item .desc {
+        display: block !important;
+    }
+
+    .news-list .news-item .desc .poster {
+        width: 100%;
+    }
+
+    .product-list {
+        display: flex !important;
+        flex-wrap: wrap;
+        grid-gap: 0 !important;
+    }
+
+    .product-list .product-item {
+        width: 50%;
+    }
+
+    .product-list .product-item .poster {
+        width: 100% !important;
+    }
+}
