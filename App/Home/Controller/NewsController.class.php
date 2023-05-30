@@ -4,8 +4,10 @@ namespace Home\Controller;
 class NewsController extends PublicController {
 
     public function index() {
-        $current_page = $_REQUEST['current_page'] ? $_REQUEST['current_page'] : 1;
-        $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 9;
+        import("ORG.Util.Page");
+        // import("Vendor.Page");
+        $current_page = $_REQUEST['page'] ? $_REQUEST['page'] : 1;
+        $page_size = $_REQUEST['size'] ? $_REQUEST['size'] : 9;
 
         $news_id = 4;
 
@@ -13,7 +15,7 @@ class NewsController extends PublicController {
 
         $firstRow = ($current_page - 1) * $page_size;
         $news = M('article')->where("`pid` in ($news_id)")->order('`order` desc,`id` desc')->limit($firstRow . ',' . $page_size)->select();
-
+        $page = new \Page($count, $page_size);
 
         foreach ($news as $key => $value) {
             $news[$key]['url'] = __APP__ . '/news/' . $value['pid'] . '_' . $value['id'];
@@ -21,6 +23,8 @@ class NewsController extends PublicController {
 
 
         $this->assign('list', $news);
+
+        $this->assign('page', $page->show());
         $this->assign('paginationStr', json_encode(array(
             'total' => $count, 
             'pageSize' => $page_size,

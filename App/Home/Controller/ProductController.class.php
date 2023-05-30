@@ -4,8 +4,10 @@ namespace Home\Controller;
 class ProductController extends PublicController {
 
     public function index() {
-        $current_page = $_REQUEST['current_page'] ? $_REQUEST['current_page'] : 1;
-        $page_size = $_REQUEST['page_size'] ? $_REQUEST['page_size'] : 9;
+        //  import("ORG.Util.Page");
+         import("Vendor.Page");
+        $current_page = $_REQUEST['page'] ? $_REQUEST['page'] : 1;
+        $page_size = $_REQUEST['size'] ? $_REQUEST['size'] : 9;
         $type = $_REQUEST['type'];
 
         $pid = $type ? $type : $this->getTypeID(PRODUCT);
@@ -13,6 +15,7 @@ class ProductController extends PublicController {
 
         $firstRow = ($current_page - 1) * $page_size;
         if ($count) {
+            $page = new \Page($count, $page_size);
             $product = M('goods')->where("`pid` in ($pid)")->order('`order` desc,`id` desc')->limit($firstRow . ',' . $page_size)->select();
         }
 
@@ -33,9 +36,9 @@ class ProductController extends PublicController {
             'pageSize' => $page_size,
             'currentPage' => $current_page,
         )));
+        $this->assign('page', $page->show());
         $this->assign('currentCategory', $type ? $type : '');
-        var_dump($type ? $type : '');
-        var_dump($categories);
+
         $this->assign('sidebarMenus', $categories);
         $this->display();
     }

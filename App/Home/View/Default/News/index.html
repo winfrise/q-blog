@@ -100,7 +100,7 @@
 					</li>
 					</volist>
 				</ul>
-				<div>{$page}</div>
+				<div id="pager">{$page}</div>
 				<div id="page"></div>
 				<script>
 					const pagination = {$paginationStr};
@@ -116,7 +116,7 @@
 							theme: '#1E9FFF',
 							jump: function (obj, first) {
 								if (!first) {
-									window.location.href = `/news?page_size=${obj.limit}&current_page=${obj.curr}`;
+									window.location.href = `/news/index/size/${obj.limit}/page/${obj.curr}`;
 								}
 							}
 						});
