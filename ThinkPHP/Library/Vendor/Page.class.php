@@ -30,18 +30,12 @@ class Page{
   // 分页显示定制
 
   private $config = array(
+    'prev_text'  => '上一页',
 
-    'header' => '<span class="rows">共 %TOTAL_ROW% 条记录</span>',
-
-    'prev'  => '上一页',
-
-    'next'  => '下一页',
-
-    'first' => '1...',
-
-    'last'  => '...%TOTAL_PAGE%',
+    'next_text'  => '下一页',
 
     'theme' => '%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%',
+    'page_sizes' => array(12, 24, 36, 48, 72),
 
   );
 
@@ -57,7 +51,7 @@ class Page{
 
    */
 
-  public function __construct($totalRows, $perPageRows=20, $parameter = array()) {
+  public function __construct($totalRows, $perPageRows=20, $parameter = array(), $pagerCount=6) {
 
     C('VAR_PAGE') && $this->p = C('VAR_PAGE'); //设置分页参数名称
 
@@ -69,7 +63,10 @@ class Page{
 
     $this->currentPage  = empty($_GET[$this->p]) ? 1 : intval($_GET[$this->p]);
 
+    $this->pagerCount = $pagerCount;
+
     $this->firstRow  = $this->perPageRows * ($this->currentPage - 1);
+
     $this->parameter = empty($parameter) ? $_GET : $parameter;
 
   }
@@ -127,21 +124,18 @@ class Page{
 
     $this->url = U('', $this->parameter, true);
 
-    /* 计算分页信息 */
-
-    $this->totalPage = ceil($this->totalRows / $this->perPageRows); //总页数
+    // 总页数
+    $this->totalPage = ceil($this->totalRows / $this->perPageRows); 
 
     /* 当前页不能大于总页数 */
     if(!empty($this->totalPage) && $this->currentPage > $this->totalPage) {
       $this->currentPage = $this->totalPage;
-
     }
 
-
-    $pagerCount = 6;
+    $pagerCount = $this->pagerCount;
     $halfPagerCount = ($pagerCount - 1) / 2;
     $currentPage = $this -> currentPage;
-    $totalpage = $this->totalPages;
+    $totalpage = $this->totalPage;
 
     $showPrevMore = false;
     $showNextMore = false;
@@ -151,7 +145,7 @@ class Page{
         $showPrevMore = true;
       }
 
-      if ($currentPage < $totalpage - $halfPagerCount) {
+      if ($currentPage + $halfPagerCount < $totalpage ) {
         $showNextMore = true;
       }
     }
@@ -160,23 +154,23 @@ class Page{
     if ($showPrevMore == true && $showNextMore == false) {
       $startPage = $totalpage - ($pagerCount - 2);
       for ($i = $startPage; $i < $totalpage; $i++) {
-        $currPager = $this->nowPage == $i ? '<li class="active">' . $i . '</li>' : '<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>';
+        $currPager = $currentPage == $i ? '<li class="active">' . $i . '</li>' : '<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>';
         array_push($pagerArr, $currPager);
       }
     } else if ($showPrevMore == false && $showNextMore == true) {
       for ($i = 2; $i < $pagerCount; $i++) {
-        $currPager = $this->nowPage == $i ? '<li class="active">' . $i . '</li>' : '<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>';
+        $currPager = $currentPage == $i ? '<li class="active">' . $i . '</li>' : '<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>';
         array_push($pagerArr, $currPager);
       }
     } else if ($showPrevMore == true && $showNextMore == true) {
       $offset = floor($pagerCount / 2) - 1;
       for ($i = $currentPage - $offset ; $i <= $currentPage + $offset; $i++) {
-        $currPager = $this->nowPage == $i ? '<li class="active">' . $i . '</li>' : '<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>';
+        $currPager = $currentPage == $i ? ('<li class="active">' . $i . '</li>') : ('<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>');
         array_push($pagerArr, $currPager);
       }
     } else {
       for ($i = 2; $i < $totalpage; $i++) {
-        $currPager = $this->nowPage == $i ? '<li class="active">' . $i . '</li>' : '<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>';
+        $currPager = $currentPage == $i ? '<li class="active">' . $i . '</li>' : '<li><a href="' . $this -> url($i) . '">' . $i . '</a></li>';
         array_push($pagerArr, $currPager);
       }
     }
@@ -185,46 +179,61 @@ class Page{
 
 
     //上一页
-    $prev = $this->nowPage - 1;
-    $prev_page = '<a ' . ($prev > 0 ? 'href="' . $this->url($prev) . '"' : '') . '>' . $this->config['prev']  . '</a>';
+    $prev = $this->currentPage - 1;
+    $prev_page = '';
+    if ($prev > 0) {
+      $prev_page = '<a href="' . $this->url($prev) . '">' . $this->config['prev_text']  . '</a>';
+    } else {
+      $prev_page = '<span class="disabled">' . $this->config['prev_text'] . '</span>';
+    }
 
     //下一页
-    $next = $this->nowPage + 1;
-    $next_page = '<a ' . ($next <= $this->totalPages ? 'href="' . $this->url($next) . '"' : '') . '>' . $this->config['next']  . '</a>';
+    $next = $this->currentPage + 1;
+    $next_page = '';
+    if ($next <= $this->totalPage) {
+      $next_page = '<a href="' . $this->url($next) . '">' . $this->config['next_text']  . '</a>';
+    } else {
+      $next_page = '<span class="disabled">' . $this->config['next_text'] . '</span>';
+    }
 
     //第一页
-
     $first_page = '';
-    if($this-> totalPages > 1){
-      if ($this -> nowPage == 1) {
+    if($this-> totalPage > 1){
+      if ($this -> currentPage == 1) {
         $first_page = '<li class="active">1</li>';
       } else {
         $first_page = '<li><a href="' . $this->url(1) . '">1</a></li>';
       }
-      
-
     }
 
     //最后一页
-
     $last_page = '';
-
-    if($this->totalPages > 2){
-      if ($this -> nowPage == $this->totalPages) {
-        $last_page = '<li class="active">' . $this->totalPages . '</li>';
+    if($this->totalPage > 2){
+      if ($this -> currentPage == $this->totalPage) {
+        $last_page = '<li class="active">' . $this->totalPage . '</li>';
       } else {
-        $last_page = '<li><a href="' . $this->url($this->totalPages) . '">' . $this->totalPages . '</a></li>';
+        $last_page = '<li><a href="' . $this->url($this->totalPage) . '">' . $this->totalPage . '</a></li>';
       }
     }
 
+    // 每页显示条数
+    $page_sizes_str = '<select>';
+    foreach ($this->config['page_sizes'] as $value){
+        $page_sizes_str .= '<option value="' . $value . '">' . $value . '条/页</option>';
+    }
+    $page_sizes_str .= '</select>';
+
+    // 跳转到指定页数
+    $jumper_str = '<span>跳转到第<input type="text" value="' . $currentPage . '" />页</span> <button type="button">确定</button>';
+
+
 
     //替换分页内容
-
     $page_str = str_replace(
 
-      array('%PREV_PAGE%', '%NEXT_PAGE%', '%FIRST_PAGE%', '%LAST_PAGE%', '%TOTAL_ROW%', '%PAGER%', '%PREV_MORE%', '%NEXT_MORE%'),
+      array('%PREV_PAGE%', '%NEXT_PAGE%', '%FIRST_PAGE%', '%LAST_PAGE%', '%TOTAL_ROW%', '%PAGER%', '%PREV_MORE%', '%NEXT_MORE%', '%PAGE_SIZES%', '%JUMPER%'),
 
-      array( $prev_page, $next_page, $first_page, $last_page, $this->totalRows, join('', $pagerArr), $showPrevMore ? '<li>...</li>' : '', $showNextMore ? '<li>...</li>' : ''),
+      array( $prev_page, $next_page, $first_page, $last_page, $this->totalRows, join('', $pagerArr), $showPrevMore ? '<li>...</li>' : '', $showNextMore ? '<li>...</li>' : '', $page_sizes_str, $jumper_str),
 
       '<span>共%TOTAL_ROW%条</span>
       <li class="prev">%PREV_PAGE%</li>
@@ -233,7 +242,10 @@ class Page{
     %PAGER%
     %NEXT_MORE%
     %LAST_PAGE%
-    <li class="next">%NEXT_PAGE%</li>');
+    <li class="next">%NEXT_PAGE%</li>
+    %PAGE_SIZES%
+    %JUMPER%
+    ');
 
     return '<ul class="pagination">' . $page_str . '</ul>';
 
