@@ -1,6 +1,7 @@
 ﻿html,
 body {
     width: 100%;
+    min-width: 1200px;
 }
 
 ul {
@@ -47,6 +48,7 @@ ul {
 }
 
 .index-module {
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 40px;
 }
